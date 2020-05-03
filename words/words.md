@@ -51,23 +51,24 @@ Pilot menggunakan simulator penerbangan untuk mempelajari bagaimana agar pesawat
 
 **Ahli epidemiologi menggunakan simulator epidemi untuk mempelajari bagaimana agar ras manusia tidak jatuh**
 
-Jadi, mari kita buat "simulator penerbangan epidemi" yang sangat, *sangat* sederhana! Dalam simulasi ini, <icon i></icon> Orang yang menular dapat mengubah <icon s></icon> Orang yang mencurigakan menjadi <icon i></icon> Orang yang menular:
+Jadi, mari kita buat "simulator penerbangan epidemi" yang sangat, *sangat* sederhana! Dalam simulasi ini, <icon i></icon> Orang yang menular dapat mengubah <icon s></icon> Orang yang rentan menjadi lebih banyak <icon i></icon> Orang yang menular:
 
 ![](pics/spread.png)
 
-It's estimated that, *at the start* of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> every 4 days, *on average*.[^serial_interval] (remember, there's a lot of variation)
+Diperkirakan bahwa, *pada awal* penjangkitan COVID-19, virus melompat dari <icon i></icon> ke <icon s></icon> setiap 4 hari, *rata-rata*.[^serial_interval] (ingat, ada banyak variasinya)
 
-[^serial_interval]: “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Early release articles are not considered as final versions)
+[^serial_interval]: “Interval [serial] rata-rata adalah 3,96 hari (95% CI 3,53–4,39 hari)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Catatan: Artikel yang dirilis lebih awal tidak dianggap sebagai versi akhir)
 
-If we simulate "double every 4 days" *and nothing else*, on a population starting with just 0.001% <icon i></icon>, what happens? 
+Jika kita mensimulasikan "kasus menjadi ganda setiap 4 hari" *dan tidak ada lagi*, dalam sebuah populasi dimulai dengan hanya 0,001% <icon i></icon>, apa yang terjadi? 
 
-**Click "Start" to play the simulation! You can re-play it later with different settings:** (technical caveats: [^caveats])
+**Klik "Mulai" untuk memainkan simulasi! Anda dapat memainkannya ulang nanti dengan pengaturan berbeda**
+**Click "Start" to play the simulation! You can re-play it later with different settings:** (peringatan teknis: [^caveats])
 
-[^caveats]: **Remember: all these simulations are super simplified, for educational purposes.**
+[^caveats]: **Ingat: semua simulasi ini sudah sangat disederhanakan, untuk keperluan edukasi.**
     
-    One simplification: When you tell this simulation "Infect 1 new person every X days", it's actually increasing # of infected by 1/X each day. Same for future settings in these simulations – "Recover every X days" is actually reducing # of infected by 1/X each day.
+    Satu penyederhanaan: Ketika Anda memberitahu simulasi ini "Infeksi 1 orang baru setiap X hari", ini sebenarnya meningkatkan jumlah dari yang terinfeksi dengan 1/x setiap harinya. Hal yang sama untuk pengaturan masa depan dari simulasi ini - "Sembuh setiap X hari" sebenarnya mengurangi sejumlah orang terinfeksi dalam 1/X setiap harinya.
     
-    Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
+    Hal ini *tentu* tidak sama persis, namun hampir mendekati, dan untuk keperluan edukasi ini tidak lebih samar daripada mengatur tingkat transmisi/pemulihan secara langsung.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
