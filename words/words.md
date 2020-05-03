@@ -2,56 +2,56 @@
     <div>
     	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
         <div style="top: 70px;font-size: 75px;font-weight: bold;">
-        	What Happens Next?
+        	Apa Yang Terjadi Selanjutnya?
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			COVID-19 Futures, Explained With Playable Simulations
+			Masa Depan COVID-19, Dijelaskan Dengan Simulasi Interaktif
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
-				🕐 30 min play/read
+				🕐 Waktu baca/interaksi: 30 menit
 				&nbsp;&middot;&nbsp;
 			</b>
 			by
 			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
-			(epidemiologist)
+			(epidemiologis)
 			&
 			<a href="https://ncase.me/">Nicky Case</a>
-			(art/code)
+			(desain/kode)
 		</div>
 	</div>
 </div>
 
-"The only thing to fear is fear itself" was stupid advice.
+"Satu-satu hal yang ditakuti adalah rasa takut itu sendiri" adalah saran yang bodoh.
 
-Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
+Tentu, tak perlu menimbun tisu toilet - namun jika pembuat kebijakan takut dengan rasa takutnya sendiri, mereka meremehkan bahaya sebenarnya untuk menghindari "kepanikan massal". Takut itu bukan masalahnya, namun bagaimana kita *menyalurkan* rasa takut kita. Takut memberikan kita kekuatan untuk menghadapi bahaya saat ini, dan mempersiapkan diri untuk bahaya di masa depan.
 
-Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
+Sejujurnya, kami (Marcel, epidemiologis + Nicky, desain/kode) khawatir. Kami yakin Anda juga! Itu mengapa kami menyalurkan rasa takut kami dengan membuat **simulasi interaktif**, sehingga *Anda* bisa menyalurkan rasa takut dengan memahami:
 
-* **The Last Few Months** (epidemiology 101, SEIR model, R & R<sub>0</sub>)
-* **The Next Few Months** (lockdowns, contact tracing, masks)
-* **The Next Few Years** (loss of immunity? no vaccine?)
+* **Beberapa Bulan yang Lalu** (epidemiologi 101, mode SEIR, R & R<sub>0</sub>)
+* **Beberapa Bulan yang Akan Datang** (karantina, pelacakan kontak, masker)
+* **Beberapa Tahun yang Akan Datang** (hilangnya imunitas? tidak ada vaksin?)
 
-This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
+Panduan ini (diterbitkan pada 1 Mei 2020. klik catatan kaki ini!→[^timestamp]) dibuat untuk memberimu harapan *dan* rasa takut. Untuk melawan COVID-19 **sekaligus melindungi kesehatan mental dan finansial kita**, kita perlu optimisme untuk membuat berbagai rencana, dan rasa pesimis untuk membuat rencana cadangan. Seperti yang Gladys Bronwyn Stern pernah katakan, *“The optimist invents the airplane and the pessimist the parachute.”* yang berarti *"Seseorang yang optimis menciptakan pesawat terbang dan yang pesimis hanya menciptakan parasut"*
 
-[^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
+[^timestamp]: Catatan kaki ini akan berisi sumber, tautan, dan komentar tambahan. Sukai komentar ini!
     
-    **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
-
-So, buckle in: we're about to experience some turbulence.
+    **Panduan ini diterbitkan pada 1 Mei 2020.** Banyak rincian yang akan kedaluarsa, namun kami yakin panduan ini akan melingkupi 95% dari kemungkinan masa depan, dan Epidemologi 1010 akan tetap bermanfaat selamanya.
+    
+Jadi, bersiaplah: kita akan mulai perjalanan dengan turbulensi.
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Last Few Months</div>
+        <div>Beberapa Bulan yang Lalu</div>
     </div>
 </div>
 
-Pilots use flight simulators to learn how not to crash planes.
+Pilot menggunakan simulator penerbangan untuk mempelajari bagaimana agar pesawat tidak jatuh.
 
-**Epidemiologists use epidemic simulators to learn how not to crash humanity.**
+**Ahli epidemiologi menggunakan simulator epidemi untuk mempelajari bagaimana agar ras manusia tidak jatuh**
 
-So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
+Jadi, mari kita buat "simulator penerbangan epidemi" yang sangat, *sangat* sederhana! Dalam simulasi ini, <icon i></icon> Orang yang menular dapat mengubah <icon s></icon> Orang yang mencurigakan menjadi <icon i></icon> Orang yang menular:
 
 ![](pics/spread.png)
 
