@@ -74,7 +74,7 @@ Jika kita mensimulasikan "kasus menjadi ganda setiap 4 hari" *dan tidak ada lagi
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-This is the **exponential growth curve.** Starts small, then explodes. "Oh it's just a flu" to "Oh right, flus don't create *mass graves in rich cities*". 
+Ini adalah **kurva pertumbuhan eksponensial.** Awalnya sedikit, kemudian meledak. Dari "Oh ini hanya flu kok" menjadi "Oh iya, flu tidak membuat *kuburan massal di kota-kota besar*". 
 
 ![](pics/exponential.png)
 
