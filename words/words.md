@@ -36,7 +36,7 @@ Panduan ini (diterbitkan pada 1 Mei 2020. klik catatan kaki ini!→[^timestamp])
 
 [^timestamp]: Catatan kaki ini akan berisi sumber, tautan, dan komentar tambahan. Sukai komentar ini!
     
-    **Panduan ini diterbitkan pada 1 Mei 2020.** Banyak rincian yang akan kedaluarsa, namun kami yakin panduan ini akan melingkupi 95% dari kemungkinan masa depan, dan Epidemologi 1010 akan tetap bermanfaat selamanya.
+    **Panduan ini diterbitkan pada 1 Mei 2020.** Banyak rincian yang akan kedaluarsa, namun kami yakin panduan ini akan melingkupi 95% dari kemungkinan masa depan, dan Pengenalan Epidemologi akan tetap bermanfaat selamanya.
     
 Jadi, bersiaplah: kita akan mulai perjalanan dengan turbulensi.
 
@@ -51,7 +51,7 @@ Pilot menggunakan simulator penerbangan untuk mempelajari bagaimana agar pesawat
 
 **Ahli epidemiologi menggunakan simulator epidemi untuk mempelajari bagaimana agar ras manusia tidak jatuh**
 
-Jadi, mari kita buat "simulator penerbangan epidemi" yang sangat, *sangat* sederhana! Dalam simulasi ini, <icon i></icon> Orang yang menular dapat mengubah <icon s></icon> Orang yang rentan menjadi lebih banyak <icon i></icon> Orang yang menular:
+Jadi, mari kita buat "simulator penerbangan epidemi" yang sangat, *sangat* sederhana! Dalam simulasi ini, <icon i></icon> Orang yang Menginfeksi dapat mengubah <icon s></icon> Orang yang Rentan menjadi lebih banyak <icon i></icon> Orang yang Menginfeksi:
 
 ![](pics/spread.png)
 
@@ -66,7 +66,7 @@ Jika kita mensimulasikan "kasus menjadi ganda setiap 4 hari" *dan tidak ada lagi
 
 [^caveats]: **Ingat: semua simulasi ini sudah sangat disederhanakan, untuk keperluan edukasi.**
     
-    Satu penyederhanaan: Ketika Anda memberitahu simulasi ini "Infeksi 1 orang baru setiap X hari", ini sebenarnya meningkatkan jumlah dari yang terinfeksi dengan 1/x setiap harinya. Hal yang sama untuk pengaturan masa depan dari simulasi ini - "Sembuh setiap X hari" sebenarnya mengurangi sejumlah orang terinfeksi dalam 1/X setiap harinya.
+    Satu penyederhanaan: Ketika Anda memberitahu simulasi ini "Infeksi 1 orang baru setiap X hari", ini sebenarnya meningkatkan jumlah dari yang Menginfeksi dengan 1/x setiap harinya. Hal yang sama untuk pengaturan masa depan dari simulasi ini - "Sembuh setiap X hari" sebenarnya mengurangi sejumlah orang Menginfeksi dalam 1/X setiap harinya.
     
     Hal ini *tentu* tidak sama persis, namun hampir mendekati, dan untuk keperluan edukasi ini tidak lebih samar daripada mengatur tingkat transmisi/pemulihan secara langsung.
 
@@ -78,92 +78,92 @@ Ini adalah **kurva pertumbuhan eksponensial.** Awalnya sedikit, kemudian meledak
 
 ![](pics/exponential.png)
 
-But, this simulation is wrong. Exponential growth, thankfully, can't go on forever. One thing that stops a virus from spreading is if others *already* have the virus:
+Tetapi, simulasi ini kurang tepat. Untungnya, pertumbuhan eksponensial tidak berjalan selamanya. Satu hal yang menghentikan virus untuk menyebar adalah jika orang-orang *sudah* terjangkiti virus:
 
 ![](pics/susceptibles.png)
 
-The more <icon i></icon>s there are, the faster <icon s></icon>s become <icon i></icon>s, **but the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s.**
+Semakin banyak <icon i></icon> bermunculan, semakin cepat <icon s></icon> berubah menjadi <icon i></icon>, **namun semakin sedikit <icon s></icon>, semakin *lambat* <icon s></icon> berubah menjadi <icon i></icon>.**
 
-How's this change the growth of an epidemic? Let's find out:
+Bagaimana ini mengubah pertumbuhan sebuah epidemi? Mari kita cari tahu:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 
-This is the "S-shaped" **logistic growth curve.** Starts small, explodes, then slows down again.
+Ini adalah **kurva S pertumbuhan logistik**. Awalnya kecil, meledak, kemudian kembali melambat.
 
-But, this simulation is *still* wrong. We're missing the fact that <icon i></icon> Infectious people eventually stop being infectious, either by 1) recovering, 2) "recovering" with lung damage, or 3) dying.
+Namun, simulasi ini *masih* keliru. Kita kehilangan fakta bahwa <icon i></icon> Orang yang Menginfeksi secara berkala akan berhenti menularkan, antara dengan menjadi 1) sembuh, 2) "sembuh" dengan kerusakan paru, atau 3) sekarat.
 
-For simplicity's sake, let's pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <icon r></icon>s can't be infected again, and let's pretend – *for now!* – that they stay immune for life.
+Untuk menyederhanakannya, kita anggap kalau semua <icon i></icon> orang yang Menginfeksi berubah menjadi <icon r></icon> Sembuh. (Cukup ingat bahwa kenyataannya, beberapa di antaranya meninggal dunia.) <icon r></icon> tidak dapat ditulari lagi, dan mari kita anggap - *untuk sekarang!* - bahwa mereka tetap imun sepanjang hidupnya.
 
-With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] That means some folks will recover before 10 days, some after. **Here's what that looks like, with a simulation *starting* with 100% <icon i></icon>:**
+Dengan COVID-19, diperkirakan Anda <icon i></icon> menjadi orang yang Menginfeksi dalam 10 hari, *rata-rata*.[^penularan] Ini berarti beberapa orang akan sembuh sebelum 10 hari, yang lainnya lebih dari itu. **Seperti ini lah tampilannya, dengan sebuah simulasi *dimulai* dengan 100% <icon i></icon>:**
 
-[^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
+[^penularan]: “Angka median periode komunikasi \[...\] adalah 9,5 hari.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Ya, kita tahu "angka median" tidak sama dengan "rata-rata". Untuk keperluan edukasi sederhana, ini cukup mendekati.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
 
-This is the opposite of exponential growth, the **exponential decay curve.**
+Ini adalah **kurva kehilangan eksponensial**, lawan dari pertumbuhan eksponensial.
 
-Now, what happens if you simulate S-shaped logistic growth *with* recovery?
+Sekarang, apa yang terjadi jika Anda mensimulasikan kurva S logistik pertumbuhan *dengan* kesembuhan?
 
 ![](pics/graphs_q.png)
 
-Let's find out.
+Mari kita cari tahu.
 
-<b style='color:#ff4040'>Red curve</b> is *current* cases <icon i></icon>,    
-<b style='color:#999999'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>),
-starts at just 0.001% <icon i></icon>:
+<b style='color:#ff4040'>Kurva merah</b> adalah kasus *saat ini* <icon i></icon>,    
+<b style='color:#999999'>Kurva abu</b> adalah kasus *total* (kasus saat ini + kasus sembuh <icon r></icon>),
+dimulai dengan hanya 0,001% <icon i></icon>:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
+Dan *itulah* asal di mana kurva terkenal tersebut muncul! Ini bukan kurva lonceng, bahkan bukan kurva "log-normal". Kurva ini tidak ada namanya. Tetapi Anda sudah melihatnya berjuta-juta kali, dan memohon-mohon agar kurva menjadi rata.
 
-This is the the **SIR Model**,[^sir]    
-(<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
-the *second*-most important idea in Epidemiology 101:
+Ini adalah **Model SIR**,[^sir]    
+(<icon s></icon>**S**usceptible/Kelas Rentan <icon i></icon>**I**nfectious/Kelas Terinfeksi <icon r></icon>**R**ecovered/Kelas Sembuh)      
+gagasan paling penting kedua di Pengenalan Epidemiologi:
 
-[^sir]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
+[^sir]: Untuk penjelasan Model SIR yang lebih teknis, lihat [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) dan [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
 ![](pics/sir.png)
 
-**NOTE: The simulations that inform policy are way, *way* more sophisticated than this!** But the SIR Model can still explain the same general findings, even if missing the nuances.
+**CATATAN: Simulasi yang menginformasikan kebijakan itu jauh, *jauh* lebih canggih daripada ini!** Namun model SIR masih dapat menjelaskan temuan umum, walaupun jika kehilangan nuansanya.
 
-Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
+Sebenarnya, mari kita tambahkan satu nuansa lain: sebelum seorang <icon s></icon> berubah menjadi <icon i></icon>, pertama-tama mereka berubah menjadi <icon e></icon> orang yang Terekspos. Ini adalah ketika mereka memiliki virus di tubuhnya namun belum dapat mengopernya ke orang lain - *ter*infeksi namun belum dapat *meng*infeksi.
 
 ![](pics/seir.png)
 
-(This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
+(Varian ini disebut sebagai **model SEIR**[^seir], di mana "E" berarti <icon e></icon> "Kelas Terekspos". Mohon dicatat bahwa ini *bukan* arti umum dari "terekspos", ketika Anda mungkin atau tidak memiliki virus. Dalam pengertian teknis, "Terekspos" berarti Anda benar-benar memiliki virusnya. Terminologi sains memang buruk.)
 
-[^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
+[^seir]: Untuk penjelasan Model SEIR yang lebih teknis, lihat, lihat [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) dan [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
-For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
+Untuk COVID-19, diperkirakan bahwa Anda menjadi <icon e></icon> orang yang terinfeksi namun belum menginfeksi dalam waktu 3 hari, *dalam rata-rata*.[^latent] Apa yang terjadi jika kita menambahkannya ke dalam simulasi?
 
-[^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
+[^latent]: “Dengan asumsi distribusi periode inkubasi rata-rata 5,2 hari dari studi terpisah kasus COVID-19 awal, kami menyimpulkan bahwa infeksi dimulai dari 2,3 hari (95% CI, 0,8-3,0 hari) sebelum timbulnya gejala” (translation: Dengan asumsi gejala dimulai pada 5 hari, infeksi dimulai 2 hari sebelumnya = Infeksi dimulai pada 3 hari) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is *current* cases (infectious <icon i></icon> + exposed <icon e></icon>),    
-<b style='color:#888'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>):
+<b style='color:#ff4040'>Kurva Merah <b style='color:#FF9393'>+ Merah Muda</b></b> adalah kasus *saat ini* (Kelas Terinfeksi <icon i></icon> + Kelas Terekspos <icon e></icon>),    
+<b style='color:#888'>Kurva Abu</b> adalah kasus *total* (saat ini + Kelas Sembuh <icon r></icon>):
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.
+Tidak banyak pengubahan! Seberapa lama Anda tetap menjadi <icon e></icon> Kelas Terekspos mengubah laju pengubahan dari <icon e></icon>-ke-<icon i></icon>, dan *ketika* kasus saat ini memuncak... tetapi *ketinggian* puncak, dan total kasus pada akhirnya, tetap sama.
 
-Why's that? Because of the *first*-most important idea in Epidemiology 101:
+Mengapa bisa begitu? Ini dikarenakan oleh gagasan *pertama* dan paling penting dalam Pengenalan Epidemiologi:
 
 ![](pics/r.png)
 
-Short for "Reproduction number". It's the *average* number of people an <icon i></icon> infects *before* they recover (or die).
+Kependekan dari "angka Reproduksi". Ini adalah angka *rata-rata* orang yang seorang <icon i></icon> infeksi *sebelum* mereka sembuh (atau meninggal dunia).
 
 ![](pics/r2.png)
 
-**R** changes over the course of an outbreak, as we get more immunity & interventions.
+**R** berubah selama wabah, sepanjang kita mendapatkan lebih banyak imunitas & intervensi.
 
-**R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.
+**R<sub>0</sub>** (diucapkan sebagai R-nought) adalah nilai R *pada permulaan penyebaran wabah, sebelum imunitas atau intervensi*. R<sub>0</sub> secara lebih dekat merefleksikan kekuatan virus itu sendiri, namun masih dapat berubah dari lokasi ke lokasi. Sebagai contoh, R<sub>0</sub> di kota-kota berkepadatan tinggi lebih tinggi daripada area pedesaan berkepadatan rendah.
 
 (Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)
 
