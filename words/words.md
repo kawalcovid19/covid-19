@@ -167,35 +167,35 @@ Kependekan dari "angka Reproduksi". Ini adalah angka *rata-rata* orang yang seor
 
 (Mayoritas artikel berita – dan bahkan beberapa artikel ilmiah! – kebingungan antara R dan R<sub>0</sub>. Sekali lagi, terminologi sains memang buruk.)
 
-R<sub>0</sub> untuk flu musiman itu sekitar 1,28[^r0_flu]. This means, at the *start* of a flu outbreak, each <icon i></icon> infects 1.28 others *on average.* (If it sounds weird that this isn't a whole number, remember that the "average" mom has 2.4 children. This doesn't mean there's half-children running about.)
+R<sub>0</sub> untuk flu musiman itu sekitar 1,28[^r0_flu]. Ini berarti, pada saat *permulaan* wabah flu, setiap <icon i></icon> menginfeksi 1,28 orang lainnya *rata-rata* (Jika ini terdengar aneh bahwa ini bukan angka bulat, ingat bahwa "rata-rata" seorang ibu memiliki 2,4 anak. Hal ini bukan berarti ada setengah anak di tengah masyarakat.)
 
-[^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
+[^r0_flu]: “Angka R median untuk influenza musiman adalah 1,28 (IQR: 1,19–1,37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 
-The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though one *not-yet-finalized* study estimates it was 5.7(!) in Wuhan.[^r0_wuhan]
+Nilai R<sub>0</sub> untuk COVID-19 diperkirakan sekitar 2,2 ,[^r0_covid] walaupun sebuah studi *yang belum difinalisasi* memperkirakan nilainya 5,7(!) di Wuhan.[^r0_wuhan]
 
-[^r0_covid]: “We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
+[^r0_covid]: “Kami memperkirakan angka reproduksi dasar R0 dari 2019-nCoV berkisar 2,2 (90% interval berkepadatan tinggi: 1,4–3,8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
 
-[^r0_wuhan]: “we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
+[^r0_wuhan]: “kami menghitung nilai median R0 sebesar 5,7 (95% CI 3,8–8,9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
-In our simulations – *at the start & on average* – an <icon i></icon> infects someone every 4 days, over 10 days. "4 days" goes into "10 days" two-and-a-half times. This means – *at the start & on average* – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])
+Dalam simulasi kami - *pada permulaan & rata-rata* – seorang <icon i></icon> menginfeksi orang lain setiap 4 hari, selama 10 hari. "4 hari" dalam "10 hari" menjadi dua-setengah kali. Ini berarti - *pada permulaan & rata-rata* - setiap <icon i></icon> menginfeksi 2,5 orang lainnya. Sehingga, nilai R<sub>0</sub> = 2,5. (caveats:[^r0_caveats_sim])
 
-[^r0_caveats_sim]: This is pretending that you're equally infectious all throughout your "infectious period". Again, simplifications for educational purposes.
+[^r0_caveats_sim]: Ini berpura-pura bahwa Anda sama-sama menular di seluruh "periode menular" Anda. Sekali lagi, penyederhanaan untuk tujuan pendidikan.
 
-**Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time & new-infection time:**
+**Mainkan dengan kalkulator R<sub>0</sub> ini, untuk melihat bagaimana R<sub>0</sub> bergantung pada waktu penyembuhan dan waktu infeksi baru:**
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
-But remember, the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s. The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)
+Tapi ingat, semakin sedikit <icon s></icon> berada, semakin *melambat* <icon s></icon> berubah menjadi <icon i></icon>. Angka reproduksi *saat ini* (R) bergantung tidak hanya pada angka reproduksi *dasar* (R<sub>0</sub>), namun *juga* bergantung pada berapa banyak orang yang tidak lagi termasuk <icon s></icon> Kelas Rentan. (Contohnya, mereka yang sembuh & mendapatkan imunitas secara alami.)
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
-When enough people have immunity, R < 1, and the virus is contained! This is called **herd immunity**. For flus, herd immunity is achieved *with a vaccine*. Trying to achieve "natural herd immunity" by letting folks get infected is a *terrible* idea. (But not for the reason you may think! We'll explain later.)
+Ketika cukup banyak orang yang memiliki kekebalan, R <1, dan virusnya terkandung! Ini disebut ***herd immunity*** atau **kekebalan kelompok**. Untuk flu, kekebalan kelompok dicapai *dengan vaksin*. Usaha untuk mencapai "kekebalan kelompok alami" dengan membiarkan orang terinfeksi adalah gagasan *mengerikan*. (Tapi tidak untuk alasan yang mungkin kau pikirkan! Kami akan menjelaskannya nanti.)
 
-Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:
+Sekarang, mari kita mainkan Model SEIR lagi, namun sekarang menampilkan nilai R<sub>0</sub>, R sepanjang waktu, dan ambang batas kekebalan kelompok:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
