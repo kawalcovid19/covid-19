@@ -193,38 +193,39 @@ Tapi ingat, semakin sedikit <icon s></icon> berada, semakin *melambat* <icon s><
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
-Ketika cukup banyak orang yang memiliki kekebalan, R <1, dan virusnya terkandung! Ini disebut ***herd immunity*** atau **kekebalan kelompok**. Untuk flu, kekebalan kelompok dicapai *dengan vaksin*. Usaha untuk mencapai "kekebalan kelompok alami" dengan membiarkan orang terinfeksi adalah gagasan *mengerikan*. (Tapi tidak untuk alasan yang mungkin kau pikirkan! Kami akan menjelaskannya nanti.)
+Ketika cukup banyak orang yang memiliki kekebalan, R<1, dan virusnya terkandung! Ini disebut ***herd immunity*** atau **kekebalan kawanan**. Untuk flu, kekebalan kawanan dicapai *dengan vaksin*. Usaha untuk mencapai "kekebalan kawanan alami" dengan membiarkan orang terinfeksi adalah gagasan *mengerikan*. (Tapi tidak untuk alasan yang mungkin kau pikirkan! Kami akan menjelaskannya nanti.)
 
-Sekarang, mari kita mainkan Model SEIR lagi, namun sekarang menampilkan nilai R<sub>0</sub>, R sepanjang waktu, dan ambang batas kekebalan kelompok:
+Sekarang, mari kita mainkan Model SEIR lagi, namun sekarang menampilkan nilai R<sub>0</sub>, R sepanjang waktu, dan ambang batas kekebalan kawanan:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
 
-**NOTE: Total cases *does not stop* at herd immunity, but overshoots it!** And it crosses the threshold *exactly* when current cases peak. (This happens no matter how you change the settings – try it for yourself!)
+**CATATAN: Angka total kasus *tidak berhenti* pada kekebalan kawanan, namun melampaui dari itu!** Dan angka tersebut melewati ambang batas *tepat* ketika kasus saat ini memuncak. (Hal ini akan terjadi bagaimanapun Anda mengubah pengaturannya - coba saja sendiri!)
 
-This is because when there are more non-<icon s></icon>s than the herd immunity threshold, you get R < 1. And when R < 1, new cases stop growing: a peak.
+Ini karena ketika ada lebih banyak orang non-<icon s></icon> daripada ambang batas kekebalan kawanan, Anda mendapati R < 1. Dan ketika R < 1, kasus baru berhenti bertambah: inilah puncak.
 
+**Jika ada hanya satu pelajaran yang bisa Anda petik dari panduan ini, ini dia** - ini adalah diagram yang sangat amat rumit sehingga silakan ambil waktu Anda untuk memahami sepenuhnya:
 **If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:
 
 ![](pics/r3.png)
 
-**This means: we do NOT need to catch all transmissions, or even nearly all transmissions, to stop COVID-19!**
+**Ini berarti: kita TIDAK perlu menangkap semua penularan, atau hampir mendekat semua penularan, untuk menghentikan COVID-19!**
 
-It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" need to stop more than 60% of infections. 60%?! If that was a school grade, that's a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R < 1, virus is contained! (exact formula:[^exact_formula])
+Ini adalah sebuah paradoks. COVID-19 sangatlah menular, bahkan untuk mengekangnya, kita "hanya" perlu menghentikan lebih dari 60% infeksi. 60%?! Jika angka itu dianggap nilai rapor sekolah, pasti tergolong nilai D-. Tetapi jika R<sub>0</sub> = 2,5, memotongnya hingga 61% dapat menghasilkan nilai R = 0,975, yang berarti R < 1, virus berhasil dikekang! (rumus tepatnya:[^rumus_tepat])
 
-[^exact_formula]: Remember R = R<sub>0</sub> * the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions *stopped*.
+[^rumus_tepat]: Ingat R = R<sub>0</sub> * rasio penularan yang dibolehkan. Ingat juga bahwa rasio penularan yang dibolehkan = 1 - rasio penularan yang *dihentikan*.
     
-    Therefore, to get R < 1, you need to get R<sub>0</sub> * TransmissionsAllowed < 1. 
+    Sehingga, untuk mendapatkan R < 1, Anda perlu untuk mendapatkan R<sub>0</sub> * PenularanYangDiperbolehkan < 1. 
     
-    Therefore, TransmissionsAllowed < 1/R<sub>0</sub>
+    Maka, PenularanYangDiperbolehkan < 1/R<sub>0</sub>
     
-    Therefore, 1 - TransmissionsStopped < 1/R<sub>0</sub>
+    Maka, 1 - PenularanYangDihentikan < 1/R<sub>0</sub>
     
-    Therefore, TransmissionsStopped > 1 - 1/R<sub>0</sub>
+    Maka, PenularanYangDihentikan > 1 - 1/R<sub>0</sub>
     
-    Therefore, you need to stop more than **1 - 1/R<sub>0</sub>** of transmissions to get R < 1 and contain the virus!
-
+    Maka, Anda perlu menghentikan lebih dari **1 - 1/R<sub>0</sub>** dari penularan untuk mendapatkan R < 1 dan virus dikekang!
+    
 ![](pics/r4.png)
 
 (If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that's good you're challenging our assumptions! There'll be a "Sandbox Mode" at the end of this guide, where you can plug in your *own* numbers, and simulate what happens.)
