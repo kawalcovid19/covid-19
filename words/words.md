@@ -228,47 +228,47 @@ Ini adalah sebuah paradoks. COVID-19 sangatlah menular, bahkan untuk mengekangny
     
 ![](pics/r4.png)
 
-(If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that's good you're challenging our assumptions! There'll be a "Sandbox Mode" at the end of this guide, where you can plug in your *own* numbers, and simulate what happens.)
+(Jika Anda pikir R<sub>0</sub> atau angka lainnya di dalam simulasi kami terlalu rendah/tinggi, pertanda bagus karena Anda menantang asumsi kami! Nanti akan ada "Mode Sandbox" pada akhir panduan ini, di mana Anda bisa mematok angka Anda *sendiri*, dan mensimulasikan apa yang terjadi.)
 
-*Every* COVID-19 intervention you've heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing & quarantining, face masks, even "herd immunity" – they're *all* doing the same thing:
+*Setip* intervensi COVID-19 yang Anda dengar - cuci tangan dengan sabun, jaga jarak, karantina wilayah, isolasi mandiri, pelacakan kontak, penggunaan masker, bahkan "imunitas kawanan" - itu *semua* dilakukan untuk hal yang sama:
 
-Getting R < 1.
+Mendapatkan nilai R < 1.
 
-So now, let's use our "epidemic flight simulator" to figure this out: How can we get R < 1 in a way **that also protects our mental health *and* financial health?**
+Jadi sekarang, mari kita gunakan "simulasi penerbangan epidemi" kami untuk memecahkan masalah ini: Bagaimana kita bisa mendapatkan nilai R < 1 dengan cara **yang sekaligus melindungi kesehatan mental *dan* finansial kita?**
 
-Brace yourselves for an emergency landing...
+Siapkan diri Anda untuk pendaratan darurat...
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Months</div>
+        <div>Beberapa Bulan Kemudian</div>
     </div>
 </div>
 
-...could have been worse. Here's a parallel universe we avoided:
+...bisa menjadi lebih buruk. Inilah jagad raya paralel yang kita hindari:
 
-###Scenario 0: Do Absolutely Nothing
+###Skenario 0: Tidak Melakukan Apa-apa
 
-Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
+Sekitar 1 dari 20 orang yang terinfeksi COVID-19 perlu dibawa ke ICU (Intensive Care Unit).[^icu_covid] Di negara makmur seperti AS, ada 1 kasur ICU per 3400 orang.[^icu_us] Oleh karena itu, AS dapat menangani 20 dari 3400 orang yang *secara simultan* terinfeksi - atau, 0,6% dari total populasi.
 
-[^icu_covid]: ["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.
+[^icu_covid]: ["Persentase kasus COVID-19 di Amerika Serikat pada 12 Februari hingga 16 Maret 2020 yang dimasukkan ke *intensive care unit*, menurut kelompok umur"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Antara 4,9% hingga 11,5% dari *semua* kasus COVID-19 memerlukan ICU. Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Dengan murah hati memilih kisaran yang lebih rendah, yaitu 5% atau 1 dari 20. Perhatikan bahwa total ini khusus untuk struktur usia AS, dan akan lebih tinggi di negara-negara dengan populasi yang lebih tua, lebih rendah di negara-negara dengan populasi yang lebih muda.
 
-[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. 
+[^icu_us]: “Total kasur ICU = 96.596”. Dari [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) Populasi AS adalah 328.200.000 pada tahun 2019. 96.596 dari 328.200.000 = sekitar 1 per 3400. 
 
-Even if we *more than tripled* that capacity to 2%, here's what would've happened *if we did absolutely nothing:*
+Bahkan jika kita *lebih dari tiga kali lipatkan* kapasitas itu menjadi 2%, inilah apa yang terjadi *jika kita tidak melakukan apa-apa:*
 
 <div class="sim">
 		<iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 </div>
 
-Not good.
+Tidak bagus.
 
-That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. 
-(remember: total cases *overshoots* herd immunity)
+Itulah apa yang [laporan Imperial College per 16 Maret](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) temukan: tidak melakukan apa-apa, dan kita kehabisan slot ICU, dengan lebih dari 80% terinfeksi. 
+(ingat: total kasus *melampaui* imunitas kawanan)
 
-Even if only 0.5% of infected die – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.*
+Bahkan jika hanya 0,5% yang terinfeksi meninggal dunia - sebuah asumsi murah hari ketika tidak ada lagi ICU - di negara besar seperti AS, dengan 300 juta orang, 0,5% dari 80% dari 300 juta = masih ada 1,2 juta orang meninggal dunia... *JIKA kita tidak melakukan apa-apa*
 
-(Lots of news & social media reported "80% will be infected" *without* "IF WE DO NOTHING". Fear was channelled into clicks, not understanding. *Sigh.*)
+(Banyak sekali berita & media sosial mengabarkan "80% akan terinfeksi" *tanpa* "JIKA KITA TIDAK MELAKUKAN APA-APA". Rasa takut disalurkan melalui setiap kliknya, bukan dalam setiap pemahaman beritanya. *Heu.*)
 
 ###Scenario 1: Flatten The Curve / Herd Immunity
 
