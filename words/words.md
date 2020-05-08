@@ -304,19 +304,19 @@ Sekarang, mari kita simulasikan apa yang terjadi pada epidemi COVID-19 jika, mul
 
 Tiga catatan:
 
-1. This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
+1. Hal ini *mengurangi* total kasus! **Bahkan jika Anda tidak mendapati nilai R < 1, mengurangi nilai R masih dapat menyelamatkan banyak jiawa, dengan mengurangi 'pelampauan' di atas imunitas kawanan.** Banyak kawan berpikir usaha "Meratakan Kurva" menyebarkan kasus tanpa menurunkan nilai total. Hal ini tidak mungkin terjadi di model Pengenalan Epidemiologi *manapun*. Namun karena berita mengabarkan "80%+ akan terinfeksi" tak dapat dihindari, kawan-kawan berpikiran bahwa total kasus akan tetap sama apapun yang terjadi. *Sigh.*
 
-2. Due to the extra interventions, current cases peak *before* herd immunity is reached. In fact, in this simulation, total cases only overshoots *a tiny bit* above herd immunity – the UK's plan! At that point, R < 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...
+2. Dikarenakan intervensi ekstra, kasus saat ini memuncak *sebelum* imunitas kawanan dicapai. Faktanya, dalam simulasi ini, total kasus hanya melampaui *sedikit saja* di atas imunitas kawanan - sesuai rencana Inggris Raya! Pada titik itu, nilai R < 1, Anda dapat melepaskan segala macam intervensi, dan COVID-19 tetap dikekang! Yah, kecuali ada satu masalah...
 
-3. You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
+3. Anda masih kekurangan ruang ICU. Untuk beberapa bulan. (dan ingat, kita *sudah* menambahkan jumlah ICU hingga tiga kali lipat untuk simulasi-simulasi ini.
 
-That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
+Itu adalah temuan lapin dari laporan Imperial College tanggal 16 Maret, yang menyakinkan Inggris Raya untuk mengabaikan rencana awalnya. Segala usaha **mitigasi** (mengurangi nilai R, namun R > 1) akan gagal. Satu-satunya jalan keluar adalah **penekanan** (mengurangi nilai R hingga R < 1).
 
 ![](pics/mitigation_vs_suppression.png)
 
-That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
+Artinya, jangan hanya "meratakan" kurva, *hancurkan* kurvanya. Misalnya, dengan ...
 
-###Scenario 2: Months-Long Lockdown
+###Skenario 2: Karantina Wilayah Berbulan-bulan
 
 Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
 
