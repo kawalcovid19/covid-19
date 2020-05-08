@@ -270,39 +270,39 @@ Bahkan jika hanya 0,5% yang terinfeksi meninggal dunia - sebuah asumsi murah har
 
 (Banyak sekali berita & media sosial mengabarkan "80% akan terinfeksi" *tanpa* "JIKA KITA TIDAK MELAKUKAN APA-APA". Rasa takut disalurkan melalui setiap kliknya, bukan dalam setiap pemahaman beritanya. *Heu.*)
 
-###Scenario 1: Flatten The Curve / Herd Immunity
+###Skenario 1: Ratakan Kurvanya / Imunitas Kawanan
 
-The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
+Rencana "Ratakan Kurvanya" digaungkan oleh setiap organisasi kesehatan masyarakat, sementara rencana awal "imunitas kawanan" milik Inggris Raya dicemooh banyak orang. Keduanya adalah *rencana yang sama*. Hanya saja mereka mengomunikasikannya dengan sangat buruk.[^yong]
 
-[^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
+[^yong]: “Dia mengatakan bahwa tujuan sebenarnya adalah sama dengan tujuan negara lain: ratakan kurva dengan cara mengejutkan infeksi. Sebagai konsekuensinya, bangsa dapat mencapai kekebalan kelompok; itu adalah efek samping, bukan tujuan. [...] Rencana tindakan coronavirus aktual pemerintah, tersedia online, tidak menyebutkan kekebalan kawanan sama sekali. "
     
-    From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
+    Dari sebuah [artikel The Atlantic oleh Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
 
-Both plans, though, had a literally fatal flaw.
+Mesikpun begitu, kedua rencana benar-benar memiliki kelemahan yang fatal.
 
-First, let's look at the two main ways to "flatten the curve": handwashing & physical distancing.
+Pertama, mari kita lihat pada dua cara utama untuk "meratakan kurva": cuci tangan dengan sabun dan menjaga jarak.
 
-Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwashing], while the city-wide lockdown in London cut close contacts by ~70%[^london]. So, let's assume handwashing can reduce R by *up to* 25%, and distancing can reduce R by *up to* 70%:
+Rajin mencuci tangan dapat memotong kasus flu & demam di negara berpenghasilan tinggi hingga ~25%[^handwashing], sementara karantina satu kota penuh di London memotong interaksi kontak dekat menjadi ~70%[^london]. Jadi, mari kita asumsikan tindakan cuci tangan dapat mengurangi nilai R *hingga* 25%, dan menjaga jarak dapat menurunkan nilai R *hingga* 70%:
 
-[^handwashing]: “All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful.
+[^handwashing]: “Semua delapan studi yang memenuhi syarat melaporkan bahwa mencuci tangan menurunkan risiko infeksi pernapasan, dengan pengurangan risiko berkisar dari 6% hingga 44% [nilai gabungan 24% (95% CI 6–40%)].” Kami mengumpulkan nilai gabungan hingga 25% dalam simulasi ini untuk penyederhanaan. [Rabie, T. dan Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Catatan: seperti yang ditunjukkan oleh meta-analisis ini, kualitas studi untuk mencuci tangan (setidaknya di negara-negara berpenghasilan tinggi) sangat buruk.
 
-[^london]: “We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
+[^london]: “Kami menemukan pengurangan 73% dalam rata-rata jumlah kontak harian yang diamati per peserta. Ini akan cukup untuk mengurangi R0 dari nilai dari 2,6 sebelum penguncian ke 0,62 (0,37 - 0,89) selama penguncian ". Kami membulatkannya menjadi 70% dalam simulasi ini untuk penyederhanaan. [Jarvis dan Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
-**Play with this calculator to see how % of non-<icon s></icon>, handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
+**Coba mainkan dengan kalkulator ini untuk melihat berapa % dari non-<icon s></icon>, mencuci tangan, dan menjaga jarak mengurangi nilai R:** (kalkulator ini memvisualisasikan efek *relatifnya*, itulah sebabnya meningkatkan salah satu *terlihat* seperti itu mengurangi efek lainnya.[^log_caveat])
 
-[^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
+[^log_caveat]: Distorsi ini akan hilang jika kita merencanakan R pada skala logaritmik .. tetapi kemudian kita malah harus menjelaskan *skala logaritmik.*
 
 <div class="sim">
 		<iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 </div>
 
-Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
+Sekarang, mari kita simulasikan apa yang terjadi pada epidemi COVID-19 jika, mulai Maret 2020, kita telah meningkatkan cuci tangan tetapi hanya *menjaga jarak* tingkat ringan - sehingga nilai R lebih rendah, tetapi masih di atas 1:
 
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 </div>
 
-Three notes:
+Tiga catatan:
 
 1. This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
 
