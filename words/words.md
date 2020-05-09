@@ -441,36 +441,36 @@ Mengisolasi kasus *bergejala* dapat menurunkan R hingga 40%, dan mengkarantina k
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
 
-Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdown!* Much better for our mental & financial health. (As for the cost to folks who have to self-isolate/quarantine, *governments should support them* – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)
+Jadi, bahkan tanpa 100% mengkarantina kontak, kita dapat meraih nilai R < 1 *tanpa karantina wilayah!* Jauh lebih baik untuk kesehatan mental & finansial kita. (Adapun biaya untuk mereka yang harus mengisolasi/karantina diri, *pemerintah harus memberi dukungan kepada mereka* - membayar tes, perlindungan kerja, cuti berbayar yang disubsidi, dan lain-lain. Masih jauh lebih murah daripada karantina wilayah berselang-seling.)
 
-We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the *right* way:
+Kemudian kita tetap menjaga nilai R < 1 sampai kita menemukan vaksinnya, yang dapat mengubah kelompok rentan <icon s></icon> menjadi kelompok yang imun <icon r></icon>. Inilah imunitas kawanan dengan cara yang *benar*:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 </div>
 
-(Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you'd have to compensate by vaccinating *more* than "herd immunity", to *actually* get herd immunity)
+(Catatan: kalkulator ini berpura-pura vaksinnya 100% efektif. Ingatlah bahwa pada kenyataannya, Anda harus menggantinya dengan cara memvaksinasi *lebih banyak* daripada mencapai "imunitas kawanan", untuk *benar-benar* mendapatkan imunitas kawanan)
 
-Okay, enough talk. Here's a simulation of:
+OK, cukup bicaranya. Ini dia simulasi dari:
 
-1. A few-month lockdown, until we can...
-2. Switch to "Test, Trace, Isolate" until we can...
-3. Vaccinate enough people, which means...
-4. We win.
+1. Karantina wilayah selama beberapa bulan, sampai kita bisa ...
+2. Beralih ke "Tes, Lacak, Isolasi" sampai kita bisa ...
+3. Vaksinasi cukup banyak orang, yang berarti ...
+4. Kita menang.
 
 <div class="sim">
 		<iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-So that's it! That's how we make an emergency landing on this plane.
+Jadi begitu! Begitulah cara kita melakukan pendaratan darurat di pesawat ini.
 
-That's how we beat COVID-19.
+Itulah cara kita mengalahkan COVID-19.
 
 ...
 
-But what if things *still* go wrong? Things have gone horribly wrong already. That's fear, and that's good! Fear gives us energy to create *backup plans*.
+Tetapi bagaimana jika ternyata *masih* bermasalah? Hal-hal buruk telah terjadi. Itulah rasa takut, dan itu bagus! Rasa takut memberi kita energi untuk membuat *rencana cadangan*.
 
-The pessimist invents the parachute.
+Pesimis menciptakan parasut.
 
 ###Scenario 4+: Masks For All, Summer, Circuit Breakers
 
