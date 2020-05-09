@@ -472,73 +472,71 @@ Tetapi bagaimana jika ternyata *masih* bermasalah? Hal-hal buruk telah terjadi. 
 
 Pesimis menciptakan parasut.
 
-###Scenario 4+: Masks For All, Summer, Circuit Breakers
+###Skenario 4+: Masker Untuk Semua, Musim Panas, Karantina Pemutus Arus
 
-What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, *still* aren't enough to get R < 1?
+Bagaimana jika nilai R<sub>0</sub> jauh lebih tinggi dari yang kita duga, dan tindakan di atas, bahkan dengan menjaga jarak secara nyaman, *masih* kurang cukup untuk meraih nilai R < 1?
 
-Remember, even if we can't get R < 1, reducing R still reduces the "overshoot" in total cases, thus saving lives. But still, R < 1 is the ideal, so here's a few other ways to reduce R:
+Ingat, bahkan jika kita tidak dapat meraih nilai R < 1, mengurangi R masih dapat menurunkan "lonjakan" pada total kasus, jadi nyawa bisa diselamatkan. Namun tetapi, R < 1 itu ideal, jadi inilah beberapa cara lainnya untuk mengurangi nilai R:
 
-**Masks For All:**
+**Masker Untuk Semua:**
 
-*"Wait,"* you might ask, *"I thought face masks don't stop you from getting sick?"*
+*"Tunggu,"* mungkin Anda bertanya, *"Saya pikir masker tidak menghentikan kita dari kemungkinan menjadi sakit?"*
 
-You're right. Masks don't stop you from getting sick[^incoming]... they stop you from getting *others* sick.
+Anda benar. Masker tidak menghentikan kita dari kemungkinan untuk sakit[^incoming]... tapi masker menghentikan Anda untuk membuat *orang lain* menjadi sakit.
 
-[^incoming]: “None of these surgical masks exhibited adequate filter performance and facial fit characteristics to be considered respiratory protection devices.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
+[^incoming]: “Tidak satu pun dari masker bedah ini yang memperlihatkan kinerja filter yang memadai dan karakteristik kecocokan wajah untuk dipertimbangkan sebagai alat perlindungan pernapasan.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
 
-[^outgoing]: “The overall 3.4 fold reduction [70% reduction] in aerosol copy numbers we observed combined with a nearly complete elimination of large droplet spray demonstrated by Johnson et al. suggests that surgical masks worn by infected persons could have a clinically significant impact on transmission.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
+[^outgoing]: “Keseluruhan pengurangan 3,4 kali lipat [pengurangan 70%] dalam jumlah salinan aerosol yang kami amati dikombinasikan dengan penghilangan semprotan tetesan besar yang hampir lengkap yang ditunjukkan oleh Johnson et al. menunjukkan bahwa masker bedah yang dikenakan oleh orang yang terinfeksi dapat memiliki dampak yang signifikan secara klinis pada penularan.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
 
-[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) See Table 1: a 100% cotton T-shirt has around 2/3 the filtration efficiency as a surgical mask, for the two bacterial aerosols they tested.
+[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) Lihat Tabel 1: T-shirt berbahan 100% katun memiliki sekitar 2/3 efisiensi penyaringan layaknya masker bedah, berdasarkan dua aerosol bakteri yang mereka uji.
 
 ![](pics/masks.png)
 
-To put a number on it: surgical masks *on the sick person* reduce cold & flu viruses in aerosols by 70%.[^outgoing] Reducing transmissions by 70% would be as large an impact as a lockdown!
+Bila kita ukur: masker bedah *yang dipakai orang sakit* menurunkan jumlah virus flu & demam berbentuk aerosol hingga 70%.[^outgoing] Mengurangi penularan hingga 70% memberi dampak yang besarnya seperti pelaksanaan karantina wilayah!
 
-However, we don't know for sure the impact of masks on COVID-19 *specifically*. In science, one should only publish a finding if you're 95% sure of it. (...should.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
+Walaupun begitu, kami belum tahu dengan yakin dampak masker pada COVID-19 *secara spesifik*. Di dalam sains, seseorang seharusnya bisa mempublikasikan sebuah temuan jika sudah 95% yakin dengan temuan tersebut. (...seharusnya.[^replication]) Masker, hingga 1 Mei 2020, masih kurang dari "95% yakin".
 
-[^replication]: Any actual scientist who read that last sentence is probably laugh-crying right now. See: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [the replication crisis](https://en.wikipedia.org/wiki/Replication_crisis))
+[^replication]: Ilmuwan sebenarnya mana pun yang membaca kalimat terakhir itu mungkin sedang tertawa saat ini. Lihat: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [krisis replikasi](https://en.wikipedia.org/wiki/Replication_crisis))
 
-However, pandemics are like poker. **Make bets only when you're 95% sure, and you'll lose everything at stake.** As a recent article on masks in the British Medical Journal notes,[^precautionary] we *have* to make cost/benefit analyses under uncertainty. Like so:
+Walaupun begitu, pandemi layaknya seperti poker. **Membuat taruhan hanya jika Anda sudah 95% yakin, dan Anda akan kehilangan segalanya yang dipertaruhkan.** Seperti yang disebutkan pada sebuah artikel tentang masker di British Medical Journal,[^precautionary] kita *harus* membuat analisis manfaat biaya di bawah ketidakpastian. Seperti itu:
 
-[^precautionary]: “It is time to apply the precautionary principle” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
+[^precautionary]: “Sudah waktunya untuk menerapkan prinsip kehati-hatian” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
-Cost: If homemade cloth masks (which are ~2/3 as effective as surgical masks[^homemade]), super cheap. If surgical masks, more expensive but still pretty cheap.
+Biaya: Jika masker kain rumahan (yang ~2/3 seefektif masker bedah[^homemade]), sangat murah. Jika masker bedah, lebih mahal tapi tetap cukup murah.
 
-Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)
+Manfaat: Bahkan jika itu adalah peluang 50-50 masker bedah mengurangi penularan sebesar 0% atau 70%, rata-rata "nilai yang diharapkan" masih 35%, sama dengan setengah dampak karantina wilayah! Jadi mari kita menerka dan perkirakan bahwa masker bedah mengurangi nilai R hingga 35%, dipotong oleh ketidakpastian kita. (Sekali lagi, Anda dapat menantang asumsi kami dengan memutar slider ke atas/bawah)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
 </div>
 
-(other arguments for/against masks:[^mask_args])
+(argumen lainnya untuk mendukung/menolak penggunaan masker:[^mask_args])
 
-[^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
+[^mask_args]: **"Kita perlu menyelamatkan persediaan untuk rumah sakit."** *Sangat setuju.* Tetapi itu lebih kepada argumen untuk meningkatkan produksi masker, bukan pendistribusiannya. Untuk sementara waktu, kita bisa membuat masker kain.
 
-   **"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
-   
-   **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
-    
-    
+   **"Mereka sulit menggunakannya dengan benar."** Juga sangat sulut untuk mencuci tangan mengikuti Panduan WHO - serius, "Langkah 3) telapak tangan kanan ke arah dorsum kiri"?! – tapi kami tetap merekomendasikan cuci tangan, karena tidak sempurna masih lebih baik daripada tidak sama sekali.
+      
+   **"Itu akan membuat orang lebih gegabah dengan mencuci tangan & menjaga jarak."** Tentu, dan sabuk pengaman membuat orang mengabaikan tanda berhenti, dan benang gigi membuat orang tetap makan batu. Tapi serius, kami berpendapat sebaliknya: masker adalah *pengingat fisik yang konstan* untuk berhati-hati - dan di Asia Timur, masker juga merupakan simbol solidaritas!
 
-Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R < 1, virus contained!
+Masker *sendiri* tidak akan mendapatkan nilai R < 1. Namun jika tindakan cuci tangan & "Tes, Lacak, Isolasi" hanya membantu kita meraih nilai R = 1,10, hanya dengan 1/3 dari seluruh orang memakai masker bisa mengubah nilai R menjadi < 1, virus berhasil dikekang!
 
-**Summer:**
+**Musim Panas:**
 
-Okay, this isn't an "intervention" we can control, but it will help! Some news outlets report that summer won't do anything to COVID-19. They're half right: summer won't get R < 1, but it *will* reduce R.
+OK, ini bukan sebuah "tindakan" yang tidak dapat kita kendalikan, namun ini dapat membantu! Beberapa media pemberitaan melaporkan bahwa musim panas tidak membantu apa-apa pada situasi COVID-19. Situasi ini setengah bermanfaat: musim panas tidak dapat menjadikan nilai R < 1, tetapi *akan* menurunkan nilai R.
 
-For COVID-19, every extra 1° Celsius (2.2° Fahrenheit) makes R drop by 1.2%.[^heat] The summer-winter difference in New York City is 15°C (60°F), so summer will make R drop by 18%.
+Untuk COVID-19, setiap penambahan suhu 1° Celsius (2,2° Fahrenheit) akan menurukan nilai hingga 1,2%.[^heat] Perbedaan musim panas-musim dingin di New York City adalah 15°C (60°F), sehingga musim panas dapat menurunkan nilai R menjadi 18%.
 
-[^heat]: “One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+[^heat]: “Peningkatan temperatur sebesar satu-derajat Celsius [...] menurunkan nilai R sebesar 0,0225” dan “Rata-rata nilai R dari 100 kota ini adalah 1,83”. 0,0225 ÷ 1,83 = ~1,2%. [Wang, Jingyuan dan Tang, Ke dan Feng, Kai dan Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
 </div>
 
-Summer alone won't make R < 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
+Musim panas saja tidak akan membuat R < 1, tetapi jika kami memiliki sumber daya yang terbatas, kami dapat mengurangi beberapa tindakan di musim panas - sehingga kami dapat meningkatkan skalanya *lebih tinggi* di musim dingin.
 
-**A "Circuit Breaker" Lockdown:**
+**Karantina "Pemutusan Arus":**
 
-And if all that *still* isn't enough to get R < 1... we can do another lockdown.
+Dan jika semua itu *masih* tidak cukup untuk mendapatkan R < 1 ... kita bisa melakukan karantina wilayah lainnya.
 
 But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R is reduced, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore had to do this recently, "despite" having controlled COVID-19 for 4 months. That's not failure: this *is* what success takes.)
 
