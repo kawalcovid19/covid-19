@@ -318,7 +318,7 @@ Artinya, jangan hanya "meratakan" kurva, *hancurkan* kurvanya. Misalnya, dengan 
 
 ###Skenario 2: Karantina Wilayah Berbulan-bulan
 
-Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
+Mari kita lihat apa yang terjadi jika kita *rusak* kurvanya dengan karantina wilayah selama 5 bulan, mengurangi <icon i></icon> sampai habis, kemudian akhirnya - *akhirnya* - kembali ke kehidupan yang normal:
 
 <div class="sim">
 		<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
@@ -326,116 +326,116 @@ Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <
 
 Oh.
 
-This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <icon i></icon>) can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
+Inilah "gelombang kedua" yang dibicarakan banyak orang. Segera setelah kita mengakhiri karantina wilayah, kita akan mendapatkan nilai R > 1 lagi. Jadi, sedikit sisa kelompok <icon i></icon> (atau kelompok <icon i></icon> yang diimpor dari tempat lagi) dapat menyebabkan lonjakan dalam kasus yang hampir seburuk dengan jika kita melakukan Skenario 0: Tidak Melakukan Apa-apa.
 
-**A lockdown isn't a cure, it's just a restart.**
+**Karantina wilayah bukanlah obatnya, hanya sebuah pengulangan kembali.**
 
-So, what, do we just lockdown again & again?
+Jadi, apakah, kita perlu lakukan karantina wilayah lagi dan lagi?
 
-###Scenario 3: Intermittent Lockdown
+###Skenario 3: Karantina Wilayah Berselang-seling
 
-This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
+Solusi ini pertama kali disarankan oleh laporan Imperial College per tanggal 16 Maret, dan diusulkan lagi oleh sebuah artikel ilmiah dari Harvard.[^lockdown_harvard]
 
-[^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
+[^lockdown_harvard]: “Tidak ada intervensi lain, metrik kunci untuk keberhasilan pembatasan sosial adalah apakah kapasitas perawatan kritis terlampaui. Untuk menghindari ini, pembatasan sosial yang lama atau berselang mungkin diperlukan hingga tahun 2022.” [Kissler dan Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
-**Here's a simulation:** (After playing the "recorded scenario", you can try simulating your *own* lockdown schedule, by changing the sliders *while* the simulation is running! Remember you can pause & continue the sim, and change the simulation speed)
+**Ini simulasinya:** (Setelah memainkan sebuah "skenario terekam", Anda dapat coba mensimulasikan jadwal karantina wilayah Anda *sendiri*, dengan mengubah slider *ketika* simulasi berjalan! Ingat, Anda dapat menjeda & melanjutkan simulasi, dan mengubah kecepatan simulasi)
 
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-This *would* keep cases below ICU capacity! And it's *much* better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there's no vaccine, repeat until herd immunity is reached... in 2022.)
+Hal ini *akan* menjaga jumlah kasus di bawah kapasitas ICU! Dan ini *lebih* baik daripada pelaksanaan karantina wilayah selama 18 bulan sampai vaksin tersedia. Kita hanya perlu untuk... menutup beberapa bulan, membuka kembali beberapa bulan, dan mengulanginya lagi sampai vaksin ditemukan. (Dan jika tidak ada vaksin ditemukan, ulangi hingga imunitas kawanan dicapai... pada tahun 2022.)
 
-Look, it's nice to draw a line saying "ICU capacity", but there's lots of important things we *can't* simulate here. Like:
+Lihat, sangat menarik untuk menarik garis bertuliskan "kapasitas ICU", namun banyak hal penting yang kita *tidak dapat* simulasikan di sini. Seperti:
 
-**Mental Health:** Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it's as associated with an early death as smoking 15 cigarettes a day.[^loneliness]
+**Kesehatan Mental:** Kesepian adalah salah satu faktor risiko terbesar dari depresi, kecemasan, dan aksi bunuh diri. Dan ini diasosiasikan dengan kematian yang cepat seperti menghisap 15 batang rokok setiap hari.[^loneliness]
 
-[^loneliness]: See [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Of course, big disclaimer that they found a *correlation*. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you're gonna get.
+[^loneliness]: Lihat [Gambar 6 dari Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Tentu saja, penolakan besar bahwa mereka menemukan *korelasi*. Tetapi kecuali jika Anda ingin mencoba secara acak menugaskan orang untuk kesepian seumur hidup, bukti pengamatan adalah semua yang akan Anda dapatkan.
 
-**Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff that makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
+**Kesehatan Finansial:** "Bagaimana dengan ekonomi" terdengar seperti Anda lebih peduli pada pundi-pundi uang daripada nyawa, namun "ekonomi" tidak hanya sebatas saham: ini adalah kemampuan masyarakat untuk menyediakan pangan dan tempat tinggal untuk keluarga yang disayangi, berinvestasi untuk masa depan anak-anaknya, dan menikmati seni, makanan, gim - hal-hal yang membuat hidup amat berarti. Dan di samping itu, kemiskinan *itu sendiri* memiliki dampak mengerikan kepada kesehatan mental dan fisik.
 
-Not saying we *shouldn't* lock down again! We'll look at "circuit breaker" lockdowns later. Still, it's not ideal.
+Bukan berarti kita *tidak perlu* melakukan karantina wilayah lagi! Kita akan lihat pada karantina "pemutusan arus" nanti. Namun masih saja, ini tidak ideal.
 
-But wait... haven't Taiwan and South Korea *already* contained COVID-19? For 4 whole months, *without* long-term lockdowns?
+Tapi tunggu... bukankah Taiwan dan Korea Selatan *sudah berhasil* mengekang COVID-19? Untuk 4 bulan penuh, *tanpa* karantina wilayah jangka panjang?
 
-How?
+Bagaimana mungkin?
 
-###Scenario 4: Test, Trace, Isolate
+###Skenario 4: Tes, Lacak, Isolasi
 
-*"Sure, we \*could've\* done what Taiwan & South Korea did at the start, but it's too late now. We missed the start."*
+*"Tentu, kita \*juga dapat\* melakukan apa yang Taiwan dan Korea Selatan lakukan sejak awal, namun sekarang sudah terlambat. Kita melewatkan permulaannya.*
 
-But that's exactly it! “A lockdown isn't a cure, it's just a restart”... **and a fresh start is what we need.**
+Tapi memang seperti itu! "Karantina wilayah bukanlah obatnya, hanya sebuah pengulangan kembali."... **dan sebuah permulaan yang barulah yang kita perlukan.**
 
-To understand how Taiwan & South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection[^timeline]:
+Untuk memahami bagaimana Taiwan & Korea Selatan mengekang COVID-19, kita perlu memahami linimasa sesungguhnya dari infeksi umum COVID-19[^timeline]:
 
-[^timeline]: **3 days on average to infectiousness:** “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
+[^timeline]: **3 hari rata-rata terjadi infeksi:** "Dengan asumsi distribusi periode inkubasi rata-rata 5,2 hari dari studi terpisah kasus COVID-19 awal, kami menyimpulkan bahwa infeksi dimulai dari 2,3 hari (95% CI, 0,8-3,0 hari) sebelum timbulnya gejala" (terjemahan: Gejala asumsi dimulai pada 5 hari, infeksi mulai 2 hari sebelumnya = Infeksi dimulai pada 3 hari) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
     
-    **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
+    **4 hari rata-rata menginfeksi orang lain:** “Interval [serial] rata-rata adalah 3,96 hari (95% CI 3,53–4,39 hari)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
     
-    **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
+    **5 hari rata-rata merasakan gejala-gejala:** “Masa inkubasi rata-rata diperkirakan 5,1 hari (95% CI, 4,5 hingga 5,8 hari)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
 ![](pics/timeline1.png)
 
-If cases only self-isolate when they know they're sick (that is, they feel symptoms), the virus can still spread:
+Jika pasien hanya mengisolasi diri ketika mereka tahu mereka sakit (yaitu, mereka merasakan gejala), virus masih dapat menyebar:
 
 ![](pics/timeline2.png)
 
-And in fact, 44% of all transmissions are like this: *pre*-symptomatic! [^pre_symp]
+Dan faktanya, 44% dari semua penularan itu seperti ini: *pre* simptomatik atau *sebelum adanya* gejala! [^pre_symp]
 
-[^pre_symp]: “We estimated that 44% (95% confidence interval, 25–69%) of secondary cases were infected during the index cases’ presymptomatic stage” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
+[^pre_symp]: “Kami memperkirakan bahwa 44% (interval kepercayaan 95%, 25-69%) dari kasus sekunder terinfeksi selama tahap presimptomatik kasus indeks” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
 
-But, if we find *and quarantine* a symptomatic case's recent close contacts... we stop the spread, by staying one step ahead!
+Namun, jika kita menemukan *dan mengkarantina* kerabat terdekat dari pasien kasus bergejala... kita menghentikan penyebaran, dengan tetap satu langkah lebih maju!
 
 ![](pics/timeline3.png)
 
-This is called **contact tracing**. It's an old idea, was used at an unprecedented scale to contain Ebola[^ebola], and now it's core part of how Taiwan & South Korea are containing COVID-19!
+Inilah yang disebut sebagai **pelacakan kontak**. Idenya sudah lama, digunakan pada skala yang tidak bisa diprediksi sebelumnya untuk mengekang Ebola[^ebola], dan sekarang menjadi bagian inti dalam bagaimana Taiwan & Korea Selatan mengekang COVID-19!
 
-[^ebola]: “Contact tracing was a critical intervention in Liberia and represented one of the largest contact tracing efforts during an epidemic in history.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
+[^ebola]: “Pelacakan kontak adalah intervensi penting di Liberia dan merupakan salah satu upaya penelusuran kontak terbesar selama epidemi dalam sejarah.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
 
-(It also lets us use our limited tests more efficiently, to find pre-symptomatic <icon i></icon>s without needing to test almost everyone.)
+(Ini pun membolehkan kita gunakan tes terbatas lebih efisien, untuk menemukan kelompok <icon i></icon> presimptomatik tanpa perlu melakukan tes hampir ke semua orang.)
 
-Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps.
+Secara tradisional, kontak ditemukan dengan wawancara langsung, namun tindakan itu *sendiri* terlalu lamban untuk jendela 48 jam dari COVID-19. Itulah mengapa pelacak kontak membutuhkan bantuan, dan akan didukung oleh - *TIDAK* digantikan oleh - aplikasi pelacakan kontak.
 
-(This idea didn't come from "techies": using an app to fight COVID-19 was first proposed by [a team of Oxford epidemiologists](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
+(Gagasan isi tidak dapat dari para "pegiat teknologi": menggunakan aplikasi untuk melawan COVID-19 pertama kali diusulkan oleh [sebuah tim epidemiologis dari Oxford](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
 
-Wait, apps that trace who you've been in contact with?... Does that mean giving up privacy, giving in to Big Brother?
+Tunggu, aplikasi yang melacak dengan siapa saja Anda telah kontak sebelumnya?... Apakah ini berarti kita merelakan privasi kita, untuk dipantau oleh pihak berwenang?
 
-Heck no! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, a team of epidemiologists & cryptographers (including one of us, Marcel Salathé) is *already* making a contact tracing app – with code available to the public – that reveals **no info about your identity, location, who your contacts are, or even *how many contacts* you've had.**
+Tentu tidak! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, sebuah tim epidemiologis & kriptografer (termasuk salah satu dari kami, Marcel Salathé) *telah* membuat sebuah aplikasi pelacakan kontak - dengan kode yang tersedia untuk umum - yang **tidak mengungkap apapun tentang identitas, lokasi Anda, siapa yang Anda hubungi, atau bahkan *berapa banyak kontak* yang telah Anda lakukan.**
 
-Here's how it works:
+Inilah bagaimana aplikasi itu bekerja:
 
 ![](pics/dp3t.png)
 
-(& [here's the full comic](https://ncase.me/contact-tracing/))
+(& [inilah komik selengkapnya](https://ncase.me/contact-tracing/))
 
-Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
+Bersamaan dengan tim serupa seperti TCN Protocol[^tcn] dan MIT PACT[^pact], mereka menginspirasi Apple & Google untuk menghasilkan pelacakan kontak yang mengutamakan privasi langsung ke dalam Android/iOS.[^gapple] (Tidak percaya Google/Apple? Bagus! Keindahan dari sistem ini adalah ini tidak *memerlukan* kepercayaan!) Kelak, kantor kesehatan masyarakat lokal Anda mungkin meminta Anda untuk mengunduh sebuah aplikasi. Jika aplikasi tersebut mengutamakan privasi dengan kode yang tersedia untuk umum, mohon segara unduh!
 
-[^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
+[^tcn]: [*Temporary Contact Numbers* atau Nomor Kontak Sementara, sebuah protokol pelacakan kontak yang terdesentralisasi dan mengutamakan privasi](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
 [^pact]: [PACT: Private Automated Contact Tracing](https://pact.mit.edu/)
 
-[^gapple]: [Apple and Google partner on COVID-19 contact tracing technology ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Note they're not making the apps *themselves*, just creating the systems that will *support* those apps.
+[^gapple]: [Apple dan Google bermitra dengan teknologi pelacakan kontak COVID-19](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Dicatat bahwa mereka tidak membuat aplikasinya *oleh mereka sendiri*, hanya membuat sistem yang dapat *mendukung* aplikasi sejenisnya.
 
-But what about folks without smartphones? Or infections through doorknobs? Or "true" asymptomatic cases? Contact tracing apps can't catch all transmissions... *and that's okay!* We don't need to catch *all* transmissions, just 60%+ to get R < 1.
+Lalu bagaimana dengan masyarakat yang tidak menggunakan ponsel pintar? Atau yang terinfeksi melalui gagang pintu? Atau kasus tanpa gejala "sebenarnya"? Aplikasi pelacakan kontak tidak dapat menangkap semua kasus penularan... *dan itu tidak apa-apa!* Kita tidak perlu menangkap *semua* penularan, hanya 60%+ saja diperlukan untuk mendapatkan nilai R < 1.
 
-(Rant about the confusion about pre-symptomatic vs "true" asymptomatic. "True" asymptomatics are rare:[^rant])
+(Ocehan tentang kebingungan tentang pra-gejala vs kasus tanpa gejala "sebenarnya". Kasus tanpa gejala "sebenarnya" jarang terjadi:[^rant])
 
-[^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
+[^rant]: Banyak laporan berita - dan sejujurnya, banyak makalah penelitian - tidak membedakan antara "kasus yang tidak menunjukkan gejala ketika kami mengujinya" (pra-gejala) dan "kasus yang tidak menunjukkan gejala *sama sekali*" (tanpa gejala yang sebenarnya). Satu-satunya cara Anda mengetahui perbedaannya adalah dengan menindaklanjuti kasus-kasus nanti.
    
-    Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
+    Yang sebenarnya apa yang [studi ini](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) telah lakukan. (Penafian: "Artikel rilis awal tidak dianggap sebagai versi final.") Di sebuah pusat panggilan di Korea Selatan yang memiliki wabah COVID-19, "hanya 4 (1,9%) yang tetap tanpa gejala dalam waktu 14 hari karantina, dan tidak satu pun dari kontak dalam satu rumah mereka memperoleh infeksi sekunder. "
     
-    So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
-
-Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
-
-[^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
+    Jadi itu berarti "kasus tanpa gejala sejati" jarang terjadi, dan tertular penyakit dari kasus tanpa gejala sejati bahkan mungkin lebih jarang!
     
-    * Symptomatics contribute R = 0.8 (40%)
-    * Pre-symptomatics contribute R = 0.9 (45%)
-    * Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
-    * Environmental stuff like doorknobs contribute R = 0.2 (10%)
+Mengisolasi kasus *bergejala* dapat menurunkan R hingga 40%, dan mengkarantina kontak mereka yang *belum/tanpa gejala* dapat menurunkan R hingga 50%[^oxford]:
 
-    And add up the pre- & a-symptomatic contacts (45% + 5%) and you get 50% of R!
+[^oxford]: Dari penelitian Oxford yang sama yang pertama merekomendasikan aplikasi untuk melawan COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) Lihat Gambar 2. Asumsikan R<sub>0</sub> = 2,0, mereka menemukan bahwa:    
+    
+    * Kasus bergejala berkontribusi pada R = 0,8 (40%)
+    * Kasus yang belum bergejala berkontribusi pada R = 0,9 (45%)
+    * Kasus bergejala berkontribusi pada R = 0,1 (5%, meskipun model mereka memiliki ketidakpastian dan bisa jadi jauh lebih rendah)
+    * Benda sekitar seperti gagang pintu berkontribusi pada R = 0,2 (10%)
+
+    Dan tambahkan kontak yang belum & tanpa gejala (45% + 5%) fan Anda akan mendapatkan 50% dari R!
 
 <div class="sim">
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
