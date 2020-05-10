@@ -409,7 +409,6 @@ Inilah bagaimana aplikasi itu bekerja:
 
 ![](pics/dp3t.png)
 
-// TODO: Translate
 ([Inilah komik selengkapnya](https://ncase.me/contact-tracing/). Rincian lebih lanjut tentang "prank"/positif palsu/dan lain-lain di catatan kaki:[^dp3t_details])
 
 [^dp3t_details]: Untuk mencegah "prank" (orang-orang yang secara keliru mengklaim terinfeksi), Protokol DP-3T mengharuskan rumah sakit terlebih dahulu memberi Anda *One-Time Passcode (OTP)* atau Kode Masuk Satu Kali yang memungkinkan Anda mengunggah pesan Anda.
@@ -538,7 +537,6 @@ Untuk COVID-19, setiap penambahan suhu 1° Celsius (1,8° Fahrenheit) akan menur
 
 [^heat]: “Peningkatan temperatur sebesar satu-derajat Celsius [...] menurunkan nilai R sebesar 0,0225” dan “Rata-rata nilai R dari 100 kota ini adalah 1,83”. 0,0225 ÷ 1,83 = ~1,2%. [Wang, Jingyuan dan Tang, Ke dan Feng, Kai dan Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
-// TODO: Translate
 [^nyc_heat]: Pada tahun 2019 di Central Park, bulan terpanas (Juli) adalah 79,6°F, bulan terdingin (Jan) adalah 32,5°F. Perbedaannya adalah 47,1°F, atau ~ 26°C. [PDF dari Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
 
 <div class="sim">
