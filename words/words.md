@@ -14,7 +14,7 @@
 			</b>
 			by
 			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
-			(epidemiologis)
+			(ahli epidemiologi)
 			&
 			<a href="https://ncase.me/">Nicky Case</a>
 			(desain/kode)
