@@ -59,7 +59,7 @@ Diperkirakan bahwa, *pada awal* penjangkitan COVID-19, virus melompat dari <icon
 
 [^serial_interval]: “Interval [serial] rata-rata adalah 3,96 hari (95% CI 3,53–4,39 hari)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Catatan: Artikel yang dirilis lebih awal tidak dianggap sebagai versi akhir)
 
-Jika kita mensimulasikan "kasus menjadi ganda setiap 4 hari" *dan tidak ada lagi*, dalam sebuah populasi dimulai dengan hanya 0,001% <icon i></icon>, apa yang terjadi? 
+Jika kita mensimulasikan "kasus menjadi ganda setiap 4 hari" *dan tidak ada lagi*, dalam sebuah populasi dimulai dengan hanya 0,001% <span class="nowrap"><icon i></icon>,</icon> apa yang terjadi?
 
 **Klik "Mulai" untuk memainkan simulasi! Anda dapat memainkannya ulang nanti dengan pengaturan berbeda**
 **Click "Start" to play the simulation! You can re-play it later with different settings:** (peringatan teknis: [^caveats])
@@ -82,7 +82,7 @@ Tetapi, simulasi ini kurang tepat. Untungnya, pertumbuhan eksponensial tidak ber
 
 ![](pics/susceptibles.png)
 
-Semakin banyak <icon i></icon> bermunculan, semakin cepat <icon s></icon> berubah menjadi <icon i></icon>, **namun semakin sedikit <icon s></icon>, semakin *lambat* <icon s></icon> berubah menjadi <icon i></icon>.**
+Semakin banyak <span class="nowrap"><icon i></icon>s</span> bermunculan, semakin cepat <span class="nowrap"><icon s></icon>s</span> berubah menjadi <span class="nowrap"><icon i></icon>s,</span>, **namun semakin sedikit <span class="nowrap"><icon s></icon>s</span>, semakin *lambat* <span class="nowrap"><icon s></icon>s</span> berubah menjadi <span class="nowrap"><icon i></icon>s.</span>**
 
 Bagaimana ini mengubah pertumbuhan sebuah epidemi? Mari kita cari tahu:
 
@@ -94,9 +94,9 @@ Ini adalah **kurva S pertumbuhan logistik**. Awalnya kecil, meledak, kemudian ke
 
 Namun, simulasi ini *masih* keliru. Kita kehilangan fakta bahwa <icon i></icon> Orang yang Menginfeksi secara berkala akan berhenti menularkan, antara dengan menjadi 1) sembuh, 2) "sembuh" dengan kerusakan paru, atau 3) sekarat.
 
-Untuk menyederhanakannya, kita anggap kalau semua <icon i></icon> orang yang Menginfeksi berubah menjadi <icon r></icon> Sembuh. (Cukup ingat bahwa kenyataannya, beberapa di antaranya meninggal dunia.) <icon r></icon> tidak dapat ditulari lagi, dan mari kita anggap - *untuk sekarang!* - bahwa mereka tetap imun sepanjang hidupnya.
+Untuk menyederhanakannya, kita anggap kalau semua <icon i></icon> orang yang Menginfeksi berubah menjadi <icon r></icon> Sembuh. (Cukup ingat bahwa kenyataannya, beberapa di antaranya meninggal dunia.) <span class="nowrap"><icon r></icon>s</span> tidak dapat ditulari lagi, dan mari kita anggap - *untuk sekarang!* - bahwa mereka tetap imun sepanjang hidupnya.
 
-Dengan COVID-19, diperkirakan Anda <icon i></icon> menjadi orang yang Menginfeksi dalam 10 hari, *rata-rata*.[^penularan] Ini berarti beberapa orang akan sembuh sebelum 10 hari, yang lainnya lebih dari itu. **Seperti ini lah tampilannya, dengan sebuah simulasi *dimulai* dengan 100% <icon i></icon>:**
+Dengan COVID-19, diperkirakan Anda <icon i></icon> menjadi orang yang Menginfeksi dalam 10 hari, *rata-rata*.[^penularan] Ini berarti beberapa orang akan sembuh sebelum 10 hari, yang lainnya lebih dari itu. **Seperti ini lah tampilannya, dengan sebuah simulasi *dimulai* dengan 100% <span class="nowrap"><icon i></icon>:</span>**
 
 [^penularan]: “Angka median periode komunikasi \[...\] adalah 9,5 hari.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Ya, kita tahu "angka median" tidak sama dengan "rata-rata". Untuk keperluan edukasi sederhana, ini cukup mendekati.
 
@@ -112,9 +112,12 @@ Sekarang, apa yang terjadi jika Anda mensimulasikan kurva S logistik pertumbuhan
 
 Mari kita cari tahu.
 
-<b style='color:#ff4040'>Kurva merah</b> adalah kasus *saat ini* <icon i></icon>,    
-<b style='color:#999999'>Kurva abu</b> adalah kasus *total* (kasus saat ini + kasus sembuh <icon r></icon>),
-dimulai dengan hanya 0,001% <icon i></icon>:
+<b style='color:#ff4040'>Kurva merah</b> adalah kasus *saat ini* <span class="nowrap"><icon i></icon>,</span>
+<b style='color:#999999'>Kurva abu</b> adalah kasus *total* (kasus saat ini + kasus sembuh <span class="nowrap"><icon r></icon>),</span>
+dimulai dengan hanya 0,001% <span class="nowrap"><icon i></icon>:</span>
+<b style='color:#ff4040'>Red curve</b> is *current* cases <span class="nowrap"><icon i></icon>,</span>    
+<b style='color:#999999'>Gray curve</b> is *total* cases (current + recovered <span class="nowrap"><icon r></icon>),</span>
+starts at just 0.001% <span class="nowrap"><icon i></icon>:</span>
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
@@ -132,7 +135,7 @@ gagasan paling penting kedua di Pengenalan Epidemiologi:
 
 **CATATAN: Simulasi yang menginformasikan kebijakan itu jauh, *jauh* lebih canggih daripada ini!** Namun model SIR masih dapat menjelaskan temuan umum, walaupun jika kehilangan nuansanya.
 
-Sebenarnya, mari kita tambahkan satu nuansa lain: sebelum seorang <icon s></icon> berubah menjadi <icon i></icon>, pertama-tama mereka berubah menjadi <icon e></icon> orang yang Terekspos. Ini adalah ketika mereka memiliki virus di tubuhnya namun belum dapat mengopernya ke orang lain - *ter*infeksi namun belum dapat *meng*infeksi.
+Sebenarnya, mari kita tambahkan satu nuansa lain: sebelum seorang <icon s></icon> berubah menjadi <span class="nowrap"><icon i></icon>,</span> pertama-tama mereka berubah menjadi <icon e></icon> orang yang Terekspos. Ini adalah ketika mereka memiliki virus di tubuhnya namun belum dapat mengopernya ke orang lain - *ter*infeksi namun belum dapat *meng*infeksi.
 
 ![](pics/seir.png)
 
@@ -144,14 +147,14 @@ Untuk COVID-19, diperkirakan bahwa Anda menjadi <icon e></icon> orang yang terin
 
 [^latent]: “Dengan asumsi distribusi periode inkubasi rata-rata 5,2 hari dari studi terpisah kasus COVID-19 awal, kami menyimpulkan bahwa infeksi dimulai dari 2,3 hari (95% CI, 0,8-3,0 hari) sebelum timbulnya gejala” (translation: Dengan asumsi gejala dimulai pada 5 hari, infeksi dimulai 2 hari sebelumnya = Infeksi dimulai pada 3 hari) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Kurva Merah <b style='color:#FF9393'>+ Merah Muda</b></b> adalah kasus *saat ini* (Kelas Terinfeksi <icon i></icon> + Kelas Terekspos <icon e></icon>),    
-<b style='color:#888'>Kurva Abu</b> adalah kasus *total* (saat ini + Kelas Sembuh <icon r></icon>):
+<b style='color:#ff4040'>Kurva Merah <b style='color:#FF9393'>+ Merah Muda</b></b> adalah kasus *saat ini* (Kelas Terinfeksi <icon i></icon> + Kelas Terekspos <span class="nowrap"><icon e></icon>),</span>
+<b style='color:#888'>Kurva Abu</b> adalah kasus *total* (saat ini + Kelas Sembuh <span class="nowrap"><icon r></icon>):</span>
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-Tidak banyak pengubahan! Seberapa lama Anda tetap menjadi <icon e></icon> Kelas Terekspos mengubah laju pengubahan dari <icon e></icon>-ke-<icon i></icon>, dan *ketika* kasus saat ini memuncak... tetapi *ketinggian* puncak, dan total kasus pada akhirnya, tetap sama.
+Tidak banyak pengubahan! Seberapa lama Anda tetap menjadi <icon e></icon> Kelas Terekspos mengubah laju pengubahan dari <span class="nowrap"><icon e></icon>-ke-<icon i></icon>,</span> dan *ketika* kasus saat ini memuncak... tetapi *ketinggian* puncak, dan total kasus pada akhirnya, tetap sama.
 
 Mengapa bisa begitu? Ini dikarenakan oleh gagasan *pertama* dan paling penting dalam Pengenalan Epidemiologi:
 
@@ -187,7 +190,7 @@ Dalam simulasi kami - *pada permulaan & rata-rata* – seorang <icon i></icon> m
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
-Tapi ingat, semakin sedikit <icon s></icon> berada, semakin *melambat* <icon s></icon> berubah menjadi <icon i></icon>. Angka reproduksi *saat ini* (R) bergantung tidak hanya pada angka reproduksi *dasar* (R<sub>0</sub>), namun *juga* bergantung pada berapa banyak orang yang tidak lagi termasuk <icon s></icon> Kelas Rentan. (Contohnya, mereka yang sembuh & mendapatkan imunitas secara alami.)
+Tapi ingat, semakin sedikit <span class="nowrap"><icon s></icon>s</span> berada, semakin *melambat* <span class="nowrap"><icon s></icon>s</span> berubah menjadi <span class="nowrap"><icon i></icon>s.</span> Angka reproduksi *saat ini* (R) bergantung tidak hanya pada angka reproduksi *dasar* (R<sub>0</sub>), namun *juga* bergantung pada berapa banyak orang yang tidak lagi termasuk <icon s></icon> Kelas Rentan. (Contohnya, mereka yang sembuh & mendapatkan imunitas secara alami.)
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
@@ -203,7 +206,7 @@ Sekarang, mari kita mainkan Model SEIR lagi, namun sekarang menampilkan nilai R<
 
 **CATATAN: Angka total kasus *tidak berhenti* pada kekebalan kawanan, namun melampaui dari itu!** Dan angka tersebut melewati ambang batas *tepat* ketika kasus saat ini memuncak. (Hal ini akan terjadi bagaimanapun Anda mengubah pengaturannya - coba saja sendiri!)
 
-Ini karena ketika ada lebih banyak orang non-<icon s></icon> daripada ambang batas kekebalan kawanan, Anda mendapati R < 1. Dan ketika R < 1, kasus baru berhenti bertambah: inilah puncak.
+Ini karena ketika ada lebih banyak orang <span class="nowrap">non-<icon s></icon>s</span> daripada ambang batas kekebalan kawanan, Anda mendapati R < 1. Dan ketika R < 1, kasus baru berhenti bertambah: inilah puncak.
 
 **Jika ada hanya satu pelajaran yang bisa Anda petik dari panduan ini, ini dia** - ini adalah diagram yang sangat amat rumit sehingga silakan ambil waktu Anda untuk memahami sepenuhnya:
 **If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:
@@ -288,7 +291,7 @@ Rajin mencuci tangan dapat memotong kasus flu & demam di negara berpenghasilan t
 
 [^london]: “Kami menemukan pengurangan 73% dalam rata-rata jumlah kontak harian yang diamati per peserta. Ini akan cukup untuk mengurangi R0 dari nilai dari 2,6 sebelum penguncian ke 0,62 (0,37 - 0,89) selama penguncian ". Kami membulatkannya menjadi 70% dalam simulasi ini untuk penyederhanaan. [Jarvis dan Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
-**Coba mainkan dengan kalkulator ini untuk melihat berapa % dari non-<icon s></icon>, mencuci tangan, dan menjaga jarak mengurangi nilai R:** (kalkulator ini memvisualisasikan efek *relatifnya*, itulah sebabnya meningkatkan salah satu *terlihat* seperti itu mengurangi efek lainnya.[^log_caveat])
+**Coba mainkan dengan kalkulator ini untuk melihat berapa % dari <span class="nowrap">non-<icon s></icon>,</span> mencuci tangan, dan menjaga jarak mengurangi nilai R:** (kalkulator ini memvisualisasikan efek *relatifnya*, itulah sebabnya meningkatkan salah satu *terlihat* seperti itu mengurangi efek lainnya.[^log_caveat])
 
 [^log_caveat]: Distorsi ini akan hilang jika kita merencanakan R pada skala logaritmik .. tetapi kemudian kita malah harus menjelaskan *skala logaritmik.*
 
@@ -326,7 +329,7 @@ Mari kita lihat apa yang terjadi jika kita *rusak* kurvanya dengan karantina wil
 
 Oh.
 
-Inilah "gelombang kedua" yang dibicarakan banyak orang. Segera setelah kita mengakhiri karantina wilayah, kita akan mendapatkan nilai R > 1 lagi. Jadi, sedikit sisa kelompok <icon i></icon> (atau kelompok <icon i></icon> yang diimpor dari tempat lagi) dapat menyebabkan lonjakan dalam kasus yang hampir seburuk dengan jika kita melakukan Skenario 0: Tidak Melakukan Apa-apa.
+Inilah "gelombang kedua" yang dibicarakan banyak orang. Segera setelah kita mengakhiri karantina wilayah, kita akan mendapatkan nilai R > 1 lagi. Jadi, sedikit sisa kelompok <icon i></icon> (atau kelompok <span class="nowrap"><icon i></icon></span> yang diimpor dari tempat lagi) dapat menyebabkan lonjakan dalam kasus yang hampir seburuk dengan jika kita melakukan Skenario 0: Tidak Melakukan Apa-apa.
 
 **Karantina wilayah bukanlah obatnya, hanya sebuah pengulangan kembali.**
 
@@ -392,7 +395,7 @@ Inilah yang disebut sebagai **pelacakan kontak**. Idenya sudah lama, digunakan p
 
 [^ebola]: “Pelacakan kontak adalah intervensi penting di Liberia dan merupakan salah satu upaya penelusuran kontak terbesar selama epidemi dalam sejarah.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
 
-(Ini pun membolehkan kita gunakan tes terbatas lebih efisien, untuk menemukan kelompok <icon i></icon> presimptomatik tanpa perlu melakukan tes hampir ke semua orang.)
+(Ini pun membolehkan kita gunakan tes terbatas lebih efisien, untuk menemukan kelompok <span class="nowrap"><icon i></icon>s</span> presimptomatik tanpa perlu melakukan tes hampir ke semua orang.)
 
 Secara tradisional, kontak ditemukan dengan wawancara langsung, namun tindakan itu *sendiri* terlalu lamban untuk jendela 48 jam dari COVID-19. Itulah mengapa pelacak kontak membutuhkan bantuan, dan akan didukung oleh - *TIDAK* digantikan oleh - aplikasi pelacakan kontak.
 
@@ -406,7 +409,14 @@ Inilah bagaimana aplikasi itu bekerja:
 
 ![](pics/dp3t.png)
 
-(& [inilah komik selengkapnya](https://ncase.me/contact-tracing/))
+// TODO: Translate
+([Here's the full comic](https://ncase.me/contact-tracing/). Details about "pranking"/false positives/etc in footnote:[^dp3t_details])
+
+[^dp3t_details]: To prevent "pranking" (people falsely claiming to be infected), the DP-3T Protocol requires that the hospital first give you a One-Time Passcode that lets you upload your messages.
+    
+    False positives are a problem in both manual & digital contact tracing. Still, we can reduce false positives in 2 ways: 1) By notifying Bobs only if they heard, say, 30+ min worth of messages, not just one message in passing. And 2) If the app *does* think Bob's been exposed, it can refer Bob to a *manual* contact tracer, for an in-depth follow-up interview.
+    
+    For other issues like data bandwidth, source integrity, and other security issues, check out [the open-source DP-3T whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
 
 Bersamaan dengan tim serupa seperti TCN Protocol[^tcn] dan MIT PACT[^pact], mereka menginspirasi Apple & Google untuk menghasilkan pelacakan kontak yang mengutamakan privasi langsung ke dalam Android/iOS.[^gapple] (Tidak percaya Google/Apple? Bagus! Keindahan dari sistem ini adalah ini tidak *memerlukan* kepercayaan!) Kelak, kantor kesehatan masyarakat lokal Anda mungkin meminta Anda untuk mengunduh sebuah aplikasi. Jika aplikasi tersebut mengutamakan privasi dengan kode yang tersedia untuk umum, mohon segara unduh!
 
@@ -418,7 +428,7 @@ Bersamaan dengan tim serupa seperti TCN Protocol[^tcn] dan MIT PACT[^pact], mere
 
 Lalu bagaimana dengan masyarakat yang tidak menggunakan ponsel pintar? Atau yang terinfeksi melalui gagang pintu? Atau kasus tanpa gejala "sebenarnya"? Aplikasi pelacakan kontak tidak dapat menangkap semua kasus penularan... *dan itu tidak apa-apa!* Kita tidak perlu menangkap *semua* penularan, hanya 60%+ saja diperlukan untuk mendapatkan nilai R < 1.
 
-(Ocehan tentang kebingungan tentang pra-gejala vs kasus tanpa gejala "sebenarnya". Kasus tanpa gejala "sebenarnya" jarang terjadi:[^rant])
+(Catatan kaki ocehan tentang kebingungan tentang pra-gejala vs kasus tanpa gejala "sebenarnya" – kasus tanpa gejala "sebenarnya" jarang terjadi:[^rant])
 
 [^rant]: Banyak laporan berita - dan sejujurnya, banyak makalah penelitian - tidak membedakan antara "kasus yang tidak menunjukkan gejala ketika kami mengujinya" (pra-gejala) dan "kasus yang tidak menunjukkan gejala *sama sekali*" (tanpa gejala yang sebenarnya). Satu-satunya cara Anda mengetahui perbedaannya adalah dengan menindaklanjuti kasus-kasus nanti.
    
@@ -443,7 +453,7 @@ Mengisolasi kasus *bergejala* dapat menurunkan R hingga 40%, dan mengkarantina k
 
 Jadi, bahkan tanpa 100% mengkarantina kontak, kita dapat meraih nilai R < 1 *tanpa karantina wilayah!* Jauh lebih baik untuk kesehatan mental & finansial kita. (Adapun biaya untuk mereka yang harus mengisolasi/karantina diri, *pemerintah harus memberi dukungan kepada mereka* - membayar tes, perlindungan kerja, cuti berbayar yang disubsidi, dan lain-lain. Masih jauh lebih murah daripada karantina wilayah berselang-seling.)
 
-Kemudian kita tetap menjaga nilai R < 1 sampai kita menemukan vaksinnya, yang dapat mengubah kelompok rentan <icon s></icon> menjadi kelompok yang imun <icon r></icon>. Inilah imunitas kawanan dengan cara yang *benar*:
+Kemudian kita tetap menjaga nilai R < 1 sampai kita menemukan vaksinnya, yang dapat mengubah kelompok rentan <span class="nowrap"><icon s></icon>s</span> menjadi kelompok yang imun <span class="nowrap"><icon r></icon>s.</span> Inilah imunitas kawanan dengan cara yang *benar*:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
@@ -492,7 +502,7 @@ Anda benar. Masker tidak menghentikan kita dari kemungkinan untuk sakit[^incomin
 
 ![](pics/masks.png)
 
-Bila kita ukur: masker bedah *yang dipakai orang sakit* menurunkan jumlah virus flu & demam berbentuk aerosol hingga 70%.[^outgoing] Mengurangi penularan hingga 70% memberi dampak yang besarnya seperti pelaksanaan karantina wilayah!
+Bila kita ukur: masker bedah *yang dipakai orang terinfeksi* menurunkan jumlah virus flu & demam berbentuk aerosol hingga 70%.[^outgoing] Mengurangi penularan hingga 70% memberi dampak yang besarnya seperti pelaksanaan karantina wilayah!
 
 Walaupun begitu, kami belum tahu dengan yakin dampak masker pada COVID-19 *secara spesifik*. Di dalam sains, seseorang seharusnya bisa mempublikasikan sebuah temuan jika sudah 95% yakin dengan temuan tersebut. (...seharusnya.[^replication]) Masker, hingga 1 Mei 2020, masih kurang dari "95% yakin".
 
@@ -524,9 +534,12 @@ Masker *sendiri* tidak akan mendapatkan nilai R < 1. Namun jika tindakan cuci ta
 
 OK, ini bukan sebuah "tindakan" yang tidak dapat kita kendalikan, namun ini dapat membantu! Beberapa media pemberitaan melaporkan bahwa musim panas tidak membantu apa-apa pada situasi COVID-19. Situasi ini setengah bermanfaat: musim panas tidak dapat menjadikan nilai R < 1, tetapi *akan* menurunkan nilai R.
 
-Untuk COVID-19, setiap penambahan suhu 1° Celsius (2,2° Fahrenheit) akan menurukan nilai hingga 1,2%.[^heat] Perbedaan musim panas-musim dingin di New York City adalah 15°C (60°F), sehingga musim panas dapat menurunkan nilai R menjadi 18%.
+Untuk COVID-19, setiap penambahan suhu 1° Celsius (1,8° Fahrenheit) akan menurukan nilai hingga 1,2%.[^heat] Perbedaan musim panas-musim dingin di New York City adalah 26°C (47°F),[^nyc_heat] sehingga musim panas dapat menurunkan nilai R menjadi ~31%.
 
 [^heat]: “Peningkatan temperatur sebesar satu-derajat Celsius [...] menurunkan nilai R sebesar 0,0225” dan “Rata-rata nilai R dari 100 kota ini adalah 1,83”. 0,0225 ÷ 1,83 = ~1,2%. [Wang, Jingyuan dan Tang, Ke dan Feng, Kai dan Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+
+// TODO: Translate
+[^nyc_heat]: In 2019 at Central Park, hottest month (July) was 79.6°F, coldest month (Jan) was 32.5°F. Difference is 47.1°F, or ~26°C. [PDF from Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
@@ -597,7 +610,7 @@ Namun untuk COVID-19 *pada manusia*, per 1 Mei 2020, "berapa lama" masih menjadi
 [^monkeys]: Dari [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Penafian: Artikel ini adalah pracetak dan belum disertifikasi oleh ulasan sejawat.* Juga, untuk menekankan: mereka hanya menguji infeksi ulang 28 hari kemudian. 
 
 Untuk simulasi ini, mari kita sebut dalam 1 tahun.
-**Berikut simulasi dimulai dengan 100% <icon r></icon>**, secara eksponensial terurai menjadi kelompok rentan, kelompok <icon s></icon> tanpa imunitas setelah 1 tahun, *rata-rata*, dengan variasi:
+**Berikut simulasi dimulai dengan 100% <span class="nowrap"><icon r></icon>**, secara eksponensial terurai menjadi kelompok rentan, kelompok <span class="nowrap"><icon s></icon>s</span> tanpa imunitas setelah 1 tahun, *rata-rata*, dengan variasi:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
@@ -627,7 +640,7 @@ Syukurlah, karena musim panas menurunkan nilai R, ini akan membuat situasi menja
 
 Oh.
 
-Secara bertolak belakang, musim panas membuat lonjakan semakin buruk *dan* rutin! Ini karena musim panas menurunkan <icon i></icon> baru, tetapi itu pada gilirannya mengurangi kekebalan baru pada kelompok <icon r></icon>. Yang berarti imunitas menurun di musim panas, *menciptakan* lonjakan besar rutin di musim dingin.
+Secara bertolak belakang, musim panas membuat lonjakan semakin buruk *dan* rutin! Ini karena musim panas menurunkan <span class="nowrap"><icon i></icon>s,</span> baru, tetapi itu pada gilirannya mengurangi kekebalan baru pada kelompok <span class="nowrap"><icon r></icon>s.</span> Yang berarti imunitas menurun di musim panas, *menciptakan* lonjakan besar rutin di musim dingin.
 
 Untung saja, solusi untuk ini sangatlah jelas - cukup vaksinasi masyarakat setiap musim gugur/dingin, seperti yang kita lakukan dengan imunisasi influenza:
 
