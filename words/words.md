@@ -2,115 +2,119 @@
     <div>
     	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
         <div style="top: 70px;font-size: 75px;font-weight: bold;">
-        	What Happens Next?
+        	Apa Yang Terjadi Selanjutnya?
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			COVID-19 Futures, Explained With Playable Simulations
+			Masa Depan COVID-19, Dijelaskan Dengan Simulasi Interaktif
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
-				🕐 30 min play/read
+				🕐 Waktu baca/interaksi: 30 menit
 				&nbsp;&middot;&nbsp;
 			</b>
 			by
 			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
-			(epidemiologist)
+			(ahli epidemiologi)
 			&
 			<a href="https://ncase.me/">Nicky Case</a>
-			(art/code)
+			(desain/kode)
 		</div>
 	</div>
 </div>
 
-"The only thing to fear is fear itself" was stupid advice.
+"Satu-satu hal yang ditakuti adalah rasa takut itu sendiri" adalah saran yang bodoh.
 
-Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
+Tentu, tak perlu menimbun tisu toilet - namun jika pembuat kebijakan takut dengan rasa takutnya sendiri, mereka meremehkan bahaya sebenarnya untuk menghindari "kepanikan massal". Takut itu bukan masalahnya, namun bagaimana kita *menyalurkan* rasa takut kita. Takut memberikan kita kekuatan untuk menghadapi bahaya saat ini, dan mempersiapkan diri untuk bahaya di masa depan.
 
-Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
+Sejujurnya, kami (Marcel, epidemiologis + Nicky, desain/kode) khawatir. Kami yakin Anda juga! Itu mengapa kami menyalurkan rasa takut kami dengan membuat **simulasi interaktif**, sehingga *Anda* bisa menyalurkan rasa takut dengan memahami:
 
-* **The Last Few Months** (epidemiology 101, SEIR model, R & R<sub>0</sub>)
-* **The Next Few Months** (lockdowns, contact tracing, masks)
-* **The Next Few Years** (loss of immunity? no vaccine?)
+* **Beberapa Bulan yang Lalu** (epidemiologi 101, mode SEIR, R & R<sub>0</sub>)
+* **Beberapa Bulan yang Akan Datang** (karantina, pelacakan kontak, masker)
+* **Beberapa Tahun yang Akan Datang** (hilangnya imunitas? tidak ada vaksin?)
 
-This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
+Panduan ini (diterbitkan pada 1 Mei 2020. klik catatan kaki ini!→[^timestamp]) dibuat untuk memberimu harapan *dan* rasa takut. Untuk melawan COVID-19 **sekaligus melindungi kesehatan mental dan finansial kita**, kita perlu optimisme untuk membuat berbagai rencana, dan rasa pesimis untuk membuat rencana cadangan. Seperti yang Gladys Bronwyn Stern pernah katakan, *“The optimist invents the airplane and the pessimist the parachute.”* yang berarti *"Seseorang yang optimis menciptakan pesawat terbang dan yang pesimis hanya menciptakan parasut"*
 
-[^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
+[^timestamp]: Catatan kaki ini akan berisi sumber, tautan, dan komentar tambahan. Sukai komentar ini!
     
-    **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
-
-So, buckle in: we're about to experience some turbulence.
+    **Panduan ini diterbitkan pada 1 Mei 2020.** Banyak rincian yang akan kedaluarsa, namun kami yakin panduan ini akan melingkupi 95% dari kemungkinan masa depan, dan Pengenalan Epidemologi akan tetap bermanfaat selamanya.
+    
+Jadi, bersiaplah: kita akan mulai perjalanan dengan turbulensi.
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Last Few Months</div>
+        <div>Beberapa Bulan yang Lalu</div>
     </div>
 </div>
 
-Pilots use flight simulators to learn how not to crash planes.
+Pilot menggunakan simulator penerbangan untuk mempelajari bagaimana agar pesawat tidak jatuh.
 
-**Epidemiologists use epidemic simulators to learn how not to crash humanity.**
+**Ahli epidemiologi menggunakan simulator epidemi untuk mempelajari bagaimana agar ras manusia tidak jatuh**
 
-So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
+Jadi, mari kita buat "simulator penerbangan epidemi" yang sangat, *sangat* sederhana! Dalam simulasi ini, <icon i></icon> Orang yang Menginfeksi dapat mengubah <icon s></icon> Orang yang Rentan menjadi lebih banyak <icon i></icon> Orang yang Menginfeksi:
 
 ![](pics/spread.png)
 
-It's estimated that, *at the start* of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> every 4 days, *on average*.[^serial_interval] (remember, there's a lot of variation)
+Diperkirakan bahwa, *pada awal* penjangkitan COVID-19, virus melompat dari <icon i></icon> ke <icon s></icon> setiap 4 hari, *rata-rata*.[^serial_interval] (ingat, ada banyak variasinya)
 
-[^serial_interval]: “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Early release articles are not considered as final versions)
+[^serial_interval]: “Interval [serial] rata-rata adalah 3,96 hari (95% CI 3,53–4,39 hari)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Catatan: Artikel yang dirilis lebih awal tidak dianggap sebagai versi akhir)
 
-If we simulate "double every 4 days" *and nothing else*, on a population starting with just 0.001% <span class="nowrap"><icon i></icon>,</span> what happens? 
+Jika kita mensimulasikan "kasus menjadi ganda setiap 4 hari" *dan tidak ada lagi*, dalam sebuah populasi dimulai dengan hanya 0,001% <span class="nowrap"><icon i></icon>,</icon> apa yang terjadi?
 
-**Click "Start" to play the simulation! You can re-play it later with different settings:** (technical caveats: [^caveats])
+**Klik "Mulai" untuk memainkan simulasi! Anda dapat memainkannya ulang nanti dengan pengaturan berbeda**
+**Click "Start" to play the simulation! You can re-play it later with different settings:** (peringatan teknis: [^caveats])
 
-[^caveats]: **Remember: all these simulations are super simplified, for educational purposes.**
+[^caveats]: **Ingat: semua simulasi ini sudah sangat disederhanakan, untuk keperluan edukasi.**
     
-    One simplification: When you tell this simulation "Infect 1 new person every X days", it's actually increasing # of infected by 1/X each day. Same for future settings in these simulations – "Recover every X days" is actually reducing # of infected by 1/X each day.
+    Satu penyederhanaan: Ketika Anda memberitahu simulasi ini "Infeksi 1 orang baru setiap X hari", ini sebenarnya meningkatkan jumlah dari yang Menginfeksi dengan 1/x setiap harinya. Hal yang sama untuk pengaturan masa depan dari simulasi ini - "Sembuh setiap X hari" sebenarnya mengurangi sejumlah orang Menginfeksi dalam 1/X setiap harinya.
     
-    Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
+    Hal ini *tentu* tidak sama persis, namun hampir mendekati, dan untuk keperluan edukasi ini tidak lebih samar daripada mengatur tingkat transmisi/pemulihan secara langsung.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-This is the **exponential growth curve.** Starts small, then explodes. "Oh it's just a flu" to "Oh right, flus don't create *mass graves in rich cities*". 
+Ini adalah **kurva pertumbuhan eksponensial.** Awalnya sedikit, kemudian meledak. Dari "Oh ini hanya flu kok" menjadi "Oh iya, flu tidak membuat *kuburan massal di kota-kota besar*". 
 
 ![](pics/exponential.png)
 
-But, this simulation is wrong. Exponential growth, thankfully, can't go on forever. One thing that stops a virus from spreading is if others *already* have the virus:
+Tetapi, simulasi ini kurang tepat. Untungnya, pertumbuhan eksponensial tidak berjalan selamanya. Satu hal yang menghentikan virus untuk menyebar adalah jika orang-orang *sudah* terjangkiti virus:
 
 ![](pics/susceptibles.png)
 
-The more <span class="nowrap"><icon i></icon>s</span> there are, the faster <span class="nowrap"><icon s></icon>s</span> become <span class="nowrap"><icon i></icon>s,</span> **but the fewer <span class="nowrap"><icon s></icon>s</span> there are, the *slower* <span class="nowrap"><icon s></icon>s</span> become <span class="nowrap"><icon i></icon>s.</span>**
+Semakin banyak <span class="nowrap"><icon i></icon>s</span> bermunculan, semakin cepat <span class="nowrap"><icon s></icon>s</span> berubah menjadi <span class="nowrap"><icon i></icon>s,</span>, **namun semakin sedikit <span class="nowrap"><icon s></icon>s</span>, semakin *lambat* <span class="nowrap"><icon s></icon>s</span> berubah menjadi <span class="nowrap"><icon i></icon>s.</span>**
 
-How's this change the growth of an epidemic? Let's find out:
+Bagaimana ini mengubah pertumbuhan sebuah epidemi? Mari kita cari tahu:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 
-This is the "S-shaped" **logistic growth curve.** Starts small, explodes, then slows down again.
+Ini adalah **kurva S pertumbuhan logistik**. Awalnya kecil, meledak, kemudian kembali melambat.
 
-But, this simulation is *still* wrong. We're missing the fact that <icon i></icon> Infectious people eventually stop being infectious, either by 1) recovering, 2) "recovering" with lung damage, or 3) dying.
+Namun, simulasi ini *masih* keliru. Kita kehilangan fakta bahwa <icon i></icon> Orang yang Menginfeksi secara berkala akan berhenti menularkan, antara dengan menjadi 1) sembuh, 2) "sembuh" dengan kerusakan paru, atau 3) sekarat.
 
-For simplicity's sake, let's pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <span class="nowrap"><icon r></icon>s</span> can't be infected again, and let's pretend – *for now!* – that they stay immune for life.
+Untuk menyederhanakannya, kita anggap kalau semua <icon i></icon> orang yang Menginfeksi berubah menjadi <icon r></icon> Sembuh. (Cukup ingat bahwa kenyataannya, beberapa di antaranya meninggal dunia.) <span class="nowrap"><icon r></icon>s</span> tidak dapat ditulari lagi, dan mari kita anggap - *untuk sekarang!* - bahwa mereka tetap imun sepanjang hidupnya.
 
-With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] That means some folks will recover before 10 days, some after. **Here's what that looks like, with a simulation *starting* with 100% <span class="nowrap"><icon i></icon>:</span>**
+Dengan COVID-19, diperkirakan Anda <icon i></icon> menjadi orang yang Menginfeksi dalam 10 hari, *rata-rata*.[^penularan] Ini berarti beberapa orang akan sembuh sebelum 10 hari, yang lainnya lebih dari itu. **Seperti ini lah tampilannya, dengan sebuah simulasi *dimulai* dengan 100% <span class="nowrap"><icon i></icon>:</span>**
 
-[^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
+[^penularan]: “Angka median periode komunikasi \[...\] adalah 9,5 hari.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Ya, kita tahu "angka median" tidak sama dengan "rata-rata". Untuk keperluan edukasi sederhana, ini cukup mendekati.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
 
-This is the opposite of exponential growth, the **exponential decay curve.**
+Ini adalah **kurva kehilangan eksponensial**, lawan dari pertumbuhan eksponensial.
 
-Now, what happens if you simulate S-shaped logistic growth *with* recovery?
+Sekarang, apa yang terjadi jika Anda mensimulasikan kurva S logistik pertumbuhan *dengan* kesembuhan?
 
 ![](pics/graphs_q.png)
 
-Let's find out.
+Mari kita cari tahu.
 
+<b style='color:#ff4040'>Kurva merah</b> adalah kasus *saat ini* <span class="nowrap"><icon i></icon>,</span>
+<b style='color:#999999'>Kurva abu</b> adalah kasus *total* (kasus saat ini + kasus sembuh <span class="nowrap"><icon r></icon>),</span>
+dimulai dengan hanya 0,001% <span class="nowrap"><icon i></icon>:</span>
 <b style='color:#ff4040'>Red curve</b> is *current* cases <span class="nowrap"><icon i></icon>,</span>    
 <b style='color:#999999'>Gray curve</b> is *total* cases (current + recovered <span class="nowrap"><icon r></icon>),</span>
 starts at just 0.001% <span class="nowrap"><icon i></icon>:</span>
@@ -119,204 +123,205 @@ starts at just 0.001% <span class="nowrap"><icon i></icon>:</span>
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
+Dan *itulah* asal di mana kurva terkenal tersebut muncul! Ini bukan kurva lonceng, bahkan bukan kurva "log-normal". Kurva ini tidak ada namanya. Tetapi Anda sudah melihatnya berjuta-juta kali, dan memohon-mohon agar kurva menjadi rata.
 
-This is the the **SIR Model**,[^sir]    
-(<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
-the *second*-most important idea in Epidemiology 101:
+Ini adalah **Model SIR**,[^sir]    
+(<icon s></icon>**S**usceptible/Kelas Rentan <icon i></icon>**I**nfectious/Kelas Terinfeksi <icon r></icon>**R**ecovered/Kelas Sembuh)      
+gagasan paling penting kedua di Pengenalan Epidemiologi:
 
-[^sir]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
+[^sir]: Untuk penjelasan Model SIR yang lebih teknis, lihat [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) dan [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
 ![](pics/sir.png)
 
-**NOTE: The simulations that inform policy are way, *way* more sophisticated than this!** But the SIR Model can still explain the same general findings, even if missing the nuances.
+**CATATAN: Simulasi yang menginformasikan kebijakan itu jauh, *jauh* lebih canggih daripada ini!** Namun model SIR masih dapat menjelaskan temuan umum, walaupun jika kehilangan nuansanya.
 
-Actually, let's add one more nuance: before an <icon s></icon> becomes an <span class="nowrap"><icon i></icon>,</span> they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
+Sebenarnya, mari kita tambahkan satu nuansa lain: sebelum seorang <icon s></icon> berubah menjadi <span class="nowrap"><icon i></icon>,</span> pertama-tama mereka berubah menjadi <icon e></icon> orang yang Terekspos. Ini adalah ketika mereka memiliki virus di tubuhnya namun belum dapat mengopernya ke orang lain - *ter*infeksi namun belum dapat *meng*infeksi.
 
 ![](pics/seir.png)
 
-(This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
+(Varian ini disebut sebagai **model SEIR**[^seir], di mana "E" berarti <icon e></icon> "Kelas Terekspos". Mohon dicatat bahwa ini *bukan* arti umum dari "terekspos", ketika Anda mungkin atau tidak memiliki virus. Dalam pengertian teknis, "Terekspos" berarti Anda benar-benar memiliki virusnya. Terminologi sains memang buruk.)
 
-[^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
+[^seir]: Untuk penjelasan Model SEIR yang lebih teknis, lihat, lihat [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) dan [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
-For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
+Untuk COVID-19, diperkirakan bahwa Anda menjadi <icon e></icon> orang yang terinfeksi namun belum menginfeksi dalam waktu 3 hari, *dalam rata-rata*.[^latent] Apa yang terjadi jika kita menambahkannya ke dalam simulasi?
 
-[^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
+[^latent]: “Dengan asumsi distribusi periode inkubasi rata-rata 5,2 hari dari studi terpisah kasus COVID-19 awal, kami menyimpulkan bahwa infeksi dimulai dari 2,3 hari (95% CI, 0,8-3,0 hari) sebelum timbulnya gejala” (translation: Dengan asumsi gejala dimulai pada 5 hari, infeksi dimulai 2 hari sebelumnya = Infeksi dimulai pada 3 hari) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is *current* cases (infectious <icon i></icon> + exposed <span class="nowrap"><icon e></icon>),</span>    
-<b style='color:#888'>Gray curve</b> is *total* cases (current + recovered <span class="nowrap"><icon r></icon>):</span>
+<b style='color:#ff4040'>Kurva Merah <b style='color:#FF9393'>+ Merah Muda</b></b> adalah kasus *saat ini* (Kelas Terinfeksi <icon i></icon> + Kelas Terekspos <span class="nowrap"><icon e></icon>),</span>
+<b style='color:#888'>Kurva Abu</b> adalah kasus *total* (saat ini + Kelas Sembuh <span class="nowrap"><icon r></icon>):</span>
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <span class="nowrap"><icon e></icon>-to-<icon i></icon>,</span> and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.
+Tidak banyak pengubahan! Seberapa lama Anda tetap menjadi <icon e></icon> Kelas Terekspos mengubah laju pengubahan dari <span class="nowrap"><icon e></icon>-ke-<icon i></icon>,</span> dan *ketika* kasus saat ini memuncak... tetapi *ketinggian* puncak, dan total kasus pada akhirnya, tetap sama.
 
-Why's that? Because of the *first*-most important idea in Epidemiology 101:
+Mengapa bisa begitu? Ini dikarenakan oleh gagasan *pertama* dan paling penting dalam Pengenalan Epidemiologi:
 
 ![](pics/r.png)
 
-Short for "Reproduction number". It's the *average* number of people an <icon i></icon> infects *before* they recover (or die).
+Kependekan dari "angka Reproduksi". Ini adalah angka *rata-rata* orang yang seorang <icon i></icon> infeksi *sebelum* mereka sembuh (atau meninggal dunia).
 
 ![](pics/r2.png)
 
-**R** changes over the course of an outbreak, as we get more immunity & interventions.
+**R** berubah selama wabah, sepanjang kita mendapatkan lebih banyak imunitas & intervensi.
 
-**R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.
+**R<sub>0</sub>** (diucapkan sebagai R-nought) adalah nilai R *pada permulaan penyebaran wabah, sebelum imunitas atau intervensi*. R<sub>0</sub> secara lebih dekat merefleksikan kekuatan virus itu sendiri, namun masih dapat berubah dari lokasi ke lokasi. Sebagai contoh, R<sub>0</sub> di kota-kota berkepadatan tinggi lebih tinggi daripada area pedesaan berkepadatan rendah.
 
-(Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)
+(Mayoritas artikel berita – dan bahkan beberapa artikel ilmiah! – kebingungan antara R dan R<sub>0</sub>. Sekali lagi, terminologi sains memang buruk.)
 
-The R<sub>0</sub> for "the" seasonal flu is around 1.28[^r0_flu]. This means, at the *start* of a flu outbreak, each <icon i></icon> infects 1.28 others *on average.* (If it sounds weird that this isn't a whole number, remember that the "average" mom has 2.4 children. This doesn't mean there's half-children running about.)
+R<sub>0</sub> untuk flu musiman itu sekitar 1,28[^r0_flu]. Ini berarti, pada saat *permulaan* wabah flu, setiap <icon i></icon> menginfeksi 1,28 orang lainnya *rata-rata* (Jika ini terdengar aneh bahwa ini bukan angka bulat, ingat bahwa "rata-rata" seorang ibu memiliki 2,4 anak. Hal ini bukan berarti ada setengah anak di tengah masyarakat.)
 
-[^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
+[^r0_flu]: “Angka R median untuk influenza musiman adalah 1,28 (IQR: 1,19–1,37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 
-The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though one *not-yet-finalized* study estimates it was 5.7(!) in Wuhan.[^r0_wuhan]
+Nilai R<sub>0</sub> untuk COVID-19 diperkirakan sekitar 2,2 ,[^r0_covid] walaupun sebuah studi *yang belum difinalisasi* memperkirakan nilainya 5,7(!) di Wuhan.[^r0_wuhan]
 
-[^r0_covid]: “We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
+[^r0_covid]: “Kami memperkirakan angka reproduksi dasar R0 dari 2019-nCoV berkisar 2,2 (90% interval berkepadatan tinggi: 1,4–3,8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
 
-[^r0_wuhan]: “we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
+[^r0_wuhan]: “kami menghitung nilai median R0 sebesar 5,7 (95% CI 3,8–8,9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
-In our simulations – *at the start & on average* – an <icon i></icon> infects someone every 4 days, over 10 days. "4 days" goes into "10 days" two-and-a-half times. This means – *at the start & on average* – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])
+Dalam simulasi kami - *pada permulaan & rata-rata* – seorang <icon i></icon> menginfeksi orang lain setiap 4 hari, selama 10 hari. "4 hari" dalam "10 hari" menjadi dua-setengah kali. Ini berarti - *pada permulaan & rata-rata* - setiap <icon i></icon> menginfeksi 2,5 orang lainnya. Sehingga, nilai R<sub>0</sub> = 2,5. (caveats:[^r0_caveats_sim])
 
-[^r0_caveats_sim]: This is pretending that you're equally infectious all throughout your "infectious period". Again, simplifications for educational purposes.
+[^r0_caveats_sim]: Ini berpura-pura bahwa Anda sama-sama menular di seluruh "periode menular" Anda. Sekali lagi, penyederhanaan untuk tujuan pendidikan.
 
-**Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time & new-infection time:**
+**Mainkan dengan kalkulator R<sub>0</sub> ini, untuk melihat bagaimana R<sub>0</sub> bergantung pada waktu penyembuhan dan waktu infeksi baru:**
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
-But remember, the fewer <span class="nowrap"><icon s></icon>s</span> there are, the *slower* <span class="nowrap"><icon s></icon>s</span> become <span class="nowrap"><icon i></icon>s.</span> The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)
+Tapi ingat, semakin sedikit <span class="nowrap"><icon s></icon>s</span> berada, semakin *melambat* <span class="nowrap"><icon s></icon>s</span> berubah menjadi <span class="nowrap"><icon i></icon>s.</span> Angka reproduksi *saat ini* (R) bergantung tidak hanya pada angka reproduksi *dasar* (R<sub>0</sub>), namun *juga* bergantung pada berapa banyak orang yang tidak lagi termasuk <icon s></icon> Kelas Rentan. (Contohnya, mereka yang sembuh & mendapatkan imunitas secara alami.)
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
-When enough people have immunity, R < 1, and the virus is contained! This is called **herd immunity**. For flus, herd immunity is achieved *with a vaccine*. Trying to achieve "natural herd immunity" by letting folks get infected is a *terrible* idea. (But not for the reason you may think! We'll explain later.)
+Ketika cukup banyak orang yang memiliki kekebalan, R<1, dan virusnya terkandung! Ini disebut ***herd immunity*** atau **kekebalan kawanan**. Untuk flu, kekebalan kawanan dicapai *dengan vaksin*. Usaha untuk mencapai "kekebalan kawanan alami" dengan membiarkan orang terinfeksi adalah gagasan *mengerikan*. (Tapi tidak untuk alasan yang mungkin kau pikirkan! Kami akan menjelaskannya nanti.)
 
-Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:
+Sekarang, mari kita mainkan Model SEIR lagi, namun sekarang menampilkan nilai R<sub>0</sub>, R sepanjang waktu, dan ambang batas kekebalan kawanan:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
 
-**NOTE: Total cases *does not stop* at herd immunity, but overshoots it!** And it crosses the threshold *exactly* when current cases peak. (This happens no matter how you change the settings – try it for yourself!)
+**CATATAN: Angka total kasus *tidak berhenti* pada kekebalan kawanan, namun melampaui dari itu!** Dan angka tersebut melewati ambang batas *tepat* ketika kasus saat ini memuncak. (Hal ini akan terjadi bagaimanapun Anda mengubah pengaturannya - coba saja sendiri!)
 
-This is because when there are more <span class="nowrap">non-<icon s></icon>s</span> than the herd immunity threshold, you get R < 1. And when R < 1, new cases stop growing: a peak.
+Ini karena ketika ada lebih banyak orang <span class="nowrap">non-<icon s></icon>s</span> daripada ambang batas kekebalan kawanan, Anda mendapati R < 1. Dan ketika R < 1, kasus baru berhenti bertambah: inilah puncak.
 
+**Jika ada hanya satu pelajaran yang bisa Anda petik dari panduan ini, ini dia** - ini adalah diagram yang sangat amat rumit sehingga silakan ambil waktu Anda untuk memahami sepenuhnya:
 **If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:
 
 ![](pics/r3.png)
 
-**This means: we do NOT need to catch all transmissions, or even nearly all transmissions, to stop COVID-19!**
+**Ini berarti: kita TIDAK perlu menangkap semua penularan, atau hampir mendekat semua penularan, untuk menghentikan COVID-19!**
 
-It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" need to stop more than 60% of infections. 60%?! If that was a school grade, that's a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R < 1, virus is contained! (exact formula:[^exact_formula])
+Ini adalah sebuah paradoks. COVID-19 sangatlah menular, bahkan untuk mengekangnya, kita "hanya" perlu menghentikan lebih dari 60% infeksi. 60%?! Jika angka itu dianggap nilai rapor sekolah, pasti tergolong nilai D-. Tetapi jika R<sub>0</sub> = 2,5, memotongnya hingga 61% dapat menghasilkan nilai R = 0,975, yang berarti R < 1, virus berhasil dikekang! (rumus tepatnya:[^rumus_tepat])
 
-[^exact_formula]: Remember R = R<sub>0</sub> * the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions *stopped*.
+[^rumus_tepat]: Ingat R = R<sub>0</sub> * rasio penularan yang dibolehkan. Ingat juga bahwa rasio penularan yang dibolehkan = 1 - rasio penularan yang *dihentikan*.
     
-    Therefore, to get R < 1, you need to get R<sub>0</sub> * TransmissionsAllowed < 1. 
+    Sehingga, untuk mendapatkan R < 1, Anda perlu untuk mendapatkan R<sub>0</sub> * PenularanYangDiperbolehkan < 1. 
     
-    Therefore, TransmissionsAllowed < 1/R<sub>0</sub>
+    Maka, PenularanYangDiperbolehkan < 1/R<sub>0</sub>
     
-    Therefore, 1 - TransmissionsStopped < 1/R<sub>0</sub>
+    Maka, 1 - PenularanYangDihentikan < 1/R<sub>0</sub>
     
-    Therefore, TransmissionsStopped > 1 - 1/R<sub>0</sub>
+    Maka, PenularanYangDihentikan > 1 - 1/R<sub>0</sub>
     
-    Therefore, you need to stop more than **1 - 1/R<sub>0</sub>** of transmissions to get R < 1 and contain the virus!
-
+    Maka, Anda perlu menghentikan lebih dari **1 - 1/R<sub>0</sub>** dari penularan untuk mendapatkan R < 1 dan virus dikekang!
+    
 ![](pics/r4.png)
 
-(If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that's good you're challenging our assumptions! There'll be a "Sandbox Mode" at the end of this guide, where you can plug in your *own* numbers, and simulate what happens.)
+(Jika Anda pikir R<sub>0</sub> atau angka lainnya di dalam simulasi kami terlalu rendah/tinggi, pertanda bagus karena Anda menantang asumsi kami! Nanti akan ada "Mode Sandbox" pada akhir panduan ini, di mana Anda bisa mematok angka Anda *sendiri*, dan mensimulasikan apa yang terjadi.)
 
-*Every* COVID-19 intervention you've heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing & quarantining, face masks, even "herd immunity" – they're *all* doing the same thing:
+*Setip* intervensi COVID-19 yang Anda dengar - cuci tangan dengan sabun, jaga jarak, karantina wilayah, isolasi mandiri, pelacakan kontak, penggunaan masker, bahkan "imunitas kawanan" - itu *semua* dilakukan untuk hal yang sama:
 
-Getting R < 1.
+Mendapatkan nilai R < 1.
 
-So now, let's use our "epidemic flight simulator" to figure this out: How can we get R < 1 in a way **that also protects our mental health *and* financial health?**
+Jadi sekarang, mari kita gunakan "simulasi penerbangan epidemi" kami untuk memecahkan masalah ini: Bagaimana kita bisa mendapatkan nilai R < 1 dengan cara **yang sekaligus melindungi kesehatan mental *dan* finansial kita?**
 
-Brace yourselves for an emergency landing...
+Siapkan diri Anda untuk pendaratan darurat...
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Months</div>
+        <div>Beberapa Bulan Kemudian</div>
     </div>
 </div>
 
-...could have been worse. Here's a parallel universe we avoided:
+...bisa menjadi lebih buruk. Inilah jagad raya paralel yang kita hindari:
 
-###Scenario 0: Do Absolutely Nothing
+###Skenario 0: Tidak Melakukan Apa-apa
 
-Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
+Sekitar 1 dari 20 orang yang terinfeksi COVID-19 perlu dibawa ke ICU (Intensive Care Unit).[^icu_covid] Di negara makmur seperti AS, ada 1 kasur ICU per 3400 orang.[^icu_us] Oleh karena itu, AS dapat menangani 20 dari 3400 orang yang *secara simultan* terinfeksi - atau, 0,6% dari total populasi.
 
-[^icu_covid]: ["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.
+[^icu_covid]: ["Persentase kasus COVID-19 di Amerika Serikat pada 12 Februari hingga 16 Maret 2020 yang dimasukkan ke *intensive care unit*, menurut kelompok umur"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Antara 4,9% hingga 11,5% dari *semua* kasus COVID-19 memerlukan ICU. Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Dengan murah hati memilih kisaran yang lebih rendah, yaitu 5% atau 1 dari 20. Perhatikan bahwa total ini khusus untuk struktur usia AS, dan akan lebih tinggi di negara-negara dengan populasi yang lebih tua, lebih rendah di negara-negara dengan populasi yang lebih muda.
 
-[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. 
+[^icu_us]: “Total kasur ICU = 96.596”. Dari [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) Populasi AS adalah 328.200.000 pada tahun 2019. 96.596 dari 328.200.000 = sekitar 1 per 3400. 
 
-Even if we *more than tripled* that capacity to 2%, here's what would've happened *if we did absolutely nothing:*
+Bahkan jika kita *lebih dari tiga kali lipatkan* kapasitas itu menjadi 2%, inilah apa yang terjadi *jika kita tidak melakukan apa-apa:*
 
 <div class="sim">
 		<iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 </div>
 
-Not good.
+Tidak bagus.
 
-That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. 
-(remember: total cases *overshoots* herd immunity)
+Itulah apa yang [laporan Imperial College per 16 Maret](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) temukan: tidak melakukan apa-apa, dan kita kehabisan slot ICU, dengan lebih dari 80% terinfeksi. 
+(ingat: total kasus *melampaui* imunitas kawanan)
 
-Even if only 0.5% of infected die – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.*
+Bahkan jika hanya 0,5% yang terinfeksi meninggal dunia - sebuah asumsi murah hari ketika tidak ada lagi ICU - di negara besar seperti AS, dengan 300 juta orang, 0,5% dari 80% dari 300 juta = masih ada 1,2 juta orang meninggal dunia... *JIKA kita tidak melakukan apa-apa*
 
-(Lots of news & social media reported "80% will be infected" *without* "IF WE DO NOTHING". Fear was channelled into clicks, not understanding. *Sigh.*)
+(Banyak sekali berita & media sosial mengabarkan "80% akan terinfeksi" *tanpa* "JIKA KITA TIDAK MELAKUKAN APA-APA". Rasa takut disalurkan melalui setiap kliknya, bukan dalam setiap pemahaman beritanya. *Heu.*)
 
-###Scenario 1: Flatten The Curve / Herd Immunity
+###Skenario 1: Ratakan Kurvanya / Imunitas Kawanan
 
-The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
+Rencana "Ratakan Kurvanya" digaungkan oleh setiap organisasi kesehatan masyarakat, sementara rencana awal "imunitas kawanan" milik Inggris Raya dicemooh banyak orang. Keduanya adalah *rencana yang sama*. Hanya saja mereka mengomunikasikannya dengan sangat buruk.[^yong]
 
-[^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
+[^yong]: “Dia mengatakan bahwa tujuan sebenarnya adalah sama dengan tujuan negara lain: ratakan kurva dengan cara mengejutkan infeksi. Sebagai konsekuensinya, bangsa dapat mencapai kekebalan kelompok; itu adalah efek samping, bukan tujuan. [...] Rencana tindakan coronavirus aktual pemerintah, tersedia online, tidak menyebutkan kekebalan kawanan sama sekali. "
     
-    From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
+    Dari sebuah [artikel The Atlantic oleh Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
 
-Both plans, though, had a literally fatal flaw.
+Mesikpun begitu, kedua rencana benar-benar memiliki kelemahan yang fatal.
 
-First, let's look at the two main ways to "flatten the curve": handwashing & physical distancing.
+Pertama, mari kita lihat pada dua cara utama untuk "meratakan kurva": cuci tangan dengan sabun dan menjaga jarak.
 
-Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwashing], while the city-wide lockdown in London cut close contacts by ~70%[^london]. So, let's assume handwashing can reduce R by *up to* 25%, and distancing can reduce R by *up to* 70%:
+Rajin mencuci tangan dapat memotong kasus flu & demam di negara berpenghasilan tinggi hingga ~25%[^handwashing], sementara karantina satu kota penuh di London memotong interaksi kontak dekat menjadi ~70%[^london]. Jadi, mari kita asumsikan tindakan cuci tangan dapat mengurangi nilai R *hingga* 25%, dan menjaga jarak dapat menurunkan nilai R *hingga* 70%:
 
-[^handwashing]: “All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful.
+[^handwashing]: “Semua delapan studi yang memenuhi syarat melaporkan bahwa mencuci tangan menurunkan risiko infeksi pernapasan, dengan pengurangan risiko berkisar dari 6% hingga 44% [nilai gabungan 24% (95% CI 6–40%)].” Kami mengumpulkan nilai gabungan hingga 25% dalam simulasi ini untuk penyederhanaan. [Rabie, T. dan Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Catatan: seperti yang ditunjukkan oleh meta-analisis ini, kualitas studi untuk mencuci tangan (setidaknya di negara-negara berpenghasilan tinggi) sangat buruk.
 
-[^london]: “We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
+[^london]: “Kami menemukan pengurangan 73% dalam rata-rata jumlah kontak harian yang diamati per peserta. Ini akan cukup untuk mengurangi R0 dari nilai dari 2,6 sebelum penguncian ke 0,62 (0,37 - 0,89) selama penguncian ". Kami membulatkannya menjadi 70% dalam simulasi ini untuk penyederhanaan. [Jarvis dan Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
-**Play with this calculator to see how % of <span class="nowrap">non-<icon s></icon>,</span> handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
+**Coba mainkan dengan kalkulator ini untuk melihat berapa % dari <span class="nowrap">non-<icon s></icon>,</span> mencuci tangan, dan menjaga jarak mengurangi nilai R:** (kalkulator ini memvisualisasikan efek *relatifnya*, itulah sebabnya meningkatkan salah satu *terlihat* seperti itu mengurangi efek lainnya.[^log_caveat])
 
-[^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
+[^log_caveat]: Distorsi ini akan hilang jika kita merencanakan R pada skala logaritmik .. tetapi kemudian kita malah harus menjelaskan *skala logaritmik.*
 
 <div class="sim">
 		<iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 </div>
 
-Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
+Sekarang, mari kita simulasikan apa yang terjadi pada epidemi COVID-19 jika, mulai Maret 2020, kita telah meningkatkan cuci tangan tetapi hanya *menjaga jarak* tingkat ringan - sehingga nilai R lebih rendah, tetapi masih di atas 1:
 
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 </div>
 
-Three notes:
+Tiga catatan:
 
-1. This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
+1. Hal ini *mengurangi* total kasus! **Bahkan jika Anda tidak mendapati nilai R < 1, mengurangi nilai R masih dapat menyelamatkan banyak jiawa, dengan mengurangi 'pelampauan' di atas imunitas kawanan.** Banyak kawan berpikir usaha "Meratakan Kurva" menyebarkan kasus tanpa menurunkan nilai total. Hal ini tidak mungkin terjadi di model Pengenalan Epidemiologi *manapun*. Namun karena berita mengabarkan "80%+ akan terinfeksi" tak dapat dihindari, kawan-kawan berpikiran bahwa total kasus akan tetap sama apapun yang terjadi. *Sigh.*
 
-2. Due to the extra interventions, current cases peak *before* herd immunity is reached. In fact, in this simulation, total cases only overshoots *a tiny bit* above herd immunity – the UK's plan! At that point, R < 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...
+2. Dikarenakan intervensi ekstra, kasus saat ini memuncak *sebelum* imunitas kawanan dicapai. Faktanya, dalam simulasi ini, total kasus hanya melampaui *sedikit saja* di atas imunitas kawanan - sesuai rencana Inggris Raya! Pada titik itu, nilai R < 1, Anda dapat melepaskan segala macam intervensi, dan COVID-19 tetap dikekang! Yah, kecuali ada satu masalah...
 
-3. You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
+3. Anda masih kekurangan ruang ICU. Untuk beberapa bulan. (dan ingat, kita *sudah* menambahkan jumlah ICU hingga tiga kali lipat untuk simulasi-simulasi ini.
 
-That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
+Itu adalah temuan lapin dari laporan Imperial College tanggal 16 Maret, yang menyakinkan Inggris Raya untuk mengabaikan rencana awalnya. Segala usaha **mitigasi** (mengurangi nilai R, namun R > 1) akan gagal. Satu-satunya jalan keluar adalah **penekanan** (mengurangi nilai R hingga R < 1).
 
 ![](pics/mitigation_vs_suppression.png)
 
-That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
+Artinya, jangan hanya "meratakan" kurva, *hancurkan* kurvanya. Misalnya, dengan ...
 
-###Scenario 2: Months-Long Lockdown
+###Skenario 2: Karantina Wilayah Berbulan-bulan
 
-Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
+Mari kita lihat apa yang terjadi jika kita *rusak* kurvanya dengan karantina wilayah selama 5 bulan, mengurangi <icon i></icon> sampai habis, kemudian akhirnya - *akhirnya* - kembali ke kehidupan yang normal:
 
 <div class="sim">
 		<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
@@ -324,310 +329,308 @@ Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <
 
 Oh.
 
-This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <span class="nowrap"><icon i></icon>)</span> can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
+Inilah "gelombang kedua" yang dibicarakan banyak orang. Segera setelah kita mengakhiri karantina wilayah, kita akan mendapatkan nilai R > 1 lagi. Jadi, sedikit sisa kelompok <icon i></icon> (atau kelompok <span class="nowrap"><icon i></icon></span> yang diimpor dari tempat lagi) dapat menyebabkan lonjakan dalam kasus yang hampir seburuk dengan jika kita melakukan Skenario 0: Tidak Melakukan Apa-apa.
 
-**A lockdown isn't a cure, it's just a restart.**
+**Karantina wilayah bukanlah obatnya, hanya sebuah pengulangan kembali.**
 
-So, what, do we just lockdown again & again?
+Jadi, apakah, kita perlu lakukan karantina wilayah lagi dan lagi?
 
-###Scenario 3: Intermittent Lockdown
+###Skenario 3: Karantina Wilayah Berselang-seling
 
-This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
+Solusi ini pertama kali disarankan oleh laporan Imperial College per tanggal 16 Maret, dan diusulkan lagi oleh sebuah artikel ilmiah dari Harvard.[^lockdown_harvard]
 
-[^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
+[^lockdown_harvard]: “Tidak ada intervensi lain, metrik kunci untuk keberhasilan pembatasan sosial adalah apakah kapasitas perawatan kritis terlampaui. Untuk menghindari ini, pembatasan sosial yang lama atau berselang mungkin diperlukan hingga tahun 2022.” [Kissler dan Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
-**Here's a simulation:** (After playing the "recorded scenario", you can try simulating your *own* lockdown schedule, by changing the sliders *while* the simulation is running! Remember you can pause & continue the sim, and change the simulation speed)
+**Ini simulasinya:** (Setelah memainkan sebuah "skenario terekam", Anda dapat coba mensimulasikan jadwal karantina wilayah Anda *sendiri*, dengan mengubah slider *ketika* simulasi berjalan! Ingat, Anda dapat menjeda & melanjutkan simulasi, dan mengubah kecepatan simulasi)
 
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-This *would* keep cases below ICU capacity! And it's *much* better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there's no vaccine, repeat until herd immunity is reached... in 2022.)
+Hal ini *akan* menjaga jumlah kasus di bawah kapasitas ICU! Dan ini *lebih* baik daripada pelaksanaan karantina wilayah selama 18 bulan sampai vaksin tersedia. Kita hanya perlu untuk... menutup beberapa bulan, membuka kembali beberapa bulan, dan mengulanginya lagi sampai vaksin ditemukan. (Dan jika tidak ada vaksin ditemukan, ulangi hingga imunitas kawanan dicapai... pada tahun 2022.)
 
-Look, it's nice to draw a line saying "ICU capacity", but there's lots of important things we *can't* simulate here. Like:
+Lihat, sangat menarik untuk menarik garis bertuliskan "kapasitas ICU", namun banyak hal penting yang kita *tidak dapat* simulasikan di sini. Seperti:
 
-**Mental Health:** Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it's as associated with an early death as smoking 15 cigarettes a day.[^loneliness]
+**Kesehatan Mental:** Kesepian adalah salah satu faktor risiko terbesar dari depresi, kecemasan, dan aksi bunuh diri. Dan ini diasosiasikan dengan kematian yang cepat seperti menghisap 15 batang rokok setiap hari.[^loneliness]
 
-[^loneliness]: See [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Of course, big disclaimer that they found a *correlation*. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you're gonna get.
+[^loneliness]: Lihat [Gambar 6 dari Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Tentu saja, penolakan besar bahwa mereka menemukan *korelasi*. Tetapi kecuali jika Anda ingin mencoba secara acak menugaskan orang untuk kesepian seumur hidup, bukti pengamatan adalah semua yang akan Anda dapatkan.
 
-**Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff that makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
+**Kesehatan Finansial:** "Bagaimana dengan ekonomi" terdengar seperti Anda lebih peduli pada pundi-pundi uang daripada nyawa, namun "ekonomi" tidak hanya sebatas saham: ini adalah kemampuan masyarakat untuk menyediakan pangan dan tempat tinggal untuk keluarga yang disayangi, berinvestasi untuk masa depan anak-anaknya, dan menikmati seni, makanan, gim - hal-hal yang membuat hidup amat berarti. Dan di samping itu, kemiskinan *itu sendiri* memiliki dampak mengerikan kepada kesehatan mental dan fisik.
 
-Not saying we *shouldn't* lock down again! We'll look at "circuit breaker" lockdowns later. Still, it's not ideal.
+Bukan berarti kita *tidak perlu* melakukan karantina wilayah lagi! Kita akan lihat pada karantina "pemutusan arus" nanti. Namun masih saja, ini tidak ideal.
 
-But wait... haven't Taiwan and South Korea *already* contained COVID-19? For 4 whole months, *without* long-term lockdowns?
+Tapi tunggu... bukankah Taiwan dan Korea Selatan *sudah berhasil* mengekang COVID-19? Untuk 4 bulan penuh, *tanpa* karantina wilayah jangka panjang?
 
-How?
+Bagaimana mungkin?
 
-###Scenario 4: Test, Trace, Isolate
+###Skenario 4: Tes, Lacak, Isolasi
 
-*"Sure, we \*could've\* done what Taiwan & South Korea did at the start, but it's too late now. We missed the start."*
+*"Tentu, kita \*juga dapat\* melakukan apa yang Taiwan dan Korea Selatan lakukan sejak awal, namun sekarang sudah terlambat. Kita melewatkan permulaannya.*
 
-But that's exactly it! “A lockdown isn't a cure, it's just a restart”... **and a fresh start is what we need.**
+Tapi memang seperti itu! "Karantina wilayah bukanlah obatnya, hanya sebuah pengulangan kembali."... **dan sebuah permulaan yang barulah yang kita perlukan.**
 
-To understand how Taiwan & South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection[^timeline]:
+Untuk memahami bagaimana Taiwan & Korea Selatan mengekang COVID-19, kita perlu memahami linimasa sesungguhnya dari infeksi umum COVID-19[^timeline]:
 
-[^timeline]: **3 days on average to infectiousness:** “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
+[^timeline]: **3 hari rata-rata terjadi infeksi:** "Dengan asumsi distribusi periode inkubasi rata-rata 5,2 hari dari studi terpisah kasus COVID-19 awal, kami menyimpulkan bahwa infeksi dimulai dari 2,3 hari (95% CI, 0,8-3,0 hari) sebelum timbulnya gejala" (terjemahan: Gejala asumsi dimulai pada 5 hari, infeksi mulai 2 hari sebelumnya = Infeksi dimulai pada 3 hari) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
     
-    **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
+    **4 hari rata-rata menginfeksi orang lain:** “Interval [serial] rata-rata adalah 3,96 hari (95% CI 3,53–4,39 hari)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
     
-    **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
+    **5 hari rata-rata merasakan gejala-gejala:** “Masa inkubasi rata-rata diperkirakan 5,1 hari (95% CI, 4,5 hingga 5,8 hari)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
 ![](pics/timeline1.png)
 
-If cases only self-isolate when they know they're sick (that is, they feel symptoms), the virus can still spread:
+Jika pasien hanya mengisolasi diri ketika mereka tahu mereka sakit (yaitu, mereka merasakan gejala), virus masih dapat menyebar:
 
 ![](pics/timeline2.png)
 
-And in fact, 44% of all transmissions are like this: *pre*-symptomatic! [^pre_symp]
+Dan faktanya, 44% dari semua penularan itu seperti ini: *pre* simptomatik atau *sebelum adanya* gejala! [^pre_symp]
 
-[^pre_symp]: “We estimated that 44% (95% confidence interval, 25–69%) of secondary cases were infected during the index cases’ presymptomatic stage” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
+[^pre_symp]: “Kami memperkirakan bahwa 44% (interval kepercayaan 95%, 25-69%) dari kasus sekunder terinfeksi selama tahap presimptomatik kasus indeks” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
 
-But, if we find *and quarantine* a symptomatic case's recent close contacts... we stop the spread, by staying one step ahead!
+Namun, jika kita menemukan *dan mengkarantina* kerabat terdekat dari pasien kasus bergejala... kita menghentikan penyebaran, dengan tetap satu langkah lebih maju!
 
 ![](pics/timeline3.png)
 
-This is called **contact tracing**. It's an old idea, was used at an unprecedented scale to contain Ebola[^ebola], and now it's core part of how Taiwan & South Korea are containing COVID-19!
+Inilah yang disebut sebagai **pelacakan kontak**. Idenya sudah lama, digunakan pada skala yang tidak bisa diprediksi sebelumnya untuk mengekang Ebola[^ebola], dan sekarang menjadi bagian inti dalam bagaimana Taiwan & Korea Selatan mengekang COVID-19!
 
-[^ebola]: “Contact tracing was a critical intervention in Liberia and represented one of the largest contact tracing efforts during an epidemic in history.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
+[^ebola]: “Pelacakan kontak adalah intervensi penting di Liberia dan merupakan salah satu upaya penelusuran kontak terbesar selama epidemi dalam sejarah.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
 
-(It also lets us use our limited tests more efficiently, to find pre-symptomatic <span class="nowrap"><icon i></icon>s</span> without needing to test almost everyone.)
+(Ini pun membolehkan kita gunakan tes terbatas lebih efisien, untuk menemukan kelompok <span class="nowrap"><icon i></icon>s</span> presimptomatik tanpa perlu melakukan tes hampir ke semua orang.)
 
-Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps.
+Secara tradisional, kontak ditemukan dengan wawancara langsung, namun tindakan itu *sendiri* terlalu lamban untuk jendela 48 jam dari COVID-19. Itulah mengapa pelacak kontak membutuhkan bantuan, dan akan didukung oleh - *TIDAK* digantikan oleh - aplikasi pelacakan kontak.
 
-(This idea didn't come from "techies": using an app to fight COVID-19 was first proposed by [a team of Oxford epidemiologists](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
+(Gagasan isi tidak dapat dari para "pegiat teknologi": menggunakan aplikasi untuk melawan COVID-19 pertama kali diusulkan oleh [sebuah tim epidemiologis dari Oxford](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
 
-Wait, apps that trace who you've been in contact with?... Does that mean giving up privacy, giving in to Big Brother?
+Tunggu, aplikasi yang melacak dengan siapa saja Anda telah kontak sebelumnya?... Apakah ini berarti kita merelakan privasi kita, untuk dipantau oleh pihak berwenang?
 
-Heck no! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, a team of epidemiologists & cryptographers (including one of us, Marcel Salathé) is *already* making a contact tracing app – with code available to the public – that reveals **no info about your identity, location, who your contacts are, or even *how many contacts* you've had.**
+Tentu tidak! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, sebuah tim epidemiologis & kriptografer (termasuk salah satu dari kami, Marcel Salathé) *telah* membuat sebuah aplikasi pelacakan kontak - dengan kode yang tersedia untuk umum - yang **tidak mengungkap apapun tentang identitas, lokasi Anda, siapa yang Anda hubungi, atau bahkan *berapa banyak kontak* yang telah Anda lakukan.**
 
-Here's how it works:
+Inilah bagaimana aplikasi itu bekerja:
 
 ![](pics/dp3t.png)
 
-([Here's the full comic](https://ncase.me/contact-tracing/). Details about "pranking"/false positives/etc in footnote:[^dp3t_details])
+([Inilah komik selengkapnya](https://ncase.me/contact-tracing/). Rincian lebih lanjut tentang "prank"/positif palsu/dan lain-lain di catatan kaki:[^dp3t_details])
 
-[^dp3t_details]: To prevent "pranking" (people falsely claiming to be infected), the DP-3T Protocol requires that the hospital first give you a One-Time Passcode that lets you upload your messages.
+[^dp3t_details]: Untuk mencegah "prank" (orang-orang yang secara keliru mengklaim terinfeksi), Protokol DP-3T mengharuskan rumah sakit terlebih dahulu memberi Anda *One-Time Passcode (OTP)* atau Kode Masuk Satu Kali yang memungkinkan Anda mengunggah pesan Anda.
     
-    False positives are a problem in both manual & digital contact tracing. Still, we can reduce false positives in 2 ways: 1) By notifying Bobs only if they heard, say, 30+ min worth of messages, not just one message in passing. And 2) If the app *does* think Bob's been exposed, it can refer Bob to a *manual* contact tracer, for an in-depth follow-up interview.
+    Positif palsu adalah masalah dalam pelacakan kontak manual & digital. Namun, kita dapat mengurangi positif palsu dengan 2 cara: 1) Dengan memberi tahu Bobs hanya jika mereka mendengar, katakanlah, pesan berdurasi 30 menit lebih, bukan hanya satu pesan yang lewat. Dan 2) Jika aplikasi *juga* berpikir Bob telah diekspos, ia dapat merujuk Bob kepada pelacakan kontak *manual*, untuk wawancara lanjutan yang mendalam.
     
-    For other issues like data bandwidth, source integrity, and other security issues, check out [the open-source DP-3T whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
+    Untuk masalah lain seperti bandwidth data, integritas sumber, dan masalah keamanan lainnya, lihat [kertas putih DP-3T sumber terbuka!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
 
-Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
+Bersamaan dengan tim serupa seperti TCN Protocol[^tcn] dan MIT PACT[^pact], mereka menginspirasi Apple & Google untuk menghasilkan pelacakan kontak yang mengutamakan privasi langsung ke dalam Android/iOS.[^gapple] (Tidak percaya Google/Apple? Bagus! Keindahan dari sistem ini adalah ini tidak *memerlukan* kepercayaan!) Kelak, kantor kesehatan masyarakat lokal Anda mungkin meminta Anda untuk mengunduh sebuah aplikasi. Jika aplikasi tersebut mengutamakan privasi dengan kode yang tersedia untuk umum, mohon segara unduh!
 
-[^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
+[^tcn]: [*Temporary Contact Numbers* atau Nomor Kontak Sementara, sebuah protokol pelacakan kontak yang terdesentralisasi dan mengutamakan privasi](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
 [^pact]: [PACT: Private Automated Contact Tracing](https://pact.mit.edu/)
 
-[^gapple]: [Apple and Google partner on COVID-19 contact tracing technology ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Note they're not making the apps *themselves*, just creating the systems that will *support* those apps.
+[^gapple]: [Apple dan Google bermitra dengan teknologi pelacakan kontak COVID-19](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Dicatat bahwa mereka tidak membuat aplikasinya *oleh mereka sendiri*, hanya membuat sistem yang dapat *mendukung* aplikasi sejenisnya.
 
-But what about folks without smartphones? Or infections through doorknobs? Or "true" asymptomatic cases? Contact tracing apps can't catch all transmissions... *and that's okay!* We don't need to catch *all* transmissions, just 60%+ to get R < 1.
+Lalu bagaimana dengan masyarakat yang tidak menggunakan ponsel pintar? Atau yang terinfeksi melalui gagang pintu? Atau kasus tanpa gejala "sebenarnya"? Aplikasi pelacakan kontak tidak dapat menangkap semua kasus penularan... *dan itu tidak apa-apa!* Kita tidak perlu menangkap *semua* penularan, hanya 60%+ saja diperlukan untuk mendapatkan nilai R < 1.
 
-(Footnote rant about the confusion between pre-symptomatic vs "true" asymptomatic – "true" asymptomatics are rare:[^rant])
+(Catatan kaki ocehan tentang kebingungan tentang pra-gejala vs kasus tanpa gejala "sebenarnya" – kasus tanpa gejala "sebenarnya" jarang terjadi:[^rant])
 
-[^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
+[^rant]: Banyak laporan berita - dan sejujurnya, banyak makalah penelitian - tidak membedakan antara "kasus yang tidak menunjukkan gejala ketika kami mengujinya" (pra-gejala) dan "kasus yang tidak menunjukkan gejala *sama sekali*" (tanpa gejala yang sebenarnya). Satu-satunya cara Anda mengetahui perbedaannya adalah dengan menindaklanjuti kasus-kasus nanti.
    
-    Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
+    Yang sebenarnya apa yang [studi ini](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) telah lakukan. (Penafian: "Artikel rilis awal tidak dianggap sebagai versi final.") Di sebuah pusat panggilan di Korea Selatan yang memiliki wabah COVID-19, "hanya 4 (1,9%) yang tetap tanpa gejala dalam waktu 14 hari karantina, dan tidak satu pun dari kontak dalam satu rumah mereka memperoleh infeksi sekunder. "
     
-    So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
-
-Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
-
-[^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
+    Jadi itu berarti "kasus tanpa gejala sejati" jarang terjadi, dan tertular penyakit dari kasus tanpa gejala sejati bahkan mungkin lebih jarang!
     
-    * Symptomatics contribute R = 0.8 (40%)
-    * Pre-symptomatics contribute R = 0.9 (45%)
-    * Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
-    * Environmental stuff like doorknobs contribute R = 0.2 (10%)
+Mengisolasi kasus *bergejala* dapat menurunkan R hingga 40%, dan mengkarantina kontak mereka yang *belum/tanpa gejala* dapat menurunkan R hingga 50%[^oxford]:
 
-    And add up the pre- & a-symptomatic contacts (45% + 5%) and you get 50% of R!
+[^oxford]: Dari penelitian Oxford yang sama yang pertama merekomendasikan aplikasi untuk melawan COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) Lihat Gambar 2. Asumsikan R<sub>0</sub> = 2,0, mereka menemukan bahwa:    
+    
+    * Kasus bergejala berkontribusi pada R = 0,8 (40%)
+    * Kasus yang belum bergejala berkontribusi pada R = 0,9 (45%)
+    * Kasus bergejala berkontribusi pada R = 0,1 (5%, meskipun model mereka memiliki ketidakpastian dan bisa jadi jauh lebih rendah)
+    * Benda sekitar seperti gagang pintu berkontribusi pada R = 0,2 (10%)
+
+    Dan tambahkan kontak yang belum & tanpa gejala (45% + 5%) fan Anda akan mendapatkan 50% dari R!
 
 <div class="sim">
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
 
-Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdown!* Much better for our mental & financial health. (As for the cost to folks who have to self-isolate/quarantine, *governments should support them* – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)
+Jadi, bahkan tanpa 100% mengkarantina kontak, kita dapat meraih nilai R < 1 *tanpa karantina wilayah!* Jauh lebih baik untuk kesehatan mental & finansial kita. (Adapun biaya untuk mereka yang harus mengisolasi/karantina diri, *pemerintah harus memberi dukungan kepada mereka* - membayar tes, perlindungan kerja, cuti berbayar yang disubsidi, dan lain-lain. Masih jauh lebih murah daripada karantina wilayah berselang-seling.)
 
-We then keep R < 1 until we have a vaccine, which turns susceptible <span class="nowrap"><icon s></icon>s</span> into immune <span class="nowrap"><icon r></icon>s.</span> Herd immunity, the *right* way:
+Kemudian kita tetap menjaga nilai R < 1 sampai kita menemukan vaksinnya, yang dapat mengubah kelompok rentan <span class="nowrap"><icon s></icon>s</span> menjadi kelompok yang imun <span class="nowrap"><icon r></icon>s.</span> Inilah imunitas kawanan dengan cara yang *benar*:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 </div>
 
-(Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you'd have to compensate by vaccinating *more* than "herd immunity", to *actually* get herd immunity)
+(Catatan: kalkulator ini berpura-pura vaksinnya 100% efektif. Ingatlah bahwa pada kenyataannya, Anda harus menggantinya dengan cara memvaksinasi *lebih banyak* daripada mencapai "imunitas kawanan", untuk *benar-benar* mendapatkan imunitas kawanan)
 
-Okay, enough talk. Here's a simulation of:
+OK, cukup bicaranya. Ini dia simulasi dari:
 
-1. A few-month lockdown, until we can...
-2. Switch to "Test, Trace, Isolate" until we can...
-3. Vaccinate enough people, which means...
-4. We win.
+1. Karantina wilayah selama beberapa bulan, sampai kita bisa ...
+2. Beralih ke "Tes, Lacak, Isolasi" sampai kita bisa ...
+3. Vaksinasi cukup banyak orang, yang berarti ...
+4. Kita menang.
 
 <div class="sim">
 		<iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-So that's it! That's how we make an emergency landing on this plane.
+Jadi begitu! Begitulah cara kita melakukan pendaratan darurat di pesawat ini.
 
-That's how we beat COVID-19.
+Itulah cara kita mengalahkan COVID-19.
 
 ...
 
-But what if things *still* go wrong? Things have gone horribly wrong already. That's fear, and that's good! Fear gives us energy to create *backup plans*.
+Tetapi bagaimana jika ternyata *masih* bermasalah? Hal-hal buruk telah terjadi. Itulah rasa takut, dan itu bagus! Rasa takut memberi kita energi untuk membuat *rencana cadangan*.
 
-The pessimist invents the parachute.
+Pesimis menciptakan parasut.
 
-###Scenario 4+: Masks For All, Summer, Circuit Breakers
+###Skenario 4+: Masker Untuk Semua, Musim Panas, Karantina Pemutus Arus
 
-What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, *still* aren't enough to get R < 1?
+Bagaimana jika nilai R<sub>0</sub> jauh lebih tinggi dari yang kita duga, dan tindakan di atas, bahkan dengan menjaga jarak secara nyaman, *masih* kurang cukup untuk meraih nilai R < 1?
 
-Remember, even if we can't get R < 1, reducing R still reduces the "overshoot" in total cases, thus saving lives. But still, R < 1 is the ideal, so here's a few other ways to reduce R:
+Ingat, bahkan jika kita tidak dapat meraih nilai R < 1, mengurangi R masih dapat menurunkan "lonjakan" pada total kasus, jadi nyawa bisa diselamatkan. Namun tetapi, R < 1 itu ideal, jadi inilah beberapa cara lainnya untuk mengurangi nilai R:
 
-**Masks For All:**
+**Masker Untuk Semua:**
 
-*"Wait,"* you might ask, *"I thought face masks don't stop you from getting sick?"*
+*"Tunggu,"* mungkin Anda bertanya, *"Saya pikir masker tidak menghentikan kita dari kemungkinan menjadi sakit?"*
 
-You're right. Masks don't stop you from getting sick[^incoming]... they stop you from getting *others* sick.
+Anda benar. Masker tidak menghentikan kita dari kemungkinan untuk sakit[^incoming]... tapi masker menghentikan Anda untuk membuat *orang lain* menjadi sakit.
 
-[^incoming]: “None of these surgical masks exhibited adequate filter performance and facial fit characteristics to be considered respiratory protection devices.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
+[^incoming]: “Tidak satu pun dari masker bedah ini yang memperlihatkan kinerja filter yang memadai dan karakteristik kecocokan wajah untuk dipertimbangkan sebagai alat perlindungan pernapasan.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
 
-[^outgoing]: “The overall 3.4 fold reduction [70% reduction] in aerosol copy numbers we observed combined with a nearly complete elimination of large droplet spray demonstrated by Johnson et al. suggests that surgical masks worn by infected persons could have a clinically significant impact on transmission.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
+[^outgoing]: “Keseluruhan pengurangan 3,4 kali lipat [pengurangan 70%] dalam jumlah salinan aerosol yang kami amati dikombinasikan dengan penghilangan semprotan tetesan besar yang hampir lengkap yang ditunjukkan oleh Johnson et al. menunjukkan bahwa masker bedah yang dikenakan oleh orang yang terinfeksi dapat memiliki dampak yang signifikan secara klinis pada penularan.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
 
-[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) See Table 1: a 100% cotton T-shirt has around 2/3 the filtration efficiency as a surgical mask, for the two bacterial aerosols they tested.
+[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) Lihat Tabel 1: T-shirt berbahan 100% katun memiliki sekitar 2/3 efisiensi penyaringan layaknya masker bedah, berdasarkan dua aerosol bakteri yang mereka uji.
 
 ![](pics/masks.png)
 
-To put a number on it: surgical masks *on the infectious person* reduce cold & flu viruses in aerosols by 70%.[^outgoing] Reducing transmissions by 70% would be as large an impact as a lockdown!
+Bila kita ukur: masker bedah *yang dipakai orang terinfeksi* menurunkan jumlah virus flu & demam berbentuk aerosol hingga 70%.[^outgoing] Mengurangi penularan hingga 70% memberi dampak yang besarnya seperti pelaksanaan karantina wilayah!
 
-However, we don't know for sure the impact of masks on COVID-19 *specifically*. In science, one should only publish a finding if you're 95% sure of it. (...should.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
+Walaupun begitu, kami belum tahu dengan yakin dampak masker pada COVID-19 *secara spesifik*. Di dalam sains, seseorang seharusnya bisa mempublikasikan sebuah temuan jika sudah 95% yakin dengan temuan tersebut. (...seharusnya.[^replication]) Masker, hingga 1 Mei 2020, masih kurang dari "95% yakin".
 
-[^replication]: Any actual scientist who read that last sentence is probably laugh-crying right now. See: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [the replication crisis](https://en.wikipedia.org/wiki/Replication_crisis))
+[^replication]: Ilmuwan sebenarnya mana pun yang membaca kalimat terakhir itu mungkin sedang tertawa saat ini. Lihat: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [krisis replikasi](https://en.wikipedia.org/wiki/Replication_crisis))
 
-However, pandemics are like poker. **Make bets only when you're 95% sure, and you'll lose everything at stake.** As a recent article on masks in the British Medical Journal notes,[^precautionary] we *have* to make cost/benefit analyses under uncertainty. Like so:
+Walaupun begitu, pandemi layaknya seperti poker. **Membuat taruhan hanya jika Anda sudah 95% yakin, dan Anda akan kehilangan segalanya yang dipertaruhkan.** Seperti yang disebutkan pada sebuah artikel tentang masker di British Medical Journal,[^precautionary] kita *harus* membuat analisis manfaat biaya di bawah ketidakpastian. Seperti itu:
 
-[^precautionary]: “It is time to apply the precautionary principle” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
+[^precautionary]: “Sudah waktunya untuk menerapkan prinsip kehati-hatian” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
-Cost: If homemade cloth masks (which are ~2/3 as effective as surgical masks[^homemade]), super cheap. If surgical masks, more expensive but still pretty cheap.
+Biaya: Jika masker kain rumahan (yang ~2/3 seefektif masker bedah[^homemade]), sangat murah. Jika masker bedah, lebih mahal tapi tetap cukup murah.
 
-Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)
+Manfaat: Bahkan jika itu adalah peluang 50-50 masker bedah mengurangi penularan sebesar 0% atau 70%, rata-rata "nilai yang diharapkan" masih 35%, sama dengan setengah dampak karantina wilayah! Jadi mari kita menerka dan perkirakan bahwa masker bedah mengurangi nilai R hingga 35%, dipotong oleh ketidakpastian kita. (Sekali lagi, Anda dapat menantang asumsi kami dengan memutar slider ke atas/bawah)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
 </div>
 
-(other arguments for/against masks:[^mask_args])
+(argumen lainnya untuk mendukung/menolak penggunaan masker:[^mask_args])
 
-[^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
+[^mask_args]: **"Kita perlu menyelamatkan persediaan untuk rumah sakit."** *Sangat setuju.* Tetapi itu lebih kepada argumen untuk meningkatkan produksi masker, bukan pendistribusiannya. Untuk sementara waktu, kita bisa membuat masker kain.
 
-   **"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
-   
-   **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
-    
-    
+   **"Mereka sulit menggunakannya dengan benar."** Juga sangat sulut untuk mencuci tangan mengikuti Panduan WHO - serius, "Langkah 3) telapak tangan kanan ke arah dorsum kiri"?! – tapi kami tetap merekomendasikan cuci tangan, karena tidak sempurna masih lebih baik daripada tidak sama sekali.
+      
+   **"Itu akan membuat orang lebih gegabah dengan mencuci tangan & menjaga jarak."** Tentu, dan sabuk pengaman membuat orang mengabaikan tanda berhenti, dan benang gigi membuat orang tetap makan batu. Tapi serius, kami berpendapat sebaliknya: masker adalah *pengingat fisik yang konstan* untuk berhati-hati - dan di Asia Timur, masker juga merupakan simbol solidaritas!
 
-Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R < 1, virus contained!
+Masker *sendiri* tidak akan mendapatkan nilai R < 1. Namun jika tindakan cuci tangan & "Tes, Lacak, Isolasi" hanya membantu kita meraih nilai R = 1,10, hanya dengan 1/3 dari seluruh orang memakai masker bisa mengubah nilai R menjadi < 1, virus berhasil dikekang!
 
-**Summer:**
+**Musim Panas:**
 
-Okay, this isn't an "intervention" we can control, but it will help! Some news outlets report that summer won't do anything to COVID-19. They're half right: summer won't get R < 1, but it *will* reduce R.
+OK, ini bukan sebuah "tindakan" yang tidak dapat kita kendalikan, namun ini dapat membantu! Beberapa media pemberitaan melaporkan bahwa musim panas tidak membantu apa-apa pada situasi COVID-19. Situasi ini setengah bermanfaat: musim panas tidak dapat menjadikan nilai R < 1, tetapi *akan* menurunkan nilai R.
 
-For COVID-19, every extra 1° Celsius (1.8° Fahrenheit) makes R drop by 1.2%.[^heat] The summer-winter difference in New York City is 26°C (47°F),[^nyc_heat] so summer will make R drop by ~31%.
+Untuk COVID-19, setiap penambahan suhu 1° Celsius (1,8° Fahrenheit) akan menurukan nilai hingga 1,2%.[^heat] Perbedaan musim panas-musim dingin di New York City adalah 26°C (47°F),[^nyc_heat] sehingga musim panas dapat menurunkan nilai R menjadi ~31%.
 
-[^heat]: “One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+[^heat]: “Peningkatan temperatur sebesar satu-derajat Celsius [...] menurunkan nilai R sebesar 0,0225” dan “Rata-rata nilai R dari 100 kota ini adalah 1,83”. 0,0225 ÷ 1,83 = ~1,2%. [Wang, Jingyuan dan Tang, Ke dan Feng, Kai dan Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
-[^nyc_heat]: In 2019 at Central Park, hottest month (July) was 79.6°F, coldest month (Jan) was 32.5°F. Difference is 47.1°F, or ~26°C. [PDF from Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
+[^nyc_heat]: Pada tahun 2019 di Central Park, bulan terpanas (Juli) adalah 79,6°F, bulan terdingin (Jan) adalah 32,5°F. Perbedaannya adalah 47,1°F, atau ~ 26°C. [PDF dari Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
 </div>
 
-Summer alone won't make R < 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
+Musim panas saja tidak akan membuat R < 1, tetapi jika kami memiliki sumber daya yang terbatas, kami dapat mengurangi beberapa tindakan di musim panas - sehingga kami dapat meningkatkan skalanya *lebih tinggi* di musim dingin.
 
-**A "Circuit Breaker" Lockdown:**
+**Karantina "Pemutusan Arus":**
 
-And if all that *still* isn't enough to get R < 1... we can do another lockdown.
+Dan jika semua itu *masih* tidak cukup untuk mendapatkan R < 1 ... kita bisa melakukan jenis lain karantina wilayah.
 
-But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R is reduced, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore had to do this recently, "despite" having controlled COVID-19 for 4 months. That's not failure: this *is* what success takes.)
+Namun kita tidak perlu lakukan penutupan selama 2 bulan lalu dibuka selama 1 bulan terus berulang-ulang! Karena nilai R berkurang, kami hanya membutuhkan satu atau dua lagi karantina wilayah "pemutus arus" sebelum vaksin tersedia. (Singapura baru-baru saja telah melakukan ini, "walaupun" sudah mengendalikan COVID-19 selama 4 bulang. Ini bukan sebuah kegagalan: *inilah* jalan menuju kesuksesan.)
 
-Here's a simulation of a "lazy case" scenario:
+Berikut adalah sebuah simulasi dari kasus skenario "selow":
 
-1. Lockdown, then
-2. A moderate amount of hygiene & "Test, Trace, Isolate", with a mild amount of "Masks For All", then...
-3. One more "circuit breaker" lockdown before a vaccine's found.
+1. Lakukan karantina wilayah, kemudian
+2. Lakukan tindakan higienis & "Tes, Lacak, Isolasi" yang moderat, dengan aksi "Masker Untuk Semua" yang longgar, kemudian...
+3. Lakukan sekali lagi karantina wilayah "pemutus arus" sebelum vaksin ditemukan.
 
 <div class="sim">
 		<iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
 </div>
 
-Not to mention all the *other* interventions we could do, to further push R down:
+Tidak termasuk semua tindakan *lainnyua* yang dapat dilakukan, untuk terus menurunkan nilai R:
 
-* Travel restrictions/quarantines
-* Temperature checks at malls & schools
-* Deep-cleaning public spaces
-* [Replacing hand-shaking with foot-bumping](https://twitter.com/V_actually/status/1233785527788285953)
-* And all else human ingenuity shall bring
+* Karantina/pembatasan perjalanan
+* Pemeriksaan temperatur badan di mall & sekolah
+* Pembersihan ruang publik secara menyeluruh
+* [Mengganti jabat tangan dengan salam kaki](https://twitter.com/V_actually/status/1233785527788285953)
+* Dan semua kecerdikan manusia lainnya yang bisa dilakukan
 
 . . .
 
-We hope these plans give you hope. 
+Kami berharap semua rencana ini memberi Anda harapan.
 
-**Even under a pessimistic scenario, it *is* possible to beat COVID-19, while protecting our mental and financial health.** Use the lockdown as a "reset button", keep R < 1 with case isolation + privacy-protecting contract tracing + at *least* cloth masks for all... and life can get back to a normal-ish!
+**Bahkan di bawan skenario yang pesimis, *sangat* mungkin mengalahkan COVID-19, bersamaan dengan menjaga kesehatan mental dan finansial kita.** Gunakan karantina massal sebagai "tombol reset", jaga nilai R < 1 dengan mengisolasi kasus positif + pelacakan kontak yang melindungi privasi + *setidaknya* masker kain untuk semua... dan hidup akan kembali agak normal!
 
-Sure, you may have dried-out hands. But you'll get to invite a date out to a comics bookstore! You'll get to go out with friends to watch the latest Hollywood cash-grab. You'll get to people-watch at a library, taking joy in people going about the simple business of *being alive.*
+Tentu, tangan Anda mungkin jadi kering. Tetapi Anda akan undangan kencan ke toko buku komik! Anda bisa jalan-jalan bersama teman menonton film Hollywood terbaru. Anda bisa mengeceng seseorang di perpustakaan, mendapatkan kesenangan dalam sebuah urusan sederhana untuk *tetap hidup*.
 
-Even under the worst-case scenario... life perseveres.
+Bahkan di dalam skenario terburuk... hidup masih bisa bertahan.
 
-So now, let's plan for some *worse* worst-case scenarios. Water landing, get your life jacket, and please follow the lights to the emergency exits:
+Jadi sekarang, mari rencanakan beberapa skenario terburuk... yang *lebih buruk*. Bersiap untuk pendaratan di atas air, siapkan jaket pelampung Anda, dan mohon ikuti lampu menuju pintu darurat:
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Years</div>
+        <div>Beberapa Tahun Yang Akan Datang</div>
     </div>
 </div>
 
-You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...
+Anda terkena COVID-19, dan sembuh. Atau Anda mendapatkan vaksin COVID-19. Atau bisa jadi, sekarang Anda imun...
 
-...*for how long?*
+...*untuk berapa lama?*
 
-* COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.[^SARS immunity]
-* The coronaviruses that cause "the" common cold give you 8 months of immunity.[^cold immunity]
-* There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear]
-* One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys]
+* COVID-19 memiliki kedekatan erat dengan SARS, yang memberikan imunitas selama 2 tahun kepada para penyintas.[^SARS immunity]
+* Virus korona yang menyebabkan demam *biasa* hanya memberikan imunitas selama 8 bulan.[^cold immunity]
+* Ada laporan dari mereka yang sembuh dari COVID-19, kemudian dinyatakan positif kembali, tapi masih belum jelas apakah ini positif palsu.[^unclear]
+* Satu studi *yang belum diulas sejawat* pada monyet yang menunjukkan imunitas pada virus korona COVID-19 untuk setidaknya 28 hari.[^monkeys]
 
-But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
+Namun untuk COVID-19 *pada manusia*, per 1 Mei 2020, "berapa lama" masih menjadi pertanyaan besar.
 
-[^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
+[^SARS immunity]: "Antibodi spesifik SARS dipertahankan selama rata-rata 2 tahun [...] Dengan demikian, pasien SARS mungkin rentan terhadap infeksi ulang ≥ 3 tahun setelah paparan awal." [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sedihnya" kita tidak akan pernah tahu berapa lama kekebalan SARS akan benar-benar bertahan, karena kita memberantasnya begitu cepat.
 
-[^cold immunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
+[^cold immunity]: “Kami tidak menemukan perbedaan yang signifikan antara probabilitas pengujian positif setidaknya satu kali dan probabilitas kekambuhan untuk beta-coronavirus HKU1 dan OC43 pada 34 minggu setelah infeksi awal/pertama.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
-[^unclear]: “Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
+[^unclear]: “Sekali seseorang melawan virus, partikel virus cenderung untuk tetap hidup berlama-lama. Ini tidak dapat menyebabkan infeksi, tetapi mereka dapat memicu tes positif. " [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
-[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later. 
+[^monkeys]: Dari [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Penafian: Artikel ini adalah pracetak dan belum disertifikasi oleh ulasan sejawat.* Juga, untuk menekankan: mereka hanya menguji infeksi ulang 28 hari kemudian. 
 
-For these simulations, let's say it's 1 year.
-**Here's a simulation starting with 100% <span class="nowrap"><icon r></icon>**,</span> exponentially decaying into susceptible, no-immunity <span class="nowrap"><icon s></icon>s</span> after 1 year, on *average*, with variation:
+Untuk simulasi ini, mari kita sebut dalam 1 tahun.
+**Berikut simulasi dimulai dengan 100% <span class="nowrap"><icon r></icon>**, secara eksponensial terurai menjadi kelompok rentan, kelompok <span class="nowrap"><icon s></icon>s</span> tanpa imunitas setelah 1 tahun, *rata-rata*, dengan variasi:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-Return of the exponential decay!
+Kembalinya penguraian eksponensial!
 
-This is the **SEIRS Model**. The final "S" stands for <icon s></icon> Susceptible, again.
+Inilah **model SEIRS**. Huruf "S" terakhir itu berarti <icon s></icon> *Susceptible*, lagi, atau Kelompok Rentan.
 
 ![](pics/seirs.png)
 
-Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
+Sekarang, mari kita simulasi pewabahan COVID-19, selama 10 tahun, tanpa ada tindakan... *jika imunitas hanya bertahan setahun saja:*
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
+Dalam simulasi sebelumnya, kita hanya punya *satu* lonjakan ICU yang berlebihan. Sekarang, kita punya beberapa, *dan* kasus <icon i></icon> masuk ke dalam kapasitas ICU *secara permanen*. (Yang berarti, ingat, kita menjadikannya *tiga kali lipat* untuk simulasi ini.)
 
-R = 1, it's **endemic.**
+R = 1, ini adalah **endemik.**
 
-Thankfully, because summer reduces R, it'll make the situation better:
+Syukurlah, karena musim panas menurunkan nilai R, ini akan membuat situasi menjadi lebih baik:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
@@ -635,83 +638,83 @@ Thankfully, because summer reduces R, it'll make the situation better:
 
 Oh.
 
-Counterintuitively, summer makes the spikes worse *and* regular! This is because summer reduces new <span class="nowrap"><icon i></icon>s,</span> but that in turn reduces new immune <span class="nowrap"><icon r></icon>s.</span> Which means immunity plummets in the summer, *creating* large regular spikes in the winter.
+Secara bertolak belakang, musim panas membuat lonjakan semakin buruk *dan* rutin! Ini karena musim panas menurunkan <span class="nowrap"><icon i></icon>s,</span> baru, tetapi itu pada gilirannya mengurangi kekebalan baru pada kelompok <span class="nowrap"><icon r></icon>s.</span> Yang berarti imunitas menurun di musim panas, *menciptakan* lonjakan besar rutin di musim dingin.
 
-Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:
+Untung saja, solusi untuk ini sangatlah jelas - cukup vaksinasi masyarakat setiap musim gugur/dingin, seperti yang kita lakukan dengan imunisasi influenza:
 
-**(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)**
+**(Setelah memainkan rekaman, coba simulasikan kampanye vaksinasi Anda sendiri! Ingat Anda dapat menjeda/melanjutkan simulasi kapan saja)**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-But here's the scarier question:
+Tetapi inilah pertanyaan yang lebih mengerikan:
 
-What if there's no vaccine for *years*? Or *ever?*
+Bagaimana jika tidak ada vaksin selama *bertahun-tahun*? Atau *selamanya?*
 
-**To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment. 
+**Sekedar menjelaskan: hal ini tidak mungkin.** Mayoritas ahli epidemiologi menduga vaksin tersedia dalam 1 hingga 2 tahun. Tentu, sebelumnya tidak ada ada vaksin untuk virus korona lainnya, tetapi itu karena SARS yang sudah diberantas dengan cepat, dan vaksin demam biasa tidak bernilai investasi.
 
-Still, infectious disease researchers have expressed worries: What if we can't make enough?[^vax_enough] What if we rush it, and it's not safe?[^vax_safe]
+Tetap saja, peneliti penyakit menular sudah mengungkapkan kekhawatirannya: Bagaimana kita tidak dapat cukup membuatnya?[^vax_enough] Bagaimana jika kita buru-buru melakukannya, dan hasilnya tidak aman?[^vax_safe]
 
-[^vax_enough]: “If a coronavirus vaccine arrives, can the world make enough?” [by Roxanne Khamsi, on Nature](https://www.nature.com/articles/d41586-020-01063-8)
+[^vax_enough]: "Jika vaksin coronavirus tiba, bisakah dunia membuat cukup (vaksin)?" [oleh Roxanne Khamsi, di Nature](https://www.nature.com/articles/d41586-020-01063-8)
 
-[^vax_safe]: “Don’t rush to deploy COVID-19 vaccines and drugs without sufficient safety guarantees” [by Shibo Jiang, on Nature](https://www.nature.com/articles/d41586-020-00751-9)
+[^vax_safe]: “Jangan terburu-buru menggunakan vaksin COVID-19 dan obat-obatan tanpa jaminan keamanan yang memadai” [oleh Shibo Jiang, di Nature](https://www.nature.com/articles/d41586-020-00751-9)
 
-Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most to least terrible:
+Bahkan dalam skenario mimpi buruk di mana"tidak ada vaksin", kita masih memiliki 3 jalan keluar. Dari yang paling buruk hingga yang cukup mengerikan:
 
-1) Do intermittent or loose R < 1 interventions, to reach "natural herd immunity". (Warning: this will result in many deaths & damaged lungs. *And* won't work if immunity doesn't last.)
+1) Lakukan intervensi R < 1 secara berselang-seling atau longgar, untuk mencapai "kekebalan kawanan alami". (Peringatan: ini akan menyebabkan banyak kematian & paru-paru yang rusak. *Dan* tidak akan berfungsi jika kekebalan tidak bertahan lama.)
 
-2) Do the R < 1 interventions forever. Contact tracing & wearing masks just becomes a new norm in the post-COVID-19 world, like how STI tests & wearing condoms became a new norm in the post-HIV world.
+2) Lakukan intervensi R < 1 selamanya. Pelacakan kontak & pemakaian masker hanya menjadi norma baru di dunia pasca COVID-19, seperti bagaimana tes IMS & pemakaian kondom menjadi norma baru di dunia pasca HIV.
 
-3) Do the R < 1 interventions until we develop treatments that make COVID-19 way, way less likely to need critical care. (Which we should be doing *anyway!*) Reducing ICU use by 10x is the same as increasing our ICU capacity by 10x:
+3) Lakukan intervensi R < 1 sampai kami mengembangkan perawatan yang membuat COVID-19 jalan, jauh lebih sedikit membutuhkan perawatan kritis. (Yang harus kita lakukan *toh!*) Mengurangi penggunaan ICU sebesar 10x sama dengan meningkatkan kapasitas ICU kita sebesar 10x:
 
-**Here's a simulation of *no* lasting immunity, *no* vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:**
+**Berikut adalah simulasi *tidak ada* kekebalan abadi, *tidak ada* vaksin, dan bahkan tidak intervensi - hanya perlahan-lahan meningkatkan kapasitas untuk bertahan hidup dari lonjakan jangka panjang:**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-Even under the *worst* worst-case scenario... life perseveres.
+Bahkan di bawah skenario terburuk *yang terburuk* ... hidup masih bisa bertahan.
 
 . . .
 
-Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s or numbers. Or try simulating your *own* combination of intervention plans!
+Mungkin Anda senang menantang asumsi kami, dan mencoba nilai atau angka R<sub>0</sub> yang berbeda-beda. Atau coba simulasikan kombinasi rencana intervensi Anda *sendiri*!
 
-**Here's an (optional) Sandbox Mode, with *everything* available. (scroll to see all controls) Simulate & play around to your heart's content:**
+**Berikut adalah Mode Kotak Pasir (opsional), dengan *semua opsi* tersedia. (gulirkan untuk melihat semua kendali) Simulasi dan mainkan sesuai kehendak Anda:**
 
 <div class="sim">
 		<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
 </div>
 
-This basic "epidemic flight simulator" has taught us so much. It's let us answer questions about the past few months, next few months, and next few years.
+"Simulator penerbangan epidemi" dasar ini mengajarkan kita banyak hal. Ini membantu kita menjawab pertanyaan tentang apa yang terjadi beberapa bulan lalu, beberapa bulan yang akan datang, dan beberapa tahun yang akan datang.
 
-So finally, let's return to...
+Jadi akhirnya, mari kita kembali ke...
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Now</div>
+        <div>Masa Kini</div>
     </div>
 </div>
 
-Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.[^dry_land]
+Pesawat tenggelam. Kita telah terpecah ke dalam rakit-rakit penyelamatan. Saatnya untuk menjadi daratan kering.[^dry_land]
 
-[^dry_land]: Dry land metaphor [from Marc Lipsitch & Yonatan Grad, on STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
+[^dry_land]: Metafora daratan kering [dari Marc Lipsitch & Yonatan Grad, di STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
-Teams of epidemiologists and policymakers ([left](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [right](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), and [multi-partisan](https://ethics.harvard.edu/covid-roadmap)) have come to a consensus on how to beat COVID-19, while protecting our lives *and* liberties.
+Tim ahli epidemiologi dan pembuat kebijakan ([sayap kiri](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [sayap kanan](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), dan [multi-partisan](https://ethics.harvard.edu/covid-roadmap)) telah menyepakati sebuah konsensus dalam bagaimana untuk mengalahkan COVID-19, bersamaan dengan itu juga melindungi nyawa *dan* kebebasan kita.
 
-Here's the rough idea, with some (less-consensus) backup plans:
+Berikut adalah ide kasar, dengan beberapa rencana cadangan (dengan sedikit konsensus):
 
 ![](pics/plan.png)
 
-So what does this mean for YOU, right now?
+Jadi apa artinya ini untuk ANDA, saat ini?
 
-**For everyone:** Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a *privacy-protecting* contact tracing app when those are available next month. Stay healthy, physically & mentally! And write your local policymaker to get off their butt and...
+**Untuk semua orang:** Hormati karantina wilayah sehingga kita dapat segera keluar dari Fase I. Terus cuci tangan. Buat maskermu sendiri. Unduh aplikasi pelacakan kontak *yang melindungi privasi* ketika tersedia bulan depan. Tetap sehat, secara fisik & mental! Dan sampaikan suara Anda kepada pembuat kebijakan lokal Anda untuk bekerja dan...
 
-**For policymakers:** Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, *supported* by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...
+**Untuk pembuat kebijakan:** Buat undang-undang untuk mendukung orang-orang yang harus mengisolasi diri/karantina. Sewa lebih banyak pelacak kontak manual, *didukung* oleh aplikasi pelacak kontak yang melindungi privasi. Arahkan lebih banyak dana ke dalam barang yang harus kita bangun, dan...
 
-**For builders:** Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope. 
+**Untuk pengembang:** Buat tes. Kembangkan ventilator. Buat alat pelindung diri untuk rumah sakit. Buat tes. Buat masker. Bangun aplikasi. Buat antivirus, profilaksis, dan perawatan lain yang bukan vaksin. Buat vaksin. Buat tes. Buat tes. Buat tes. Bangun harapan.
 
-Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
+Jangan kecilkan rasa takut untuk membangun harapan. Ketakutan kita harus *bergabung* dengan harapan kita, seperti para penemu pesawat terbang & parasut. Mempersiapkan masa depan yang mengerikan adalah bagaimana kita *menciptakan* masa depan yang penuh harapan.
 
-The only thing to fear is the idea that the only thing to fear is fear itself.
+Satu-satunya hal yang perlu ditakuti adalah gagasan bahwa satu-satunya hal yang perlu ditakuti adalah ketakutan itu sendiri.
