@@ -410,13 +410,13 @@ Inilah bagaimana aplikasi itu bekerja:
 ![](pics/dp3t.png)
 
 // TODO: Translate
-([Here's the full comic](https://ncase.me/contact-tracing/). Details about "pranking"/false positives/etc in footnote:[^dp3t_details])
+([Inilah komik selengkapnya](https://ncase.me/contact-tracing/). Rincian lebih lanjut tentang "prank"/positif palsu/dan lain-lain di catatan kaki:[^dp3t_details])
 
-[^dp3t_details]: To prevent "pranking" (people falsely claiming to be infected), the DP-3T Protocol requires that the hospital first give you a One-Time Passcode that lets you upload your messages.
+[^dp3t_details]: Untuk mencegah "prank" (orang-orang yang secara keliru mengklaim terinfeksi), Protokol DP-3T mengharuskan rumah sakit terlebih dahulu memberi Anda *One-Time Passcode (OTP)* atau Kode Masuk Satu Kali yang memungkinkan Anda mengunggah pesan Anda.
     
-    False positives are a problem in both manual & digital contact tracing. Still, we can reduce false positives in 2 ways: 1) By notifying Bobs only if they heard, say, 30+ min worth of messages, not just one message in passing. And 2) If the app *does* think Bob's been exposed, it can refer Bob to a *manual* contact tracer, for an in-depth follow-up interview.
+    Positif palsu adalah masalah dalam pelacakan kontak manual & digital. Namun, kita dapat mengurangi positif palsu dengan 2 cara: 1) Dengan memberi tahu Bobs hanya jika mereka mendengar, katakanlah, pesan berdurasi 30 menit lebih, bukan hanya satu pesan yang lewat. Dan 2) Jika aplikasi *juga* berpikir Bob telah diekspos, ia dapat merujuk Bob kepada pelacakan kontak *manual*, untuk wawancara lanjutan yang mendalam.
     
-    For other issues like data bandwidth, source integrity, and other security issues, check out [the open-source DP-3T whitepapers!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
+    Untuk masalah lain seperti bandwidth data, integritas sumber, dan masalah keamanan lainnya, lihat [kertas putih DP-3T sumber terbuka!](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)
 
 Bersamaan dengan tim serupa seperti TCN Protocol[^tcn] dan MIT PACT[^pact], mereka menginspirasi Apple & Google untuk menghasilkan pelacakan kontak yang mengutamakan privasi langsung ke dalam Android/iOS.[^gapple] (Tidak percaya Google/Apple? Bagus! Keindahan dari sistem ini adalah ini tidak *memerlukan* kepercayaan!) Kelak, kantor kesehatan masyarakat lokal Anda mungkin meminta Anda untuk mengunduh sebuah aplikasi. Jika aplikasi tersebut mengutamakan privasi dengan kode yang tersedia untuk umum, mohon segara unduh!
 
@@ -539,7 +539,7 @@ Untuk COVID-19, setiap penambahan suhu 1° Celsius (1,8° Fahrenheit) akan menur
 [^heat]: “Peningkatan temperatur sebesar satu-derajat Celsius [...] menurunkan nilai R sebesar 0,0225” dan “Rata-rata nilai R dari 100 kota ini adalah 1,83”. 0,0225 ÷ 1,83 = ~1,2%. [Wang, Jingyuan dan Tang, Ke dan Feng, Kai dan Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
 // TODO: Translate
-[^nyc_heat]: In 2019 at Central Park, hottest month (July) was 79.6°F, coldest month (Jan) was 32.5°F. Difference is 47.1°F, or ~26°C. [PDF from Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
+[^nyc_heat]: Pada tahun 2019 di Central Park, bulan terpanas (Juli) adalah 79,6°F, bulan terdingin (Jan) adalah 32,5°F. Perbedaannya adalah 47,1°F, atau ~ 26°C. [PDF dari Weather.gov](https://www.weather.gov/media/okx/Climate/CentralPark/monthlyannualtemp.pdf)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
