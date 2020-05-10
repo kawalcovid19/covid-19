@@ -536,90 +536,90 @@ Musim panas saja tidak akan membuat R < 1, tetapi jika kami memiliki sumber daya
 
 **Karantina "Pemutusan Arus":**
 
-Dan jika semua itu *masih* tidak cukup untuk mendapatkan R < 1 ... kita bisa melakukan karantina wilayah lainnya.
+Dan jika semua itu *masih* tidak cukup untuk mendapatkan R < 1 ... kita bisa melakukan jenis lain karantina wilayah.
 
-But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R is reduced, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore had to do this recently, "despite" having controlled COVID-19 for 4 months. That's not failure: this *is* what success takes.)
+Namun kita tidak perlu lakukan penutupan selama 2 bulan lalu dibuka selama 1 bulan terus berulang-ulang! Karena nilai R berkurang, kami hanya membutuhkan satu atau dua lagi karantina wilayah "pemutus arus" sebelum vaksin tersedia. (Singapura baru-baru saja telah melakukan ini, "walaupun" sudah mengendalikan COVID-19 selama 4 bulang. Ini bukan sebuah kegagalan: *inilah* jalan menuju kesuksesan.)
 
-Here's a simulation a "lazy case" scenario:
+Berikut adalah sebuah simulasi dari kasus skenario "selow":
 
-1. Lockdown, then
-2. A moderate amount of hygiene & "Test, Trace, Isolate", with a mild amount of "Masks For All", then...
-3. One more "circuit breaker" lockdown before a vaccine's found.
+1. Lakukan karantina wilayah, kemudian
+2. Lakukan tindakan higienis & "Tes, Lacak, Isolasi" yang moderat, dengan aksi "Masker Untuk Semua" yang longgar, kemudian...
+3. Lakukan sekali lagi karantina wilayah "pemutus arus" sebelum vaksin ditemukan.
 
 <div class="sim">
 		<iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
 </div>
 
-Not to mention all the *other* interventions we could do, to further push R down:
+Tidak termasuk semua tindakan *lainnyua* yang dapat dilakukan, untuk terus menurunkan nilai R:
 
-* Travel restrictions/quarantines
-* Temperature checks at malls & schools
-* Deep-cleaning public spaces
-* [Replacing hand-shaking with foot-bumping](https://twitter.com/V_actually/status/1233785527788285953)
-* And all else human ingenuity shall bring
+* Karantina/pembatasan perjalanan
+* Pemeriksaan temperatur badan di mall & sekolah
+* Pembersihan ruang publik secara menyeluruh
+* [Mengganti jabat tangan dengan salam kaki](https://twitter.com/V_actually/status/1233785527788285953)
+* Dan semua kecerdikan manusia lainnya yang bisa dilakukan
 
 . . .
 
-We hope these plans give you hope. 
+Kami berharap semua rencana ini memberi Anda harapan.
 
-**Even under a pessimistic scenario, it *is* possible to beat COVID-19, while protecting our mental and financial health.** Use the lockdown as a "reset button", keep R < 1 with case isolation + privacy-protecting contract tracing + at *least* cloth masks for all... and life can get back to a normal-ish!
+**Bahkan di bawan skenario yang pesimis, *sangat* mungkin mengalahkan COVID-19, bersamaan dengan menjaga kesehatan mental dan finansial kita.** Gunakan karantina massal sebagai "tombol reset", jaga nilai R < 1 dengan mengisolasi kasus positif + pelacakan kontak yang melindungi privasi + *setidaknya* masker kain untuk semua... dan hidup akan kembali agak normal!
 
-Sure, you may have dried-out hands. But you'll get to invite a date out to a comics bookstore! You'll get to go out with friends to watch the latest Hollywood cash-grab. You'll get to people-watch at a library, taking joy in people going about the simple business of *being alive.*
+Tentu, tangan Anda mungkin jadi kering. Tetapi Anda akan undangan kencan ke toko buku komik! Anda bisa jalan-jalan bersama teman menonton film Hollywood terbaru. Anda bisa mengeceng seseorang di perpustakaan, mendapatkan kesenangan dalam sebuah urusan sederhana untuk *tetap hidup*.
 
-Even under the worst-case scenario... life perseveres.
+Bahkan di dalam skenario terburuk... hidup masih bisa bertahan.
 
-So now, let's plan for some *worse* worst-case scenarios. Water landing, get your life jacket, and please follow the lights to the emergency exits:
+Jadi sekarang, mari rencanakan beberapa skenario terburuk... yang *lebih buruk*. Bersiap untuk pendaratan di atas air, siapkan jaket pelampung Anda, dan mohon ikuti lampu menuju pintu darurat:
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Years</div>
+        <div>Beberapa Tahun Yang Akan Datang</div>
     </div>
 </div>
 
-You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...
+Anda terkena COVID-19, dan sembuh. Atau Anda mendapatkan vaksin COVID-19. Atau bisa jadi, sekarang Anda imun...
 
-...*for how long?*
+...*untuk berapa lama?*
 
-* COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.[^SARS immunity]
-* The coronaviruses that cause "the" common cold give you 8 months of immunity.[^cold immunity]
-* There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear]
-* One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys]
+* COVID-19 memiliki kedekatan erat dengan SARS, yang memberikan imunitas selama 2 tahun kepada para penyintas.[^SARS immunity]
+* Virus korona yang menyebabkan demam *biasa* hanya memberikan imunitas selama 8 bulan.[^cold immunity]
+* Ada laporan dari mereka yang sembuh dari COVID-19, kemudian dinyatakan positif kembali, tapi masih belum jelas apakah ini positif palsu.[^unclear]
+* Satu studi *yang belum diulas sejawat* pada monyet yang menunjukkan imunitas pada virus korona COVID-19 untuk setidaknya 28 hari.[^monkeys]
 
-But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
+Namun untuk COVID-19 *pada manusia*, per 1 Mei 2020, "berapa lama" masih menjadi pertanyaan besar.
 
-[^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
+[^SARS immunity]: "Antibodi spesifik SARS dipertahankan selama rata-rata 2 tahun [...] Dengan demikian, pasien SARS mungkin rentan terhadap infeksi ulang ≥ 3 tahun setelah paparan awal." [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sedihnya" kita tidak akan pernah tahu berapa lama kekebalan SARS akan benar-benar bertahan, karena kita memberantasnya begitu cepat.
 
-[^cold immunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
+[^cold immunity]: “Kami tidak menemukan perbedaan yang signifikan antara probabilitas pengujian positif setidaknya satu kali dan probabilitas kekambuhan untuk beta-coronavirus HKU1 dan OC43 pada 34 minggu setelah infeksi awal/pertama.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
-[^unclear]: “Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
+[^unclear]: “Sekali seseorang melawan virus, partikel virus cenderung untuk tetap hidup berlama-lama. Ini tidak dapat menyebabkan infeksi, tetapi mereka dapat memicu tes positif. " [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
-[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later. 
+[^monkeys]: Dari [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Penafian: Artikel ini adalah pracetak dan belum disertifikasi oleh ulasan sejawat.* Juga, untuk menekankan: mereka hanya menguji infeksi ulang 28 hari kemudian. 
 
-For these simulations, let's say it's 1 year.
-**Here's a simulation starting with 100% <icon r></icon>**, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on *average*, with variation:
+Untuk simulasi ini, mari kita sebut dalam 1 tahun.
+**Berikut simulasi dimulai dengan 100% <icon r></icon>**, secara eksponensial terurai menjadi kelompok rentan, kelompok <icon s></icon> tanpa imunitas setelah 1 tahun, *rata-rata*, dengan variasi:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-Return of the exponential decay!
+Kembalinya penguraian eksponensial!
 
-This is the **SEIRS Model**. The final "S" stands for <icon s></icon> Susceptible, again.
+Inilah **model SEIRS**. Huruf "S" terakhir itu berarti <icon s></icon> *Susceptible*, lagi, atau Kelompok Rentan.
 
 ![](pics/seirs.png)
 
-Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
+Sekarang, mari kita simulasi pewabahan COVID-19, selama 10 tahun, tanpa ada tindakan... *jika imunitas hanya bertahan setahun saja:*
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
+Dalam simulasi sebelumnya, kita hanya punya *satu* lonjakan ICU yang berlebihan. Sekarang, kita punya beberapa, *dan* kasus <icon i></icon> masuk ke dalam kapasitas ICU *secara permanen*. (Yang berarti, ingat, kita menjadikannya *tiga kali lipat* untuk simulasi ini.)
 
-R = 1, it's **endemic.**
+R = 1, ini adalah **endemik.**
 
-Thankfully, because summer reduces R, it'll make the situation better:
+Syukurlah, karena musim panas menurunkan nilai R, ini akan membuat situasi menjadi lebih baik:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
@@ -627,83 +627,83 @@ Thankfully, because summer reduces R, it'll make the situation better:
 
 Oh.
 
-Counterintuitively, summer makes the spikes worse *and* regular! This is because summer reduces new <icon i></icon>s, but that in turn reduces new immune <icon r></icon>s. Which means immunity plummets in the summer, *creating* large regular spikes in the winter.
+Secara bertolak belakang, musim panas membuat lonjakan semakin buruk *dan* rutin! Ini karena musim panas menurunkan <icon i></icon> baru, tetapi itu pada gilirannya mengurangi kekebalan baru pada kelompok <icon r></icon>. Yang berarti imunitas menurun di musim panas, *menciptakan* lonjakan besar rutin di musim dingin.
 
-Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:
+Untung saja, solusi untuk ini sangatlah jelas - cukup vaksinasi masyarakat setiap musim gugur/dingin, seperti yang kita lakukan dengan imunisasi influenza:
 
-**(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)**
+**(Setelah memainkan rekaman, coba simulasikan kampanye vaksinasi Anda sendiri! Ingat Anda dapat menjeda/melanjutkan simulasi kapan saja)**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-But here's the scarier question:
+Tetapi inilah pertanyaan yang lebih mengerikan:
 
-What if there's no vaccine for *years*? Or *ever?*
+Bagaimana jika tidak ada vaksin selama *bertahun-tahun*? Atau *selamanya?*
 
-**To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment. 
+**Sekedar menjelaskan: hal ini tidak mungkin.** Mayoritas ahli epidemiologi menduga vaksin tersedia dalam 1 hingga 2 tahun. Tentu, sebelumnya tidak ada ada vaksin untuk virus korona lainnya, tetapi itu karena SARS yang sudah diberantas dengan cepat, dan vaksin demam biasa tidak bernilai investasi.
 
-Still, infectious disease researchers have expressed worries: What if we can't make enough?[^vax_enough] What if we rush it, and it's not safe?[^vax_safe]
+Tetap saja, peneliti penyakit menular sudah mengungkapkan kekhawatirannya: Bagaimana kita tidak dapat cukup membuatnya?[^vax_enough] Bagaimana jika kita buru-buru melakukannya, dan hasilnya tidak aman?[^vax_safe]
 
-[^vax_enough]: “If a coronavirus vaccine arrives, can the world make enough?” [by Roxanne Khamsi, on Nature](https://www.nature.com/articles/d41586-020-01063-8)
+[^vax_enough]: "Jika vaksin coronavirus tiba, bisakah dunia membuat cukup (vaksin)?" [oleh Roxanne Khamsi, di Nature](https://www.nature.com/articles/d41586-020-01063-8)
 
-[^vax_safe]: “Don’t rush to deploy COVID-19 vaccines and drugs without sufficient safety guarantees” [by Shibo Jiang, on Nature](https://www.nature.com/articles/d41586-020-00751-9)
+[^vax_safe]: “Jangan terburu-buru menggunakan vaksin COVID-19 dan obat-obatan tanpa jaminan keamanan yang memadai” [oleh Shibo Jiang, di Nature](https://www.nature.com/articles/d41586-020-00751-9)
 
-Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most to least terrible:
+Bahkan dalam skenario mimpi buruk di mana"tidak ada vaksin", kita masih memiliki 3 jalan keluar. Dari yang paling buruk hingga yang cukup mengerikan:
 
-1) Do intermittent or loose R < 1 interventions, to reach "natural herd immunity". (Warning: this will result in many deaths & damaged lungs. *And* won't work if immunity doesn't last.)
+1) Lakukan intervensi R < 1 secara berselang-seling atau longgar, untuk mencapai "kekebalan kawanan alami". (Peringatan: ini akan menyebabkan banyak kematian & paru-paru yang rusak. *Dan* tidak akan berfungsi jika kekebalan tidak bertahan lama.)
 
-2) Do the R < 1 interventions forever. Contact tracing & wearing masks just becomes a new norm in the post-COVID-19 world, like how STI tests & wearing condoms became a new norm in the post-HIV world.
+2) Lakukan intervensi R < 1 selamanya. Pelacakan kontak & pemakaian masker hanya menjadi norma baru di dunia pasca COVID-19, seperti bagaimana tes IMS & pemakaian kondom menjadi norma baru di dunia pasca HIV.
 
-3) Do the R < 1 interventions until we develop treatments that make COVID-19 way, way less likely to need critical care. (Which we should be doing *anyway!*) Reducing ICU use by 10x is the same as increasing our ICU capacity by 10x:
+3) Lakukan intervensi R < 1 sampai kami mengembangkan perawatan yang membuat COVID-19 jalan, jauh lebih sedikit membutuhkan perawatan kritis. (Yang harus kita lakukan *toh!*) Mengurangi penggunaan ICU sebesar 10x sama dengan meningkatkan kapasitas ICU kita sebesar 10x:
 
-**Here's a simulation of *no* lasting immunity, *no* vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:**
+**Berikut adalah simulasi *tidak ada* kekebalan abadi, *tidak ada* vaksin, dan bahkan tidak intervensi - hanya perlahan-lahan meningkatkan kapasitas untuk bertahan hidup dari lonjakan jangka panjang:**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-Even under the *worst* worst-case scenario... life perseveres.
+Bahkan di bawah skenario terburuk *yang terburuk* ... hidup masih bisa bertahan.
 
 . . .
 
-Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s or numbers. Or try simulating your *own* combination of intervention plans!
+Mungkin Anda senang menantang asumsi kami, dan mencoba nilai atau angka R<sub>0</sub> yang berbeda-beda. Atau coba simulasikan kombinasi rencana intervensi Anda *sendiri*!
 
-**Here's an (optional) Sandbox Mode, with *everything* available. (scroll to see all controls) Simulate & play around to your heart's content:**
+**Berikut adalah Mode Kotak Pasir (opsional), dengan *semua opsi* tersedia. (gulirkan untuk melihat semua kendali) Simulasi dan mainkan sesuai kehendak Anda:**
 
 <div class="sim">
 		<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
 </div>
 
-This basic "epidemic flight simulator" has taught us so much. It's let us answer questions about the past few months, next few months, and next few years.
+"Simulator penerbangan epidemi" dasar ini mengajarkan kita banyak hal. Ini membantu kita menjawab pertanyaan tentang apa yang terjadi beberapa bulan lalu, beberapa bulan yang akan datang, dan beberapa tahun yang akan datang.
 
-So finally, let's return to...
+Jadi akhirnya, mari kita kembali ke...
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Now</div>
+        <div>Masa Kini</div>
     </div>
 </div>
 
-Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.[^dry_land]
+Pesawat tenggelam. Kita telah terpecah ke dalam rakit-rakit penyelamatan. Saatnya untuk menjadi daratan kering.[^dry_land]
 
-[^dry_land]: Dry land metaphor [from Marc Lipsitch & Yonatan Grad, on STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
+[^dry_land]: Metafora daratan kering [dari Marc Lipsitch & Yonatan Grad, di STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
-Teams of epidemiologists and policymakers ([left](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [right](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), and [multi-partisan](https://ethics.harvard.edu/covid-roadmap)) have come to a consensus on how to beat COVID-19, while protecting our lives *and* liberties.
+Tim ahli epidemiologi dan pembuat kebijakan ([sayap kiri](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [sayap kanan](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), dan [multi-partisan](https://ethics.harvard.edu/covid-roadmap)) telah menyepakati sebuah konsensus dalam bagaimana untuk mengalahkan COVID-19, bersamaan dengan itu juga melindungi nyawa *dan* kebebasan kita.
 
-Here's the rough idea, with some (less-consensus) backup plans:
+Berikut adalah ide kasar, dengan beberapa rencana cadangan (dengan sedikit konsensus):
 
 ![](pics/plan.png)
 
-So what does this mean for YOU, right now?
+Jadi apa artinya ini untuk ANDA, saat ini?
 
-**For everyone:** Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a *privacy-protecting* contact tracing app when those are available next month. Stay healthy, physically & mentally! And write your local policymaker to get off their butt and...
+**Untuk semua orang:** Hormati karantina wilayah sehingga kita dapat segera keluar dari Fase I. Terus cuci tangan. Buat maskermu sendiri. Unduh aplikasi pelacakan kontak *yang melindungi privasi* ketika tersedia bulan depan. Tetap sehat, secara fisik & mental! Dan sampaikan suara Anda kepada pembuat kebijakan lokal Anda untuk bekerja dan...
 
-**For policymakers:** Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, *supported* by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...
+**Untuk pembuat kebijakan:** Buat undang-undang untuk mendukung orang-orang yang harus mengisolasi diri/karantina. Sewa lebih banyak pelacak kontak manual, *didukung* oleh aplikasi pelacak kontak yang melindungi privasi. Arahkan lebih banyak dana ke dalam barang yang harus kita bangun, dan...
 
-**For builders:** Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope. 
+**Untuk pengembang:** Buat tes. Kembangkan ventilator. Buat alat pelindung diri untuk rumah sakit. Buat tes. Buat masker. Bangun aplikasi. Buat antivirus, profilaksis, dan perawatan lain yang bukan vaksin. Buat vaksin. Buat tes. Buat tes. Buat tes. Bangun harapan.
 
-Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
+Jangan kecilkan rasa takut untuk membangun harapan. Ketakutan kita harus *bergabung* dengan harapan kita, seperti para penemu pesawat terbang & parasut. Mempersiapkan masa depan yang mengerikan adalah bagaimana kita *menciptakan* masa depan yang penuh harapan.
 
-The only thing to fear is the idea that the only thing to fear is fear itself.
+Satu-satunya hal yang perlu ditakuti adalah gagasan bahwa satu-satunya hal yang perlu ditakuti adalah ketakutan itu sendiri.
